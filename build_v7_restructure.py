@@ -7,7 +7,7 @@ ALL existing data preserved — only reorganized
 import json, re
 from collections import OrderedDict
 
-with open('/sessions/nifty-kind-faraday/master_stakeholders.json') as f:
+with open('master_stakeholders.json') as f:
     data = json.load(f)
 
 master = data['stakeholders']
@@ -277,7 +277,7 @@ SECTION_DESCRIPTIONS = {
 data['stakeholders'] = master
 data['meta']['version'] = '7.0'
 data['meta']['description'] = 'V7: Reorganized into Organisationer/Influencers/Medier with sort+search'
-with open('/sessions/nifty-kind-faraday/master_stakeholders.json', 'w') as f:
+with open('master_stakeholders.json', 'w') as f:
     json.dump(data, f, ensure_ascii=False, indent=2)
 print("Saved master JSON v7.0")
 
@@ -780,7 +780,7 @@ function sortInfluencers(mode,btn){
 </script></body></html>''')
 
 html = ''.join(H)
-out = '/sessions/nifty-kind-faraday/mnt/outputs/saga-stakeholder-map-v5.html'
+out = 'index.html'
 with open(out,'w') as f: f.write(html)
 
 cards = html.count('data-search=')
