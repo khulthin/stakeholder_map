@@ -424,8 +424,9 @@ body{{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
 .cr{{font-size:11px;color:var(--o);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
 .co{{font-size:10px;color:var(--m);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
 .crt{{display:flex;align-items:center;gap:5px;flex-shrink:0}}
-.li-b{{width:18px;height:18px;border-radius:3px;background:#0077b5;color:#fff;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;text-decoration:none;opacity:.7;transition:opacity .15s}}
-.li-b:hover{{opacity:1}}
+.li-b{{width:20px;height:20px;border-radius:4px;background:#0077b5;color:#fff;display:flex;align-items:center;justify-content:center;text-decoration:none;opacity:.75;transition:opacity .15s;flex-shrink:0}}
+.li-b:hover{{opacity:1;transform:scale(1.1)}}
+.li-b svg{{width:12px;height:12px;fill:#fff}}
 .tp{{font-size:10px;font-weight:600;padding:2px 6px;border-radius:6px;white-space:nowrap}}
 .tp.t1{{background:var(--t1b);color:var(--t1)}}.tp.t2{{background:var(--t2b);color:var(--t2)}}.tp.t3{{background:var(--t3b);color:var(--t3)}}
 .cv{{font-size:11px;color:#ccc;transition:transform .2s;margin-left:2px}}.cd.open .cv{{transform:rotate(180deg)}}
@@ -516,7 +517,8 @@ def render_person_card(r):
         out.append(f'<div class="co">{esc(org_display)}</div>\n')
     out.append('</div></div>\n<div class="crt">\n')
     if r.get('linkedin'):
-        out.append(f'<a class="li-b" href="{r["linkedin"]}" target="_blank" onclick="event.stopPropagation()" title="LinkedIn">in</a>\n')
+        li_svg = '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>'
+        out.append(f'<a class="li-b" href="{r["linkedin"]}" target="_blank" onclick="event.stopPropagation()" title="LinkedIn profil">{li_svg}</a>\n')
     if score is not None:
         out.append(f'<span class="tp t{t}">{score}/10</span>\n')
     out.append(f'<span class="tp t{t}">{TIER_LABELS[t]}</span>\n')
@@ -526,7 +528,7 @@ def render_person_card(r):
     out.append('<div class="dt">\n')
     bg = r.get('baggrund','')
     if bg:
-        out.append(f'<div class="ds"><div class="dl">Baggrund</div>\n')
+        out.append(f'<div class="ds"><div class="dl">Rolle og baggrund</div>\n')
         qm = re.search(r'["\u201c\u201d]([^"\u201c\u201d]{10,})["\u201c\u201d]', bg)
         if qm:
             rest = bg.replace(qm.group(0),'').strip().strip('.')
