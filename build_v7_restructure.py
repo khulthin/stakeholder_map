@@ -514,13 +514,15 @@ def mkid(name):
 
 tg = {1:('#1b7a3d','#2da85a'),2:('#6d28d9','#8b5cf6'),3:('#b45309','#d97706')}
 
-# Count stats
+# Count stats — all persons (master + netvaerk)
 lm = layout_master
-t1=sum(1 for r in lm if r['tier']==1)
-t2=sum(1 for r in lm if r['tier']==2)
-t3=sum(1 for r in lm if r['tier']==3)
-li=sum(1 for r in lm if r.get('linkedin'))
-ct=sum(1 for r in lm if r.get('email') or r.get('phone'))
+all_persons = lm + netvaerk_persons
+total_count = len(all_persons)
+t1=sum(1 for r in all_persons if r['tier']==1)
+t2=sum(1 for r in all_persons if r['tier']==2)
+t3=sum(1 for r in all_persons if r['tier']==3)
+li=sum(1 for r in all_persons if r.get('linkedin'))
+ct=sum(1 for r in all_persons if r.get('email') or r.get('phone'))
 
 # Count per group
 org_count = sum(1 for s in lm if s['new_group'] == 'ORGANISATIONER')
@@ -706,7 +708,7 @@ for gname, (glabel, gcount) in group_labels.items():
     H.append('</div>\n')
 
 H.append(f'''<div class="ss">
-<div class="sr"><span class="l">Total</span><span class="v">{len(lm)}</span></div>
+<div class="sr"><span class="l">Total</span><span class="v">{total_count}</span></div>
 <div class="sr"><span class="l">Tier 1</span><span class="v">{t1}</span></div>
 <div class="sr"><span class="l">Tier 2</span><span class="v">{t2}</span></div>
 <div class="sr"><span class="l">Tier 3</span><span class="v">{t3}</span></div>
@@ -716,7 +718,7 @@ H.append(f'''<div class="ss">
 </div></nav>
 <main class="mn">
 <div class="pt">Stakeholder Map</div>
-<div class="ps">{len(lm)} stakeholders &middot; {org_count} i organisationer &middot; {inf_count} influencers &middot; {med_count} i medier &middot; {kom_count} i kommuner</div>
+<div class="ps">{total_count} stakeholders &middot; {org_count} i organisationer &middot; {inf_count} influencers &middot; {med_count} i medier &middot; {kom_count} i kommuner</div>
 <div class="main-search">
 <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
 <input type="text" id="mainSearch" placeholder="Søg efter navn, organisation, rolle..." oninput="doSearch(this.value)">
