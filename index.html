@@ -143,20 +143,19 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <input type="text" placeholder="Søg stakeholder..." oninput="doSearch(this.value)">
 </div>
 <div class="ng">
-<div class="ng-h">Organisationer <span class="ng-c">52</span></div>
+<div class="ng-h">Organisationer <span class="ng-c">56</span></div>
 <a href="#organisationer-nationalt-politisk" onclick="go('organisationer-nationalt-politisk');return false">Nationalt Politisk <span class="nc">12</span></a>
-<a href="#organisationer-foreninger-kl" onclick="go('organisationer-foreninger-kl');return false">Foreninger &amp; KL <span class="nc">25</span></a>
-<a href="#organisationer-fonde" onclick="go('organisationer-fonde');return false">Fonde <span class="nc">9</span></a>
+<a href="#organisationer-foreninger-kl" onclick="go('organisationer-foreninger-kl');return false">Foreninger &amp; KL <span class="nc">28</span></a>
+<a href="#organisationer-fonde" onclick="go('organisationer-fonde');return false">Fonde <span class="nc">10</span></a>
 <a href="#organisationer-professionshoejskoler" onclick="go('organisationer-professionshoejskoler');return false">Professionshøjskoler <span class="nc">3</span></a>
 <a href="#organisationer-it-myndigheder" onclick="go('organisationer-it-myndigheder');return false">IT-Myndigheder <span class="nc">3</span></a>
 </div>
 <div class="ng">
-<div class="ng-h">Influencers <span class="ng-c">40</span></div>
-<a href="#influencers-psykologer" onclick="go('influencers-psykologer');return false">Psykologer <span class="nc">2</span></a>
-<a href="#influencers-forskere" onclick="go('influencers-forskere');return false">Forskere <span class="nc">13</span></a>
+<div class="ng-h">Influencers <span class="ng-c">36</span></div>
+<a href="#influencers-psykologer" onclick="go('influencers-psykologer');return false">Psykologer <span class="nc">1</span></a>
+<a href="#influencers-forskere" onclick="go('influencers-forskere');return false">Forskere <span class="nc">12</span></a>
 <a href="#influencers-erhvervsledere" onclick="go('influencers-erhvervsledere');return false">Erhvervsledere <span class="nc">11</span></a>
-<a href="#influencers-skolepersoner" onclick="go('influencers-skolepersoner');return false">Skolepersoner <span class="nc">10</span></a>
-<a href="#influencers-andre" onclick="go('influencers-andre');return false">Andre <span class="nc">4</span></a>
+<a href="#influencers-andre" onclick="go('influencers-andre');return false">Andre <span class="nc">12</span></a>
 </div>
 <div class="ng">
 <div class="ng-h">Medier <span class="ng-c">14</span></div>
@@ -274,7 +273,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 </div></nav>
 <main class="mn">
 <div class="pt">Stakeholder Map</div>
-<div class="ps">583 stakeholders &middot; 52 i organisationer &middot; 40 influencers &middot; 14 i medier &middot; 477 i kommuner</div>
+<div class="ps">583 stakeholders &middot; 56 i organisationer &middot; 36 influencers &middot; 14 i medier &middot; 477 i kommuner</div>
 <div class="main-search">
 <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
 <input type="text" id="mainSearch" placeholder="Søg efter navn, organisation, rolle..." oninput="doSearch(this.value)">
@@ -650,7 +649,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 </div>
 </div>
 <div class="sec" id="organisationer-foreninger-kl" data-group="ORGANISATIONER">
-<div class="sh"><div class="st">Foreninger &amp; KL</div><div class="sc_">25 stakeholders</div></div>
+<div class="sh"><div class="st">Foreninger &amp; KL</div><div class="sc_">28 stakeholders</div></div>
 <div class="sec-desc"><div class="od">Fagforeninger, interesseorganisationer og KL (Kommunernes Landsforening) der former holdninger til teknologi i skolen.</div><div class="os">SAGA-strategi: SAGA må ALDRIG opfattes som erstatning for lærere. Positionér som lærer-empowerment og inklusionsstøtte. KL er nøglen til 98 kommuner.</div></div>
 <div class="og" id="foreninger-kl-kommuner-oevrige">
 <div class="og-h" onclick="toggleOrg(this.parentElement)">
@@ -1052,17 +1051,65 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 </div></div>
 </div>
 </div>
+<div class="og" id="foreninger-kl-danmarks-laererforening-dlf">
+<div class="og-h" onclick="toggleOrg(this.parentElement)">
+<div class="og-left">
+<div class="og-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 21h18v-2H3v2zm0-4h4v-2H3v2zm6 0h4v-2H9v2zm6 0h4v-2h-4v2zM3 13h4v-2H3v2zm6 0h4v-2H9v2zm6 0h4v-2h-4v2zM3 9h4V7H3v2zm6 0h4V7H9v2zm6 0h4V7h-4v2zM3 5h18V3H3v2z"/></svg></div>
+<div class="og-info">
+<div class="og-name">Danmarks Lærerforening (DLF)</div>
+<div class="og-meta">~90.000 medlemmer, 67.000 aktive lærere&middot;1 person</div>
+</div></div>
+<div class="og-right">
+<a class="og-link" href="https://www.dlf.org/" target="_blank" onclick="event.stopPropagation()">Hjemmeside &#8599;</a>
+<span class="og-cnt">1</span>
+<span class="og-cv">&#9660;</span>
+</div></div>
+<div class="og-detail">
+<p><span class="og-lbl og-lbl-e">Events:</span> DLF Medlemskonferencer (marts 2026, Skarrildhus); DLF Kongres (september); AI i skolen debatfora (2025-2026)</p>
+<p><span class="og-lbl og-lbl-a">Agenda:</span> Styrkelse af lærerprofessionen, samarbejdskultur, AI-literacy, kritisk brug af AI, efteruddannelse</p>
+<p><span class="og-lbl og-lbl-s">SAGA-indgang:</span> Sponsor lærer-workshops om adaptiv læring; vis at SAGA støtter (ikke erstatter) lærere; præsentér på medlemskonferencer</p>
+</div>
+<div class="og-cards">
+<div class="cd t2" data-search="gordon ørskov madsen formand danmarks lærerforening (65.000+ medl.) danmarks lærerforening (dlf)" data-tier="2" data-score="8.5">
+<div class="ch" onclick="toggle(this.parentElement)">
+<div class="cl">
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g27" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g27)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">GØ</text></svg></div>
+<div class="ci">
+<div class="cn">Gordon Ørskov Madsen</div>
+<div class="cr">Formand</div>
+<div class="co">Danmarks Lærerforening (DLF)</div>
+</div></div>
+<div class="crt">
+<a class="li-b" href="https://linkedin.com/in/gordon-ørskov-madsen-bb800ba6/" target="_blank" onclick="event.stopPropagation()" title="LinkedIn profil"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+<span class="tp t2">8.5/10</span>
+<span class="tp t2">Tier 2</span>
+<span class="cv">&#9660;</span>
+</div></div>
+<div class="dt">
+<div class="ds"><div class="dl">Rolle og baggrund</div>
+<div class="dx">Gordon Ørskov Madsen er formand for Danmarks Lærerforening (DLF) siden 2020 og organiserer ca. 90.000 lærere og skoleledere. Han er uddannet lærer fra Aarhus Dag- og Aftenseminarium (1996) og har siden 2020 siddet som formand. I 2025 blev han desuden valgt som formand for Centralorganisationernes Fællesudvalg (CFU), der forhandler på vegne af knap 200.000 statsansatte. Han er formand for Lærernes Pension og Lån &amp; Spar Bank.</div>
+</div>
+<div class="ds"><div class="dl">Fokus</div>
+<div class="dx">Madsen kæmper for at rette op på folkeskolens vilkår og har advaret om, at skolen er på randen af sammenbrud grundet rekrutteringskrise og forringede lærervilkår. Han prioriterer lærernes forberedelsestid, arbejdsmiljø og professionelle autonomi. Parallelt med DLF-formandskabet leder han CFU&#39;s forhandlinger om statslige overenskomster.</div></div>
+<div class="ds"><div class="dl">SAGA Relevans</div>
+<div class="dx">DLF er den mest centrale gatekeeper for lærernes accept af nye teknologier. Madsen kan åbne eller lukke døren for SAGA i folkeskolen. En strategisk tilgang er at invitere DLF ind som sparringspartner i produktudviklingen og positionere SAGA eksplicit som et redskab der frigiver lærertid og styrker lærerens professionelle rolle. En anbefaling fra DLF vil have enorm signalværdi over for 90.000 lærere.</div></div>
+<div class="ib rel"><div class="ib-l">SAGA-Relevans: 8.5/10</div><div class="ib-t">Tier 2 — Vigtig stakeholder</div></div>
+<div class="ib abm"><div class="ib-l">ABM Strategi</div><div class="ib-t">1:1-møde, case study arbejdsbelastnings-reduktion, DLF-årskongres</div></div>
+<div class="cb">&#9993; <a href="mailto:GOM@dlf.org" onclick="event.stopPropagation()">GOM@dlf.org</a> &nbsp;&middot;&nbsp; &#9742; 33 69 63 00 (DLF sekretariat) &nbsp;&middot;&nbsp; <a href="https://linkedin.com/in/gordon-ørskov-madsen-bb800ba6/" target="_blank" onclick="event.stopPropagation()">LinkedIn &#8599;</a></div>
+</div></div>
+</div>
+</div>
 <div class="og" id="foreninger-kl-skolelederforeningen">
 <div class="og-h" onclick="toggleOrg(this.parentElement)">
 <div class="og-left">
 <div class="og-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 21h18v-2H3v2zm0-4h4v-2H3v2zm6 0h4v-2H9v2zm6 0h4v-2h-4v2zM3 13h4v-2H3v2zm6 0h4v-2H9v2zm6 0h4v-2h-4v2zM3 9h4V7H3v2zm6 0h4V7H9v2zm6 0h4V7h-4v2zM3 5h18V3H3v2z"/></svg></div>
 <div class="og-info">
 <div class="og-name">Skolelederforeningen</div>
-<div class="og-meta">~44.000 medlemmer&middot;1 person</div>
+<div class="og-meta">~44.000 medlemmer&middot;2 personer</div>
 </div></div>
 <div class="og-right">
 <a class="og-link" href="https://skolelederforeningen.org/" target="_blank" onclick="event.stopPropagation()">Hjemmeside &#8599;</a>
-<span class="og-cnt">1</span>
+<span class="og-cnt">2</span>
 <span class="og-cv">&#9660;</span>
 </div></div>
 <div class="og-detail">
@@ -1071,10 +1118,37 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <p><span class="og-lbl og-lbl-s">SAGA-indgang:</span> Sponsor Årsmøde; leadership case studies; workshops om implementering af adaptiv læring</p>
 </div>
 <div class="og-cards">
+<div class="cd t2" data-search="dorte andreas formand skolelederforeningen skolelederforeningen" data-tier="2" data-score="9">
+<div class="ch" onclick="toggle(this.parentElement)">
+<div class="cl">
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g28" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g28)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">DA</text></svg></div>
+<div class="ci">
+<div class="cn">Dorte Andreas</div>
+<div class="cr">Formand</div>
+<div class="co">Skolelederforeningen</div>
+</div></div>
+<div class="crt">
+<a class="li-b" href="https://dk.linkedin.com/in/dorte-andreas" target="_blank" onclick="event.stopPropagation()" title="LinkedIn profil"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+<span class="tp t2">9/10</span>
+<span class="tp t2">Tier 2</span>
+<span class="cv">&#9660;</span>
+</div></div>
+<div class="dt">
+<div class="ds"><div class="dl">Rolle og baggrund</div>
+<div class="dx">Dorte Andreas tiltrådte som formand for Skolelederforeningen 1. december 2024 og afløser Claus Hjortdal efter ti år i spidsen. Hun har de forudgående otte år fungeret som næstformand i foreningen og har været skoleleder i Odense Kommune (Tingkærskolen 2008-2016). Hun er valgt for en treårig periode.</div>
+</div>
+<div class="ds"><div class="dl">Fokus</div>
+<div class="dx">Andreas har tre klare mærkesager: at stoppe opgaveglidning til skolerne uden ressourcer, at løse inklusionsopgaven og at frisætte skolerne fra detailstyring. Hun ønsker &#39;mere overskud&#39; i folkeskolen og mener, at skolelederne er nøglepersoner i at skabe trygge og professionelle miljøer.</div></div>
+<div class="ds"><div class="dl">SAGA Relevans</div>
+<div class="dx">Skolelederforeningen repræsenterer de beslutningstagere der i praksis godkender og implementerer nye digitale løsninger på skolerne. Andreas&#39; fokus på inklusion og ressourcemangel matcher SAGAs pitch om at spare tid og løfte specialundervisningselever. Et møde med Skolelederforeningen og evt. fælles survey om AI og klasseledelse kan bane vej for pilotprojekter.</div></div>
+<div class="ib rel"><div class="ib-l">SAGA-Relevans: 9/10</div><div class="ib-t">Tier 2 — Vigtig stakeholder</div></div>
+<div class="ib abm"><div class="ib-l">ABM Strategi</div><div class="ib-t">1:1 + Næstformand, skoleleder-seminar, SAGA-implementation case study</div></div>
+<div class="cb">&#9993; <a href="mailto:skolelederne@skolelederne.org" onclick="event.stopPropagation()">skolelederne@skolelederne.org</a> &nbsp;&middot;&nbsp; &#9742; 70 25 10 08 &nbsp;&middot;&nbsp; <a href="https://dk.linkedin.com/in/dorte-andreas" target="_blank" onclick="event.stopPropagation()">LinkedIn &#8599;</a></div>
+</div></div>
 <div class="cd t2" data-search="kristian dissing olesen næstformand skolelederforeningen skolelederforeningen" data-tier="2" data-score="8">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g27" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g27)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">KD</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g29" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g29)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">KD</text></svg></div>
 <div class="ci">
 <div class="cn">Kristian Dissing Olesen</div>
 <div class="cr">Næstformand</div>
@@ -1122,7 +1196,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="elisa rimpler formand bupl (65.000+ pædagoger) bupl" data-tier="2" data-score="7.5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g28" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g28)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">ER</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g30" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g30)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">ER</text></svg></div>
 <div class="ci">
 <div class="cn">Elisa Rimpler</div>
 <div class="cr">Formand</div>
@@ -1148,6 +1222,54 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 </div></div>
 </div>
 </div>
+<div class="og" id="foreninger-kl-dansk-psykolog-forening">
+<div class="og-h" onclick="toggleOrg(this.parentElement)">
+<div class="og-left">
+<div class="og-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 21h18v-2H3v2zm0-4h4v-2H3v2zm6 0h4v-2H9v2zm6 0h4v-2h-4v2zM3 13h4v-2H3v2zm6 0h4v-2H9v2zm6 0h4v-2h-4v2zM3 9h4V7H3v2zm6 0h4V7H9v2zm6 0h4V7h-4v2zM3 5h18V3H3v2z"/></svg></div>
+<div class="og-info">
+<div class="og-name">Dansk Psykolog Forening</div>
+<div class="og-meta">12.500+ medlemmer&middot;1 person</div>
+</div></div>
+<div class="og-right">
+<a class="og-link" href="https://www.dp.dk/" target="_blank" onclick="event.stopPropagation()">Hjemmeside &#8599;</a>
+<span class="og-cnt">1</span>
+<span class="og-cv">&#9660;</span>
+</div></div>
+<div class="og-detail">
+<p><span class="og-lbl og-lbl-e">Events:</span> Faglig konference (maj 2026); Kursuskalender 2026-2028; Efteruddannelsesprogrammer</p>
+<p><span class="og-lbl og-lbl-a">Agenda:</span> Psykologisk støtte i uddannelse, mental sundhed, trivsel i skoler</p>
+<p><span class="og-lbl og-lbl-s">SAGA-indgang:</span> SAGA-moduler for elevtrivsel; præsentation for psykologer; interventionsprogrammer</p>
+</div>
+<div class="og-cards">
+<div class="cd t2" data-search="dea seidenfaden forperson dansk psykolog forening dansk psykolog forening" data-tier="2" data-score="8.5">
+<div class="ch" onclick="toggle(this.parentElement)">
+<div class="cl">
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g31" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g31)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">DS</text></svg></div>
+<div class="ci">
+<div class="cn">Dea Seidenfaden</div>
+<div class="cr">Forperson</div>
+<div class="co">Dansk Psykolog Forening</div>
+</div></div>
+<div class="crt">
+<a class="li-b" href="https://linkedin.com/in/dea-seidenfaden-9208695/" target="_blank" onclick="event.stopPropagation()" title="LinkedIn profil"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+<span class="tp t2">8.5/10</span>
+<span class="tp t2">Tier 2</span>
+<span class="cv">&#9660;</span>
+</div></div>
+<div class="dt">
+<div class="ds"><div class="dl">Rolle og baggrund</div>
+<div class="dx">Dea Seidenfaden er forperson for Dansk Psykolog Forening siden sommeren 2023 og organiserer over 12.500 psykologer og psykologistuderende. Hun er uddannet psykolog fra KU (2007) og specialpsykolog i psykiatri fra 2016. Hendes karriere tæller stillinger i Dansk Røde Kors, Region Hovedstadens Psykiatri og som leder af Københavns Kommunes kriminalpræventive indsatser. Hun er genvalgt uden modkandidater i maj 2024 og er desuden formand for menneskerettighedsorganisationen DIGNITY. I 2025 udsendte hun bogen &#39;Mysteriet om unges mistrivsel – en lille bog om et stort problem&#39;.</div>
+</div>
+<div class="ds"><div class="dl">Fokus</div>
+<div class="dx">Seidenfaden sætter børn og unges trivselskrise højt på dagsordenen og argumenterer for, at unges mistrivsel er en reel og alvorlig krise. Hun arbejder for at lette adgangen til offentlig psykologbehandling og styrke det nære sundhedsvæsen.</div></div>
+<div class="ds"><div class="dl">SAGA Relevans</div>
+<div class="dx">Seidenfaden er en central stemme i den nationale debat om børns trivsel og digital teknologi i skolen. En dialog med SAGA kan bruges til at sikre, at platformens design er psykologisk forsvarlig. SAGA bør invitere foreningen til at deltage i en faglig referencegruppe og søge faglig godkendelse af den adaptive tilgang til børn med psykologiske udfordringer.</div></div>
+<div class="ib rel"><div class="ib-l">SAGA-Relevans: 8.5/10</div><div class="ib-t">Tier 2 — Vigtig stakeholder</div></div>
+<div class="ib abm"><div class="ib-l">ABM Strategi</div><div class="ib-t">Møde + interview, mediesamarbejde, artikel digital læring som mental sundhed</div></div>
+<div class="cb">&#9993; <a href="mailto:des@dp.dk" onclick="event.stopPropagation()">des@dp.dk</a> &nbsp;&middot;&nbsp; &#9742; 26 12 58 96 &nbsp;&middot;&nbsp; <a href="https://linkedin.com/in/dea-seidenfaden-9208695/" target="_blank" onclick="event.stopPropagation()">LinkedIn &#8599;</a></div>
+</div></div>
+</div>
+</div>
 <div class="og" id="foreninger-kl-danmarks-it-og-medievejlederforening">
 <div class="og-h" onclick="toggleOrg(this.parentElement)">
 <div class="og-left">
@@ -1170,7 +1292,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t1" data-search="hanne voldborg andersen formand danmarks it- og medievejlederforening danmarks it- og medievejlederforening" data-tier="1" data-score="9.5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g29" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1b7a3d"/><stop offset="100%" stop-color="#2da85a"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g29)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">HV</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g32" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1b7a3d"/><stop offset="100%" stop-color="#2da85a"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g32)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">HV</text></svg></div>
 <div class="ci">
 <div class="cn">Hanne Voldborg Andersen</div>
 <div class="cr">Formand</div>
@@ -1218,7 +1340,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="helle kyhnau steffensen formand gifted children danmark (~1.500 børn) gifted children danmark" data-tier="2" data-score="8.5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g30" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g30)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">HK</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g33" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g33)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">HK</text></svg></div>
 <div class="ci">
 <div class="cn">Helle Kyhnau Steffensen</div>
 <div class="cr">Formand</div>
@@ -1266,7 +1388,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="trish nymark formand adhd-foreningen (300.000+ repr.) adhd-foreningen" data-tier="2" data-score="9">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g31" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g31)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">TN</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g34" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g34)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">TN</text></svg></div>
 <div class="ci">
 <div class="cn">Trish Nymark</div>
 <div class="cr">Formand</div>
@@ -1314,7 +1436,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="karina bundgaard formand autismeforeningen (13.000+ medl.) autismeforeningen" data-tier="2" data-score="8.5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g32" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g32)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">KB</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g35" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g35)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">KB</text></svg></div>
 <div class="ci">
 <div class="cn">Karina Bundgaard</div>
 <div class="cr">Formand</div>
@@ -1362,7 +1484,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="gry kaalund nicolaisen forperson ordblindeforeningen (300.000+ ordblinde) ordblindeforeningen" data-tier="2" data-score="8.5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g33" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g33)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">GK</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g36" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g36)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">GK</text></svg></div>
 <div class="ci">
 <div class="cn">Gry Kaalund Nicolaisen</div>
 <div class="cr">Forperson</div>
@@ -1410,7 +1532,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="skole og forældre interesseorganisation national forældreorganisation skole og forældre" data-tier="2" data-score="7">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g34" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g34)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">SO</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g37" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g37)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">SO</text></svg></div>
 <div class="ci">
 <div class="cn">Skole og Forældre</div>
 <div class="cr">Interesseorganisation</div>
@@ -1436,7 +1558,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="forældre- og skolehjem forældrerepræsentation nationale netværk skole og forældre" data-tier="2" data-score="6">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g35" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g35)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">FO</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g38" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g38)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">FO</text></svg></div>
 <div class="ci">
 <div class="cn">Forældre- og Skolehjem</div>
 <div class="cr">Forældrerepræsentation</div>
@@ -1481,7 +1603,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="sammen om skolen nationalt samarbejdsforum kl + dlf + skolelederfor. + bupl + skole og forældre sammen om skolen" data-tier="2" data-score="8">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g36" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g36)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">SO</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g39" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g39)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">SO</text></svg></div>
 <div class="ci">
 <div class="cn">Sammen om Skolen</div>
 <div class="cr">Nationalt samarbejdsforum</div>
@@ -1527,7 +1649,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="per b. christensen tidl. formand skolelederforeningen bkf (børne- og kulturchefforeningen)" data-tier="2" data-score="6.5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g37" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g37)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">PB</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g40" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g40)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">PB</text></svg></div>
 <div class="ci">
 <div class="cn">Per B. Christensen</div>
 <div class="cr">Tidl. formand</div>
@@ -1553,8 +1675,81 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 </div>
 </div>
 <div class="sec" id="organisationer-fonde" data-group="ORGANISATIONER">
-<div class="sh"><div class="st">Fonde</div><div class="sc_">9 stakeholders</div></div>
+<div class="sh"><div class="st">Fonde</div><div class="sc_">10 stakeholders</div></div>
 <div class="sec-desc"><div class="od">Danske fonde investerer massivt i uddannelse. LEGO Fonden alene giver 2.8 mia DKK/år. Solid evidens er nøglen til funding.</div><div class="os">SAGA-strategi: Evidens-drevet pitch. Pilotresultater → fondsansøgning → skalering. Hver fond har forskellige fokusområder.</div></div>
+<div class="og" id="fonde-novo-nordisk-fonden-life-fonden">
+<div class="og-h" onclick="toggleOrg(this.parentElement)">
+<div class="og-left">
+<div class="og-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 21h18v-2H3v2zm0-4h4v-2H3v2zm6 0h4v-2H9v2zm6 0h4v-2h-4v2zM3 13h4v-2H3v2zm6 0h4v-2H9v2zm6 0h4v-2h-4v2zM3 9h4V7H3v2zm6 0h4V7H9v2zm6 0h4V7h-4v2zM3 5h18V3H3v2z"/></svg></div>
+<div class="og-info">
+<div class="og-name">Novo Nordisk Fonden / LIFE Fonden</div>
+<div class="og-meta">2 personer</div>
+</div></div>
+<div class="og-right">
+<span class="og-cnt">2</span>
+<span class="og-cv">&#9660;</span>
+</div></div>
+<div class="og-detail">
+<p><span class="og-lbl og-lbl-e">Events:</span> PREPARE Programme (2025-2027); LIFE-kurser; Naturvidenskabsinitiativer</p>
+<p><span class="og-lbl og-lbl-a">Agenda:</span> Videregående uddannelse i STEM, folkeskolens naturfag, lærerstyrkelse, 10 mia DKK bevillinger</p>
+<p><span class="og-lbl og-lbl-s">SAGA-indgang:</span> Alignér med PREPARE-programmet; partnerskab om naturfagskurser; udvikl STEM-adaptive moduler</p>
+</div>
+<div class="og-cards">
+<div class="cd t1" data-search="stefan hermann direktør life fonden (novo nordisk fonden) novo nordisk fonden / life fonden" data-tier="1" data-score="9">
+<div class="ch" onclick="toggle(this.parentElement)">
+<div class="cl">
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g41" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1b7a3d"/><stop offset="100%" stop-color="#2da85a"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g41)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">SH</text></svg></div>
+<div class="ci">
+<div class="cn">Stefan Hermann</div>
+<div class="cr">Direktør</div>
+<div class="co">Novo Nordisk Fonden / LIFE Fonden</div>
+</div></div>
+<div class="crt">
+<a class="li-b" href="https://dk.linkedin.com/in/stefan-hermann-506274b" target="_blank" onclick="event.stopPropagation()" title="LinkedIn profil"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+<span class="tp t1">9/10</span>
+<span class="tp t1">Tier 1</span>
+<span class="cv">&#9660;</span>
+</div></div>
+<div class="dt">
+<div class="ds"><div class="dl">Rolle og baggrund</div>
+<div class="dx">Stefan Hermann er administrerende direktør for LIFE Fonden, et initiativ under Novo Nordisk Fonden dedikeret til at styrke interessen for naturvidenskab og teknologi hos børn og unge i Danmark. Han tiltrådte stillingen 1. oktober 2023 efter 15+ år som rektor for først Professionshøjskolen Metropol og derefter Københavns Professionshøjskole (KP). Hermann er uddannelsesforsker og filosof og er forfatter til bøger om uddannelse og dannelse, bl.a. &#39;En varm tid&#39; (2022).</div>
+</div>
+<div class="ds"><div class="dl">Fokus</div>
+<div class="dx">Hermann leder LIFE Fondens ambition om at skabe et landsdækkende initiativ for naturvidenskabelig undervisning i folkeskolen. Han er filosofisk og systemteoretisk orienteret og er en hyppig og velartikuleret stemme i den brede uddannelsesdebat.</div></div>
+<div class="ds"><div class="dl">SAGA Relevans</div>
+<div class="dx">Hermann kombinerer som ingen anden dyb operationel viden om professionshøjskolernes uddannelse af lærere og et direkte forvalteransvar for Novo Nordisk Fondens uddannelsesinvesteringer. LIFE Fonden og SAGA er komplementære: begge vil styrke lærernes evne til at differentiere undervisning. Et konkret samarbejde kan føre til pilotfinansiering og integration af SAGA i LIFE-skolernes netværk.</div></div>
+<div class="ib rel"><div class="ib-l">SAGA-Relevans: 9/10</div><div class="ib-t">Tier 1 — Strategisk prioritet</div></div>
+<div class="ib abm"><div class="ib-l">ABM Strategi</div><div class="ib-t">1:1 pitch naturfag + adaptiv læring, joint funding-ansøgning, LIFE-skole-pilot</div></div>
+<div class="cb">&#9993; <a href="mailto:info@life.dk" onclick="event.stopPropagation()">info@life.dk</a> &nbsp;&middot;&nbsp; &#9742; 33 34 35 40 &nbsp;&middot;&nbsp; <a href="https://dk.linkedin.com/in/stefan-hermann-506274b" target="_blank" onclick="event.stopPropagation()">LinkedIn &#8599;</a></div>
+</div></div>
+<div class="cd t2" data-search="novo nordisk fonden fond novo nordisk fonden novo nordisk fonden / life fonden" data-tier="2" data-score="7.5">
+<div class="ch" onclick="toggle(this.parentElement)">
+<div class="cl">
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g42" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g42)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">NN</text></svg></div>
+<div class="ci">
+<div class="cn">Novo Nordisk Fonden</div>
+<div class="cr">Fond</div>
+<div class="co">Novo Nordisk Fonden / LIFE Fonden</div>
+</div></div>
+<div class="crt">
+<span class="tp t2">7.5/10</span>
+<span class="tp t2">Tier 2</span>
+<span class="cv">&#9660;</span>
+</div></div>
+<div class="dt">
+<div class="ds"><div class="dl">Rolle og baggrund</div>
+<div class="dx">Danmarks og verdens største erhvervsdrivende fond med 10+ mia DKK i bevillinger årligt (2024). Støtter LIFE Fonden for naturfagsundervisning. Bred vifte af programmer inden for sundhed, forskning og uddannelse.</div>
+</div>
+<div class="ds"><div class="dl">Fokus</div>
+<div class="dx">Stor dansk fond, sundhed, uddannelse, forskning. Supporterede LIFE.</div></div>
+<div class="ds"><div class="dl">SAGA Relevans</div>
+<div class="dx">Novo Nordisk Fondens kolossale midler og fokus på videnskabelig uddannelse gør dem til potentiel strategisk partner. SAGA kan pitch adaptiv naturfagsundervisning gennem LIFE-koblingen.</div></div>
+<div class="ib rel"><div class="ib-l">SAGA-Relevans: 7.5/10</div><div class="ib-t">Tier 2 — Vigtig stakeholder</div></div>
+<div class="ib abm"><div class="ib-l">ABM Strategi</div><div class="ib-t">Byg relationer omkring uddannelse og innovation</div></div>
+<div class="cb">&#9993; <a href="mailto:nnf@novonordiskfonden.dk" onclick="event.stopPropagation()">nnf@novonordiskfonden.dk</a></div>
+</div></div>
+</div>
+</div>
 <div class="og" id="fonde-lego-fonden">
 <div class="og-h" onclick="toggleOrg(this.parentElement)">
 <div class="og-left">
@@ -1577,7 +1772,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t1" data-search="sidsel marie kristensen ceo lego fonden lego fonden" data-tier="1" data-score="8.5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g38" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1b7a3d"/><stop offset="100%" stop-color="#2da85a"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g38)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">SM</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g43" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1b7a3d"/><stop offset="100%" stop-color="#2da85a"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g43)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">SM</text></svg></div>
 <div class="ci">
 <div class="cn">Sidsel Marie Kristensen</div>
 <div class="cr">CEO</div>
@@ -1625,7 +1820,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t1" data-search="agi csonka &amp; karen skytte larsen leder / programmechef villum fonden villum fonden" data-tier="1" data-score="8">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g39" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1b7a3d"/><stop offset="100%" stop-color="#2da85a"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g39)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">AC</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g44" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1b7a3d"/><stop offset="100%" stop-color="#2da85a"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g44)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">AC</text></svg></div>
 <div class="ci">
 <div class="cn">Agi Csonka &amp; Karen Skytte Larsen</div>
 <div class="cr">Leder / Programmechef</div>
@@ -1673,7 +1868,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="heidi sørensen direktør egmont fonden egmont fonden" data-tier="2" data-score="7">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g40" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g40)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">HS</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g45" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g45)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">HS</text></svg></div>
 <div class="ci">
 <div class="cn">Heidi Sørensen</div>
 <div class="cr">Direktør</div>
@@ -1721,7 +1916,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="mads lebech direktør a.p. møller fonden a.p. møller fonden" data-tier="2" data-score="6.5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g41" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g41)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">ML</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g46" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g46)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">ML</text></svg></div>
 <div class="ci">
 <div class="cn">Mads Lebech</div>
 <div class="cr">Direktør</div>
@@ -1769,7 +1964,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="anette mullerup schmidt ceo lundbeckfonden lundbeckfonden" data-tier="2" data-score="6.5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g42" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g42)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">AM</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g47" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g47)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">AM</text></svg></div>
 <div class="ci">
 <div class="cn">Anette Mullerup Schmidt</div>
 <div class="cr">CEO</div>
@@ -1795,52 +1990,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 </div></div>
 </div>
 </div>
-<div class="og" id="fonde-novo-nordisk-fonden-life-fonden">
-<div class="og-h" onclick="toggleOrg(this.parentElement)">
-<div class="og-left">
-<div class="og-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 21h18v-2H3v2zm0-4h4v-2H3v2zm6 0h4v-2H9v2zm6 0h4v-2h-4v2zM3 13h4v-2H3v2zm6 0h4v-2H9v2zm6 0h4v-2h-4v2zM3 9h4V7H3v2zm6 0h4V7H9v2zm6 0h4V7h-4v2zM3 5h18V3H3v2z"/></svg></div>
-<div class="og-info">
-<div class="og-name">Novo Nordisk Fonden / LIFE Fonden</div>
-<div class="og-meta">1 person</div>
-</div></div>
-<div class="og-right">
-<span class="og-cnt">1</span>
-<span class="og-cv">&#9660;</span>
-</div></div>
-<div class="og-detail">
-<p><span class="og-lbl og-lbl-e">Events:</span> PREPARE Programme (2025-2027); LIFE-kurser; Naturvidenskabsinitiativer</p>
-<p><span class="og-lbl og-lbl-a">Agenda:</span> Videregående uddannelse i STEM, folkeskolens naturfag, lærerstyrkelse, 10 mia DKK bevillinger</p>
-<p><span class="og-lbl og-lbl-s">SAGA-indgang:</span> Alignér med PREPARE-programmet; partnerskab om naturfagskurser; udvikl STEM-adaptive moduler</p>
-</div>
-<div class="og-cards">
-<div class="cd t2" data-search="novo nordisk fonden fond novo nordisk fonden novo nordisk fonden / life fonden" data-tier="2" data-score="7.5">
-<div class="ch" onclick="toggle(this.parentElement)">
-<div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g43" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g43)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">NN</text></svg></div>
-<div class="ci">
-<div class="cn">Novo Nordisk Fonden</div>
-<div class="cr">Fond</div>
-<div class="co">Novo Nordisk Fonden / LIFE Fonden</div>
-</div></div>
-<div class="crt">
-<span class="tp t2">7.5/10</span>
-<span class="tp t2">Tier 2</span>
-<span class="cv">&#9660;</span>
-</div></div>
-<div class="dt">
-<div class="ds"><div class="dl">Rolle og baggrund</div>
-<div class="dx">Danmarks og verdens største erhvervsdrivende fond med 10+ mia DKK i bevillinger årligt (2024). Støtter LIFE Fonden for naturfagsundervisning. Bred vifte af programmer inden for sundhed, forskning og uddannelse.</div>
-</div>
-<div class="ds"><div class="dl">Fokus</div>
-<div class="dx">Stor dansk fond, sundhed, uddannelse, forskning. Supporterede LIFE.</div></div>
-<div class="ds"><div class="dl">SAGA Relevans</div>
-<div class="dx">Novo Nordisk Fondens kolossale midler og fokus på videnskabelig uddannelse gør dem til potentiel strategisk partner. SAGA kan pitch adaptiv naturfagsundervisning gennem LIFE-koblingen.</div></div>
-<div class="ib rel"><div class="ib-l">SAGA-Relevans: 7.5/10</div><div class="ib-t">Tier 2 — Vigtig stakeholder</div></div>
-<div class="ib abm"><div class="ib-l">ABM Strategi</div><div class="ib-t">Byg relationer omkring uddannelse og innovation</div></div>
-<div class="cb">&#9993; <a href="mailto:nnf@novonordiskfonden.dk" onclick="event.stopPropagation()">nnf@novonordiskfonden.dk</a></div>
-</div></div>
-</div>
-</div>
 <div class="og" id="fonde-lauritzen-fonden">
 <div class="og-h" onclick="toggleOrg(this.parentElement)">
 <div class="og-left">
@@ -1862,7 +2011,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t3" data-search="lauritzen fonden - lauritzen fonden lauritzen fonden" data-tier="3" data-score="6">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g44" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#b45309"/><stop offset="100%" stop-color="#d97706"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g44)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">LF</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g48" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#b45309"/><stop offset="100%" stop-color="#d97706"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g48)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">LF</text></svg></div>
 <div class="ci">
 <div class="cn">Lauritzen Fonden</div>
 <div class="cr">-</div>
@@ -1909,7 +2058,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t3" data-search="tryg fonden - tryg fonden tryg fonden" data-tier="3" data-score="5.5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g45" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#b45309"/><stop offset="100%" stop-color="#d97706"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g45)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">TF</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g49" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#b45309"/><stop offset="100%" stop-color="#d97706"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g49)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">TF</text></svg></div>
 <div class="ci">
 <div class="cn">Tryg Fonden</div>
 <div class="cr">-</div>
@@ -1956,7 +2105,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t3" data-search="henrik lehmann andersen ceo nordea-fonden nordea-fonden" data-tier="3" data-score="5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g46" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#b45309"/><stop offset="100%" stop-color="#d97706"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g46)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">HL</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g50" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#b45309"/><stop offset="100%" stop-color="#d97706"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g50)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">HL</text></svg></div>
 <div class="ci">
 <div class="cn">Henrik Lehmann Andersen</div>
 <div class="cr">CEO</div>
@@ -2008,7 +2157,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="camilla wang rektor absalon professionshøjskole absalon professionshøjskole" data-tier="2" data-score="7">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g47" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g47)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">CW</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g51" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g51)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">CW</text></svg></div>
 <div class="ci">
 <div class="cn">Camilla Wang</div>
 <div class="cr">Rektor</div>
@@ -2056,7 +2205,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="harald mikkelsen rektor via university college via university college" data-tier="2" data-score="7">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g48" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g48)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">HM</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g52" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g52)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">HM</text></svg></div>
 <div class="ci">
 <div class="cn">Harald Mikkelsen</div>
 <div class="cr">Rektor</div>
@@ -2104,7 +2253,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="jens mejer pedersen rektor ucl erhvervsakademi og professionshøjskole ucl erhvervsakademi og ph" data-tier="2" data-score="7">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g49" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g49)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">JM</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g53" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g53)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">JM</text></svg></div>
 <div class="ci">
 <div class="cn">Jens Mejer Pedersen</div>
 <div class="cr">Rektor</div>
@@ -2156,7 +2305,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t1" data-search="stil (styrelsen for it og læring) myndighed børne- og undervisningsministeriet stil (styrelsen for it og læring)" data-tier="1" data-score="9">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g50" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1b7a3d"/><stop offset="100%" stop-color="#2da85a"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g50)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">S</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g54" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1b7a3d"/><stop offset="100%" stop-color="#2da85a"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g54)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">S</text></svg></div>
 <div class="ci">
 <div class="cn">STIL (Styrelsen for IT og Læring)</div>
 <div class="cr">Myndighed</div>
@@ -2203,7 +2352,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="kombit myndighed kommunal it-fællesskab kombit" data-tier="2" data-score="8">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g51" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g51)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">K</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g55" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g55)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">K</text></svg></div>
 <div class="ci">
 <div class="cn">KOMBIT</div>
 <div class="cr">Myndighed</div>
@@ -2251,7 +2400,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="kl&#39;s center for digitalisering myndighed kl kl&#39;s center for digitalisering" data-tier="2" data-score="7">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g52" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g52)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">KC</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g56" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g56)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">KC</text></svg></div>
 <div class="ci">
 <div class="cn">KL&#39;s Center for Digitalisering</div>
 <div class="cr">Myndighed</div>
@@ -2287,39 +2436,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 </div>
 <div id="influencer-container">
 <div class="sec" id="influencers-psykologer" data-group="INFLUENCERS">
-<div class="sh"><div class="st">Psykologer</div><div class="sc_">2 stakeholders</div></div>
+<div class="sh"><div class="st">Psykologer</div><div class="sc_">1 stakeholders</div></div>
 <div class="sec-desc"><div class="od">Psykologer der former narrativet om børns trivsel, mental sundhed og digital skærmtid.</div><div class="os">SAGA-strategi: SAGA som trivsel-værktøj, ikke skærm-tid. Tidlig involvering af tech-skeptikere er afgørende.</div></div>
-<div class="cd t2" data-search="dea seidenfaden forperson dansk psykolog forening dansk psykolog forening" data-tier="2" data-score="8.5">
-<div class="ch" onclick="toggle(this.parentElement)">
-<div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g53" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g53)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">DS</text></svg></div>
-<div class="ci">
-<div class="cn">Dea Seidenfaden</div>
-<div class="cr">Forperson</div>
-<div class="co">Dansk Psykolog Forening</div>
-</div></div>
-<div class="crt">
-<a class="li-b" href="https://linkedin.com/in/dea-seidenfaden-9208695/" target="_blank" onclick="event.stopPropagation()" title="LinkedIn profil"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-<span class="tp t2">8.5/10</span>
-<span class="tp t2">Tier 2</span>
-<span class="cv">&#9660;</span>
-</div></div>
-<div class="dt">
-<div class="ds"><div class="dl">Rolle og baggrund</div>
-<div class="dx">Dea Seidenfaden er forperson for Dansk Psykolog Forening siden sommeren 2023 og organiserer over 12.500 psykologer og psykologistuderende. Hun er uddannet psykolog fra KU (2007) og specialpsykolog i psykiatri fra 2016. Hendes karriere tæller stillinger i Dansk Røde Kors, Region Hovedstadens Psykiatri og som leder af Københavns Kommunes kriminalpræventive indsatser. Hun er genvalgt uden modkandidater i maj 2024 og er desuden formand for menneskerettighedsorganisationen DIGNITY. I 2025 udsendte hun bogen &#39;Mysteriet om unges mistrivsel – en lille bog om et stort problem&#39;.</div>
-</div>
-<div class="ds"><div class="dl">Fokus</div>
-<div class="dx">Seidenfaden sætter børn og unges trivselskrise højt på dagsordenen og argumenterer for, at unges mistrivsel er en reel og alvorlig krise. Hun arbejder for at lette adgangen til offentlig psykologbehandling og styrke det nære sundhedsvæsen.</div></div>
-<div class="ds"><div class="dl">SAGA Relevans</div>
-<div class="dx">Seidenfaden er en central stemme i den nationale debat om børns trivsel og digital teknologi i skolen. En dialog med SAGA kan bruges til at sikre, at platformens design er psykologisk forsvarlig. SAGA bør invitere foreningen til at deltage i en faglig referencegruppe og søge faglig godkendelse af den adaptive tilgang til børn med psykologiske udfordringer.</div></div>
-<div class="ib rel"><div class="ib-l">SAGA-Relevans: 8.5/10</div><div class="ib-t">Tier 2 — Vigtig stakeholder</div></div>
-<div class="ib abm"><div class="ib-l">ABM Strategi</div><div class="ib-t">Møde + interview, mediesamarbejde, artikel digital læring som mental sundhed</div></div>
-<div class="cb">&#9993; <a href="mailto:des@dp.dk" onclick="event.stopPropagation()">des@dp.dk</a> &nbsp;&middot;&nbsp; &#9742; 26 12 58 96 &nbsp;&middot;&nbsp; <a href="https://linkedin.com/in/dea-seidenfaden-9208695/" target="_blank" onclick="event.stopPropagation()">LinkedIn &#8599;</a></div>
-</div></div>
 <div class="cd t2" data-search="marie louise obel børnepsykolog, forfatter privatpraksis øvrige forskere" data-tier="2" data-score="6.5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g54" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g54)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">ML</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g57" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g57)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">ML</text></svg></div>
 <div class="ci">
 <div class="cn">Marie Louise Obel</div>
 <div class="cr">Børnepsykolog, Forfatter</div>
@@ -2343,39 +2465,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 </div></div>
 </div>
 <div class="sec" id="influencers-forskere" data-group="INFLUENCERS">
-<div class="sh"><div class="st">Forskere</div><div class="sc_">13 stakeholders</div></div>
+<div class="sh"><div class="st">Forskere</div><div class="sc_">12 stakeholders</div></div>
 <div class="sec-desc"><div class="od">Forskere fra DPU, AAU, VIA UC og andre institutioner der leverer akademisk validering og former uddannelsesdebatten.</div><div class="os">SAGA-strategi: Forsknings-partnership → peer-reviewed evidens → fondenes og politikernes tillid.</div></div>
-<div class="cd t1" data-search="stefan hermann direktør life fonden (novo nordisk fonden) novo nordisk fonden / life fonden" data-tier="1" data-score="9">
-<div class="ch" onclick="toggle(this.parentElement)">
-<div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g55" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1b7a3d"/><stop offset="100%" stop-color="#2da85a"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g55)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">SH</text></svg></div>
-<div class="ci">
-<div class="cn">Stefan Hermann</div>
-<div class="cr">Direktør</div>
-<div class="co">Novo Nordisk Fonden / LIFE Fonden</div>
-</div></div>
-<div class="crt">
-<a class="li-b" href="https://dk.linkedin.com/in/stefan-hermann-506274b" target="_blank" onclick="event.stopPropagation()" title="LinkedIn profil"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-<span class="tp t1">9/10</span>
-<span class="tp t1">Tier 1</span>
-<span class="cv">&#9660;</span>
-</div></div>
-<div class="dt">
-<div class="ds"><div class="dl">Rolle og baggrund</div>
-<div class="dx">Stefan Hermann er administrerende direktør for LIFE Fonden, et initiativ under Novo Nordisk Fonden dedikeret til at styrke interessen for naturvidenskab og teknologi hos børn og unge i Danmark. Han tiltrådte stillingen 1. oktober 2023 efter 15+ år som rektor for først Professionshøjskolen Metropol og derefter Københavns Professionshøjskole (KP). Hermann er uddannelsesforsker og filosof og er forfatter til bøger om uddannelse og dannelse, bl.a. &#39;En varm tid&#39; (2022).</div>
-</div>
-<div class="ds"><div class="dl">Fokus</div>
-<div class="dx">Hermann leder LIFE Fondens ambition om at skabe et landsdækkende initiativ for naturvidenskabelig undervisning i folkeskolen. Han er filosofisk og systemteoretisk orienteret og er en hyppig og velartikuleret stemme i den brede uddannelsesdebat.</div></div>
-<div class="ds"><div class="dl">SAGA Relevans</div>
-<div class="dx">Hermann kombinerer som ingen anden dyb operationel viden om professionshøjskolernes uddannelse af lærere og et direkte forvalteransvar for Novo Nordisk Fondens uddannelsesinvesteringer. LIFE Fonden og SAGA er komplementære: begge vil styrke lærernes evne til at differentiere undervisning. Et konkret samarbejde kan føre til pilotfinansiering og integration af SAGA i LIFE-skolernes netværk.</div></div>
-<div class="ib rel"><div class="ib-l">SAGA-Relevans: 9/10</div><div class="ib-t">Tier 1 — Strategisk prioritet</div></div>
-<div class="ib abm"><div class="ib-l">ABM Strategi</div><div class="ib-t">1:1 pitch naturfag + adaptiv læring, joint funding-ansøgning, LIFE-skole-pilot</div></div>
-<div class="cb">&#9993; <a href="mailto:info@life.dk" onclick="event.stopPropagation()">info@life.dk</a> &nbsp;&middot;&nbsp; &#9742; 33 34 35 40 &nbsp;&middot;&nbsp; <a href="https://dk.linkedin.com/in/stefan-hermann-506274b" target="_blank" onclick="event.stopPropagation()">LinkedIn &#8599;</a></div>
-</div></div>
 <div class="cd t2" data-search="jeppe bundsgaard professor dpu, aarhus universitet dpu / aarhus universitet" data-tier="2" data-score="8.5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g56" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g56)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">JB</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g58" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g58)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">JB</text></svg></div>
 <div class="ci">
 <div class="cn">Jeppe Bundsgaard</div>
 <div class="cr">Professor</div>
@@ -2402,7 +2497,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="ole sejer iversen professor, center for comp. thinking &amp; design aarhus universitet dpu / aarhus universitet" data-tier="2" data-score="9">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g57" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g57)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">OS</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g59" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g59)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">OS</text></svg></div>
 <div class="ci">
 <div class="cn">Ole Sejer Iversen</div>
 <div class="cr">Professor, Center for Comp. Thinking &amp; Design</div>
@@ -2429,7 +2524,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="andreas rasch-christensen forsknings- og udviklingschef via uc via university college" data-tier="2" data-score="7.5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g58" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g58)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">AR</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g60" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g60)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">AR</text></svg></div>
 <div class="ci">
 <div class="cn">Andreas Rasch-Christensen</div>
 <div class="cr">Forsknings- og udviklingschef</div>
@@ -2456,7 +2551,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="dpu (danmarks pædagogiske universitet) forskningsinstitution aarhus universitet dpu / aarhus universitet" data-tier="2" data-score="8">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g59" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g59)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">D</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g61" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g61)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">D</text></svg></div>
 <div class="ci">
 <div class="cn">DPU (Danmarks Pædagogiske Universitet)</div>
 <div class="cr">Forskningsinstitution</div>
@@ -2482,7 +2577,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="aarhus universitet &amp; universiteterne forskningsinstitutioner dk-dækkende dpu / aarhus universitet" data-tier="2" data-score="7">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g60" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g60)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">AU</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g62" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g62)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">AU</text></svg></div>
 <div class="ci">
 <div class="cn">Aarhus Universitet &amp; universiteterne</div>
 <div class="cr">Forskningsinstitutioner</div>
@@ -2508,7 +2603,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="lene tanggaard professor, pædagogisk psykologi aau — fhv. rektor designskolen kolding aau (aalborg universitet)" data-tier="2" data-score="8">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g61" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g61)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">LT</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g63" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g63)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">LT</text></svg></div>
 <div class="ci">
 <div class="cn">Lene Tanggaard</div>
 <div class="cr">Professor, pædagogisk psykologi</div>
@@ -2535,7 +2630,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="lars qvortrup professor emeritus dpu — inklusionsforskning dpu / aarhus universitet" data-tier="2" data-score="7.5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g62" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g62)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">LQ</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g64" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g64)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">LQ</text></svg></div>
 <div class="ci">
 <div class="cn">Lars Qvortrup</div>
 <div class="cr">Professor Emeritus</div>
@@ -2562,7 +2657,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="svend brinkmann professor, psykolog, forfatter aau — kritisk humanist aau (aalborg universitet)" data-tier="2" data-score="7">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g63" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g63)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">SB</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g65" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g65)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">SB</text></svg></div>
 <div class="ci">
 <div class="cn">Svend Brinkmann</div>
 <div class="cr">Professor, Psykolog, Forfatter</div>
@@ -2589,7 +2684,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="dorte marie søndergaard professor dpu/aarhus universitet dpu / aarhus universitet" data-tier="2" data-score="7">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g64" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g64)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">DM</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g66" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g66)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">DM</text></svg></div>
 <div class="ci">
 <div class="cn">Dorte Marie Søndergaard</div>
 <div class="cr">Professor</div>
@@ -2616,7 +2711,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="louise klinge phd, forsker, forfatter dpu — rising fast dpu / aarhus universitet" data-tier="2" data-score="7.5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g65" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g65)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">LK</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g67" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g67)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">LK</text></svg></div>
 <div class="ci">
 <div class="cn">Louise Klinge</div>
 <div class="cr">PhD, Forsker, Forfatter</div>
@@ -2643,7 +2738,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="helle rabøl hansen lektor, forsker dpu — rising dpu / aarhus universitet" data-tier="2" data-score="7">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g66" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g66)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">HR</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g68" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g68)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">HR</text></svg></div>
 <div class="ci">
 <div class="cn">Helle Rabøl Hansen</div>
 <div class="cr">Lektor, Forsker</div>
@@ -2670,7 +2765,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t3" data-search="niels egelund professor emeritus dpu — declining dpu / aarhus universitet" data-tier="3" data-score="4.5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g67" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#b45309"/><stop offset="100%" stop-color="#d97706"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g67)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">NE</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g69" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#b45309"/><stop offset="100%" stop-color="#d97706"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g69)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">NE</text></svg></div>
 <div class="ci">
 <div class="cn">Niels Egelund</div>
 <div class="cr">Professor Emeritus</div>
@@ -2701,7 +2796,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="tommy ahlers tidl. minister, investor, æresdocent dtu seriel iværksætter (20+ virksomheder) serielle iværksættere" data-tier="2" data-score="8">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g68" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g68)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">TA</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g70" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g70)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">TA</text></svg></div>
 <div class="ci">
 <div class="cn">Tommy Ahlers</div>
 <div class="cr">Tidl. minister, Investor, Æresdocent DTU</div>
@@ -2728,7 +2823,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="jeppe rindom ceo &amp; medstifter pleo pleo" data-tier="2" data-score="7.5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g69" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g69)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">JR</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g71" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g71)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">JR</text></svg></div>
 <div class="ci">
 <div class="cn">Jeppe Rindom</div>
 <div class="cr">CEO &amp; medstifter</div>
@@ -2755,7 +2850,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="niels b. christiansen ceo lego group lego group" data-tier="2" data-score="8.5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g70" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g70)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">NB</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g72" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g72)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">NB</text></svg></div>
 <div class="ci">
 <div class="cn">Niels B. Christiansen</div>
 <div class="cr">CEO</div>
@@ -2782,7 +2877,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t1" data-search="morten amstrup stifter, tidl. cbs-underviser edtech denmark (70+ edtech startups) edtech denmark" data-tier="1" data-score="9.5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g71" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1b7a3d"/><stop offset="100%" stop-color="#2da85a"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g71)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">MA</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g73" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1b7a3d"/><stop offset="100%" stop-color="#2da85a"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g73)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">MA</text></svg></div>
 <div class="ci">
 <div class="cn">Morten Amstrup</div>
 <div class="cr">Stifter, Tidl. CBS-underviser</div>
@@ -2809,7 +2904,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t3" data-search="kim fausing ceo danfoss danfoss" data-tier="3" data-score="6.5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g72" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#b45309"/><stop offset="100%" stop-color="#d97706"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g72)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">KF</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g74" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#b45309"/><stop offset="100%" stop-color="#d97706"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g74)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">KF</text></svg></div>
 <div class="ci">
 <div class="cn">Kim Fausing</div>
 <div class="cr">CEO</div>
@@ -2836,7 +2931,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="michael bodekaer medstifter labster (vr science, $523m+, 12k inst.) labster" data-tier="2" data-score="8">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g73" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g73)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">MB</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g75" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g75)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">MB</text></svg></div>
 <div class="ci">
 <div class="cn">Michael Bodekaer</div>
 <div class="cr">Medstifter</div>
@@ -2863,7 +2958,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="dansk industri (di) brancheorganisation di - fremtidens folkeskole dansk industri (di)" data-tier="2" data-score="7">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g74" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g74)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">DI</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g76" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g76)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">DI</text></svg></div>
 <div class="ci">
 <div class="cn">Dansk Industri (DI)</div>
 <div class="cr">Brancheorganisation</div>
@@ -2889,7 +2984,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="arbejderbevægelsens erhvervsråd (ae) thinktank ae arbejderbevægelsens erhvervsråd" data-tier="2" data-score="6.5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g75" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g75)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">AE</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g77" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g77)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">AE</text></svg></div>
 <div class="ci">
 <div class="cn">Arbejderbevægelsens Erhvervsråd (AE)</div>
 <div class="cr">Thinktank</div>
@@ -2915,7 +3010,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="edtech-virksomheder &amp; digitale platforme branche edtech danmark edtech denmark" data-tier="2" data-score="7.5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g76" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g76)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">E</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g78" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g78)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">E</text></svg></div>
 <div class="ci">
 <div class="cn">EdTech-Virksomheder &amp; Digitale Platforme</div>
 <div class="cr">Branche</div>
@@ -2940,7 +3035,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="tech-giganters uddannelsesinitiativer store tech-virksomheder google, microsoft, apple m.fl. tech giants" data-tier="2" data-score="6.5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g77" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g77)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">TU</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g79" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g79)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">TU</text></svg></div>
 <div class="ci">
 <div class="cn">Tech-Giganters Uddannelsesinitiativer</div>
 <div class="cr">Store tech-virksomheder</div>
@@ -2965,7 +3060,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cd t2" data-search="dansk industri (di) — anne tiedemann chefkonsulent uddannelsespolitik di / &#39;fremtidens folkeskole&#39; dansk industri (di)" data-tier="2" data-score="7">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g78" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g78)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">DI</text></svg></div>
+<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g80" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g80)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">DI</text></svg></div>
 <div class="ci">
 <div class="cn">Dansk Industri (DI) — Anne Tiedemann</div>
 <div class="cr">Chefkonsulent uddannelsespolitik</div>
@@ -2989,63 +3084,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="cb">&#9993; <a href="mailto:atie@di.dk" onclick="event.stopPropagation()">atie@di.dk</a></div>
 </div></div>
 </div>
-<div class="sec" id="influencers-skolepersoner" data-group="INFLUENCERS">
-<div class="sh"><div class="st">Skolepersoner</div><div class="sc_">10 stakeholders</div></div>
-<div class="sec-desc"><div class="od">Lærere, skoleledere, elever og forældre — SAGA&#39;s primære slutbrugere og de vigtigste ambassadører.</div><div class="os">SAGA-strategi: Bottom-up adoption: lærere → læringsvejledere → skoleledere → kommune. Viral spredning via word-of-mouth.</div></div>
-<div class="cd t2" data-search="gordon ørskov madsen formand danmarks lærerforening (65.000+ medl.) danmarks lærerforening (dlf)" data-tier="2" data-score="8.5">
-<div class="ch" onclick="toggle(this.parentElement)">
-<div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g79" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g79)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">GØ</text></svg></div>
-<div class="ci">
-<div class="cn">Gordon Ørskov Madsen</div>
-<div class="cr">Formand</div>
-<div class="co">Danmarks Lærerforening (DLF)</div>
-</div></div>
-<div class="crt">
-<a class="li-b" href="https://linkedin.com/in/gordon-ørskov-madsen-bb800ba6/" target="_blank" onclick="event.stopPropagation()" title="LinkedIn profil"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-<span class="tp t2">8.5/10</span>
-<span class="tp t2">Tier 2</span>
-<span class="cv">&#9660;</span>
-</div></div>
-<div class="dt">
-<div class="ds"><div class="dl">Rolle og baggrund</div>
-<div class="dx">Gordon Ørskov Madsen er formand for Danmarks Lærerforening (DLF) siden 2020 og organiserer ca. 90.000 lærere og skoleledere. Han er uddannet lærer fra Aarhus Dag- og Aftenseminarium (1996) og har siden 2020 siddet som formand. I 2025 blev han desuden valgt som formand for Centralorganisationernes Fællesudvalg (CFU), der forhandler på vegne af knap 200.000 statsansatte. Han er formand for Lærernes Pension og Lån &amp; Spar Bank.</div>
-</div>
-<div class="ds"><div class="dl">Fokus</div>
-<div class="dx">Madsen kæmper for at rette op på folkeskolens vilkår og har advaret om, at skolen er på randen af sammenbrud grundet rekrutteringskrise og forringede lærervilkår. Han prioriterer lærernes forberedelsestid, arbejdsmiljø og professionelle autonomi. Parallelt med DLF-formandskabet leder han CFU&#39;s forhandlinger om statslige overenskomster.</div></div>
-<div class="ds"><div class="dl">SAGA Relevans</div>
-<div class="dx">DLF er den mest centrale gatekeeper for lærernes accept af nye teknologier. Madsen kan åbne eller lukke døren for SAGA i folkeskolen. En strategisk tilgang er at invitere DLF ind som sparringspartner i produktudviklingen og positionere SAGA eksplicit som et redskab der frigiver lærertid og styrker lærerens professionelle rolle. En anbefaling fra DLF vil have enorm signalværdi over for 90.000 lærere.</div></div>
-<div class="ib rel"><div class="ib-l">SAGA-Relevans: 8.5/10</div><div class="ib-t">Tier 2 — Vigtig stakeholder</div></div>
-<div class="ib abm"><div class="ib-l">ABM Strategi</div><div class="ib-t">1:1-møde, case study arbejdsbelastnings-reduktion, DLF-årskongres</div></div>
-<div class="cb">&#9993; <a href="mailto:GOM@dlf.org" onclick="event.stopPropagation()">GOM@dlf.org</a> &nbsp;&middot;&nbsp; &#9742; 33 69 63 00 (DLF sekretariat) &nbsp;&middot;&nbsp; <a href="https://linkedin.com/in/gordon-ørskov-madsen-bb800ba6/" target="_blank" onclick="event.stopPropagation()">LinkedIn &#8599;</a></div>
-</div></div>
-<div class="cd t2" data-search="dorte andreas formand skolelederforeningen skolelederforeningen" data-tier="2" data-score="9">
-<div class="ch" onclick="toggle(this.parentElement)">
-<div class="cl">
-<div class="av"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g80" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g80)"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">DA</text></svg></div>
-<div class="ci">
-<div class="cn">Dorte Andreas</div>
-<div class="cr">Formand</div>
-<div class="co">Skolelederforeningen</div>
-</div></div>
-<div class="crt">
-<a class="li-b" href="https://dk.linkedin.com/in/dorte-andreas" target="_blank" onclick="event.stopPropagation()" title="LinkedIn profil"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-<span class="tp t2">9/10</span>
-<span class="tp t2">Tier 2</span>
-<span class="cv">&#9660;</span>
-</div></div>
-<div class="dt">
-<div class="ds"><div class="dl">Rolle og baggrund</div>
-<div class="dx">Dorte Andreas tiltrådte som formand for Skolelederforeningen 1. december 2024 og afløser Claus Hjortdal efter ti år i spidsen. Hun har de forudgående otte år fungeret som næstformand i foreningen og har været skoleleder i Odense Kommune (Tingkærskolen 2008-2016). Hun er valgt for en treårig periode.</div>
-</div>
-<div class="ds"><div class="dl">Fokus</div>
-<div class="dx">Andreas har tre klare mærkesager: at stoppe opgaveglidning til skolerne uden ressourcer, at løse inklusionsopgaven og at frisætte skolerne fra detailstyring. Hun ønsker &#39;mere overskud&#39; i folkeskolen og mener, at skolelederne er nøglepersoner i at skabe trygge og professionelle miljøer.</div></div>
-<div class="ds"><div class="dl">SAGA Relevans</div>
-<div class="dx">Skolelederforeningen repræsenterer de beslutningstagere der i praksis godkender og implementerer nye digitale løsninger på skolerne. Andreas&#39; fokus på inklusion og ressourcemangel matcher SAGAs pitch om at spare tid og løfte specialundervisningselever. Et møde med Skolelederforeningen og evt. fælles survey om AI og klasseledelse kan bane vej for pilotprojekter.</div></div>
-<div class="ib rel"><div class="ib-l">SAGA-Relevans: 9/10</div><div class="ib-t">Tier 2 — Vigtig stakeholder</div></div>
-<div class="ib abm"><div class="ib-l">ABM Strategi</div><div class="ib-t">1:1 + Næstformand, skoleleder-seminar, SAGA-implementation case study</div></div>
-<div class="cb">&#9993; <a href="mailto:skolelederne@skolelederne.org" onclick="event.stopPropagation()">skolelederne@skolelederne.org</a> &nbsp;&middot;&nbsp; &#9742; 70 25 10 08 &nbsp;&middot;&nbsp; <a href="https://dk.linkedin.com/in/dorte-andreas" target="_blank" onclick="event.stopPropagation()">LinkedIn &#8599;</a></div>
-</div></div>
+<div class="sec" id="influencers-andre" data-group="INFLUENCERS">
+<div class="sh"><div class="st">Andre</div><div class="sc_">12 stakeholders</div></div>
+<div class="sec-desc"><div class="od">Tværgående influencers fra politik, innovation og uddannelse der former den offentlige debat.</div><div class="os">SAGA-strategi: Identificér rising voices for tidlig alliance-building. Advisory board-potentiale.</div></div>
 <div class="cd t1" data-search="lærere individuelle klasselærere primære slutbrugere lærere &amp; undervisere" data-tier="1" data-score="10">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">
@@ -3250,10 +3291,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <div class="ib abm"><div class="ib-l">ABM Strategi</div><div class="ib-t">Awareness</div></div>
 <div class="cb">&#9993; <a href="mailto:dgs@dgs.dk" onclick="event.stopPropagation()">dgs@dgs.dk</a></div>
 </div></div>
-</div>
-<div class="sec" id="influencers-andre" data-group="INFLUENCERS">
-<div class="sh"><div class="st">Andre</div><div class="sc_">4 stakeholders</div></div>
-<div class="sec-desc"><div class="od">Tværgående influencers fra politik, innovation og uddannelse der former den offentlige debat.</div><div class="os">SAGA-strategi: Identificér rising voices for tidlig alliance-building. Advisory board-potentiale.</div></div>
 <div class="cd t2" data-search="henrik v. stokholm rektor, forfatter, foredragsholder rising fast øvrige influencers" data-tier="2" data-score="7.5">
 <div class="ch" onclick="toggle(this.parentElement)">
 <div class="cl">

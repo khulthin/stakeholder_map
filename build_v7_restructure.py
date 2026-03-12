@@ -252,11 +252,9 @@ def assign_new_group(s):
             if 'LIFE' in org:
                 return ('INFLUENCERS', 'Forskere', 1)
             # Rising/Stabil/Declining people
-            if any(k in org for k in ['DLF', 'Skoleleder']):
-                return ('INFLUENCERS', 'Skolepersoner', 2)
             return ('INFLUENCERS', 'Andre', 3)
         if 'DLF' in org or 'Skoleleder' in org:
-            return ('INFLUENCERS', 'Skolepersoner', 2)
+            return ('INFLUENCERS', 'Andre', 3)
         return ('INFLUENCERS', 'Andre', 3)
 
     if sec == 'Psykologer & Forskere':
@@ -271,7 +269,7 @@ def assign_new_group(s):
         return ('INFLUENCERS', 'Erhvervsledere', 2)
 
     if sec == 'Skoleniveau':
-        return ('INFLUENCERS', 'Skolepersoner', 2)
+        return ('INFLUENCERS', 'Andre', 3)
 
     # Fallback
     return ('ORGANISATIONER', sec, 99)
@@ -321,11 +319,11 @@ for s in master:
                 score += 2
             return score
         best = max(entries, key=score_entry)
-        # But keep the new_group/section from the Nøglepersoner entry if it was INFLUENCERS
-        # since that's where we want influencers to show up
+        # Only override to INFLUENCERS if the best entry is itself INFLUENCERS
+        # (i.e. don't pull ORGANISATIONER people into INFLUENCERS)
         inf_entry = next((e for e in entries if e['section'] == 'Nøglepersoner (Influencers)'), None)
-        if inf_entry and best['section'] != 'Nøglepersoner (Influencers)':
-            # Person has dual role: keep in INFLUENCERS group but use richer data
+        if inf_entry and best['new_group'] == 'INFLUENCERS':
+            # Both resolve to INFLUENCERS — use richer data but keep the specific section
             best = dict(best)  # copy
             best['new_group'] = inf_entry['new_group']
             best['new_section'] = inf_entry['new_section']
@@ -345,7 +343,7 @@ GROUPS['KOMMUNER'] = OrderedDict()
 
 # Section order within each group
 ORG_SECTIONS = ['Nationalt Politisk', 'Foreninger & KL', 'Fonde', 'Professionshøjskoler', 'IT-Myndigheder']
-INF_SECTIONS = ['Psykologer', 'Forskere', 'Erhvervsledere', 'Skolepersoner', 'Andre']
+INF_SECTIONS = ['Psykologer', 'Forskere', 'Erhvervsledere', 'Andre']
 MED_SECTIONS = ['Medier']
 
 for sec in ORG_SECTIONS:
