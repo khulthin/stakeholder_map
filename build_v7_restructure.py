@@ -239,6 +239,8 @@ def assign_new_group(s):
         return ('ORGANISATIONER', 'Professionshøjskoler', 4)
     if sec == 'IT-Myndigheder':
         return ('ORGANISATIONER', 'IT-Myndigheder', 5)
+    if sec == 'EdTech & Digitale Aktører':
+        return ('ORGANISATIONER', 'EdTech & Digitale Aktører', 6)
 
     # INFLUENCERS
     if sec == 'Nøglepersoner (Influencers)':
@@ -342,7 +344,7 @@ GROUPS['MEDIER'] = OrderedDict()
 GROUPS['KOMMUNER'] = OrderedDict()
 
 # Section order within each group
-ORG_SECTIONS = ['Nationalt Politisk', 'Foreninger & KL', 'Fonde', 'Professionshøjskoler', 'IT-Myndigheder']
+ORG_SECTIONS = ['Nationalt Politisk', 'Foreninger & KL', 'Fonde', 'Professionshøjskoler', 'IT-Myndigheder', 'EdTech & Digitale Aktører']
 INF_SECTIONS = ['Psykologer', 'Forskere', 'Erhvervsledere', 'Andre']
 MED_SECTIONS = ['Medier']
 
@@ -451,6 +453,10 @@ SECTION_DESCRIPTIONS = {
     'IT-Myndigheder': {
         'desc': 'Gatekeepers for digital infrastruktur i skoler. STIL og KOMBIT styrer UNI-Login og AULA.',
         'saga': 'STIL-alignment er KRITISK for adgang til skoler. UNI-Login integration og GDPR-compliance er must-haves.'
+    },
+    'EdTech & Digitale Aktører': {
+        'desc': 'Digitale platforme, klynger og nationale IT-myndigheder der kontrollerer adgang til og distribution i skolerne.',
+        'saga': 'STIL-integration = adgang til 1 mio+ brugere. EdTech Denmark membership = 70+ netværkskontakter og markedsindsigt. EMU og CFU = distributionskanaler til alle lærere.'
     },
     'Psykologer': {
         'desc': 'Psykologer der former narrativet om børns trivsel, mental sundhed og digital skærmtid.',
