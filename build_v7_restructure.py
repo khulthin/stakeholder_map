@@ -613,12 +613,10 @@ for gname, (glabel, gcount) in group_labels.items():
         if gname == 'KOMMUNER':
             mdata = MUNICIPALITY_DATA.get(sec, {})
             rank = mdata.get('rank', '')
-            tier = mdata.get('tier', '')
-            tc = TIER_CLASS.get(tier, 'fol')
-            badge = f'<span class="rnk {tc}">#{rank}</span>' if rank else ''
             display = sec.replace(' Kommune', '')  # strip suffix for brevity
             cnt = f'<span class="nc">{len(people)}</span>' if people else ''
-            H.append(f'<a href="#{mkid(gname+"-"+sec)}" onclick="go(\'{mkid(gname+"-"+sec)}\');return false">{badge}{esc(display)} {cnt}</a>\n')
+            prefix = f'#{rank} ' if rank else ''
+            H.append(f'<a href="#{mkid(gname+"-"+sec)}" onclick="go(\'{mkid(gname+"-"+sec)}\');return false">{esc(prefix + display)} {cnt}</a>\n')
         elif people:
             H.append(f'<a href="#{mkid(gname+"-"+sec)}" onclick="go(\'{mkid(gname+"-"+sec)}\');return false">{esc(sec)} <span class="nc">{len(people)}</span></a>\n')
     H.append('</div>\n')
@@ -725,8 +723,17 @@ def render_org_group(canon_org, people, section_name):
     out.append(f'<div class="og" id="{oid}">\n')
     out.append(f'<div class="og-h" onclick="toggleOrg(this.parentElement)">\n')
     out.append(f'<div class="og-left">\n<div class="og-icon">{building_svg}</div>\n<div class="og-info">\n')
-    out.append(f'<div class="og-name">{esc(canon_org)}</div>\n')
+    # For municipalities: show display name without " Kommune" suffix
+    display_name = canon_org.replace(' Kommune', '') if section_name == 'KOMMUNER' else canon_org
+    out.append(f'<div class="og-name">{esc(display_name)}</div>\n')
     meta = []
+    if section_name == 'KOMMUNER':
+        mdata = MUNICIPALITY_DATA.get(canon_org, {})
+        rank = mdata.get('rank', '')
+        tier = mdata.get('tier', '')
+        if rank:
+            tc = TIER_CLASS.get(tier, 'fol')
+            meta.append(f'<span class="tier-bdg {tc}">{tier} &middot; #{rank}</span>')
     if stats: meta.append(esc(stats))
     meta.append(f'{len(people)} {"person" if len(people)==1 else "personer"}')
     out.append(f'<div class="og-meta">{"&middot;".join(meta)}</div>\n')
@@ -792,18 +799,7 @@ for gname in ['ORGANISATIONER', 'INFLUENCERS', 'MEDIER', 'KOMMUNER']:
 
         H.append(f'<div class="sec" id="{sec_id}" data-group="{gname}">\n')
 
-        if gname == 'KOMMUNER':
-            mdata = MUNICIPALITY_DATA.get(sec, {})
-            rank = mdata.get('rank', '')
-            tier = mdata.get('tier', '')
-            score = mdata.get('score', '')
-            tc = TIER_CLASS.get(tier, 'fol')
-            display = sec.replace(' Kommune', '')
-            badge = f'<span class="tier-bdg {tc}">{tier} #{rank}</span>' if rank else ''
-            score_str = f' &middot; Score {score}/10' if score else ''
-            H.append(f'<div class="sh"><div class="st">{esc(display)}{badge}</div>'
-                     f'<div class="sc_">{len(people)} stakeholders{score_str}</div></div>\n')
-        else:
+        if gname != 'KOMMUNER':
             H.append(f'<div class="sh"><div class="st">{esc(sec)}</div><div class="sc_">{len(people)} stakeholders</div></div>\n')
 
         if sd:
@@ -818,11 +814,7 @@ for gname in ['ORGANISATIONER', 'INFLUENCERS', 'MEDIER', 'KOMMUNER']:
             for canon_org, org_people in org_groups.items():
                 H.append(render_org_group(canon_org, org_people, sec))
         elif gname == 'KOMMUNER':
-            if people:
-                for p in people:
-                    H.append(render_person_card(p))
-            else:
-                H.append('<div class="kom-empty">Ingen kontakter endnu</div>\n')
+            H.append(render_org_group(sec, people, gname))
         else:
             # For INFLUENCERS and MEDIER: render cards directly (or grouped by media outlet)
             if gname == 'MEDIER':
