@@ -514,6 +514,11 @@ def mkid(name):
 
 tg = {1:('#1b7a3d','#2da85a'),2:('#6d28d9','#8b5cf6'),3:('#b45309','#d97706')}
 
+# Build date (Danish month name)
+import datetime as _dt
+_da_months = ['januar','februar','marts','april','maj','juni','juli','august','september','oktober','november','december']
+build_date = f"{_da_months[_dt.date.today().month - 1]} {_dt.date.today().year}"
+
 # Count stats — all persons (master + netvaerk)
 lm = layout_master
 all_persons = lm + netvaerk_persons
@@ -672,7 +677,7 @@ body{{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
 <body>
 <nav class="sb">
 <div style="display:flex;align-items:center"><span class="logo">SAGA</span><span class="sb-bdg">STAKEHOLDERS</span></div>
-<div class="sb-s">{len(lm)} stakeholders &middot; Opdateret marts 2026</div>
+<div class="sb-s">{total_count} stakeholders &middot; Opdateret {build_date}</div>
 <div class="sb-search">
 <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
 <input type="text" placeholder="Søg stakeholder..." oninput="doSearch(this.value)">
