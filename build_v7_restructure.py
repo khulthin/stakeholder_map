@@ -35,11 +35,12 @@ def assign_new_group(s):
     if sec == 'Nationalt Politisk':
         return ('ORGANISATIONER', 'Nationalt Politisk', 0)
     if sec in ('Kommunalt', 'Kommunale Skolechefer'):
-        # KL people go to Foreninger & KL
         canon = s.get('canonical_org', '')
-        if canon == 'KL (Kommunernes Landsforening)':
-            return ('ORGANISATIONER', 'Foreninger & KL', 2)
-        return ('ORGANISATIONER', 'Kommuner', 1)
+        # Only real municipalities (canonical_org ends with "Kommune") go to KOMMUNER
+        if canon.endswith('Kommune'):
+            return ('KOMMUNER', canon, 1)
+        # KL, BKF and other associations go to Foreninger & KL
+        return ('ORGANISATIONER', 'Foreninger & KL', 2)
     if sec == 'Foreninger':
         return ('ORGANISATIONER', 'Foreninger & KL', 2)
     if sec == 'Fonde':
@@ -150,9 +151,10 @@ GROUPS = OrderedDict()
 GROUPS['ORGANISATIONER'] = OrderedDict()
 GROUPS['INFLUENCERS'] = OrderedDict()
 GROUPS['MEDIER'] = OrderedDict()
+GROUPS['KOMMUNER'] = OrderedDict()
 
 # Section order within each group
-ORG_SECTIONS = ['Nationalt Politisk', 'Kommuner', 'Foreninger & KL', 'Fonde', 'Professionshøjskoler', 'IT-Myndigheder']
+ORG_SECTIONS = ['Nationalt Politisk', 'Foreninger & KL', 'Fonde', 'Professionshøjskoler', 'IT-Myndigheder']
 INF_SECTIONS = ['Psykologer', 'Forskere', 'Erhvervsledere', 'Skolepersoner', 'Andre']
 MED_SECTIONS = ['Medier']
 
@@ -169,6 +171,9 @@ for s in layout_master:
     if sec not in GROUPS[g]:
         GROUPS[g][sec] = []
     GROUPS[g][sec].append(s)
+
+# Sort municipalities alphabetically
+GROUPS['KOMMUNER'] = OrderedDict(sorted(GROUPS['KOMMUNER'].items()))
 
 # For Foreninger & KL: also move the KL org-level stakeholder
 # (the one named "KL (Kommunernes Landsforening)" currently in Kommunalt)
@@ -316,6 +321,7 @@ ct=sum(1 for r in lm if r.get('email') or r.get('phone'))
 org_count = sum(1 for s in lm if s['new_group'] == 'ORGANISATIONER')
 inf_count = sum(1 for s in lm if s['new_group'] == 'INFLUENCERS')
 med_count = sum(1 for s in lm if s['new_group'] == 'MEDIER')
+kom_count = sum(1 for s in lm if s['new_group'] == 'KOMMUNER')
 
 building_svg = '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 21h18v-2H3v2zm0-4h4v-2H3v2zm6 0h4v-2H9v2zm6 0h4v-2h-4v2zM3 13h4v-2H3v2zm6 0h4v-2H9v2zm6 0h4v-2h-4v2zM3 9h4V7H3v2zm6 0h4V7H9v2zm6 0h4V7h-4v2zM3 5h18V3H3v2z"/></svg>'
 
@@ -379,7 +385,7 @@ body{{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
 .gh-icon{{width:28px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0}}
 .gh-icon svg{{width:16px;height:16px;fill:#fff}}
 .gh-org{{background:linear-gradient(135deg,var(--o),var(--r))}}.gh-inf{{background:linear-gradient(135deg,#6d28d9,#8b5cf6)}}
-.gh-med{{background:linear-gradient(135deg,#2563eb,#3b82f6)}}
+.gh-med{{background:linear-gradient(135deg,#2563eb,#3b82f6)}}.gh-kom{{background:linear-gradient(135deg,#059669,#10b981)}}
 
 /* Section */
 .sec{{margin-bottom:36px}}
@@ -461,11 +467,13 @@ group_labels = {
     'ORGANISATIONER': ('Organisationer', org_count),
     'INFLUENCERS': ('Influencers', inf_count),
     'MEDIER': ('Medier', med_count),
+    'KOMMUNER': ('Kommuner', kom_count),
 }
 group_sections = {
     'ORGANISATIONER': ORG_SECTIONS,
     'INFLUENCERS': INF_SECTIONS,
     'MEDIER': MED_SECTIONS,
+    'KOMMUNER': list(GROUPS['KOMMUNER'].keys()),
 }
 
 for gname, (glabel, gcount) in group_labels.items():
@@ -481,12 +489,13 @@ H.append(f'''<div class="ss">
 <div class="sr"><span class="l">Tier 1</span><span class="v">{t1}</span></div>
 <div class="sr"><span class="l">Tier 2</span><span class="v">{t2}</span></div>
 <div class="sr"><span class="l">Tier 3</span><span class="v">{t3}</span></div>
+<div class="sr"><span class="l">Kommuner</span><span class="v">{len(GROUPS["KOMMUNER"])}</span></div>
 <div class="sr"><span class="l">LinkedIn</span><span class="v">{li}</span></div>
 <div class="sr"><span class="l">Kontakt</span><span class="v">{ct}</span></div>
 </div></nav>
 <main class="mn">
 <div class="pt">Stakeholder Map</div>
-<div class="ps">{len(lm)} stakeholders &middot; {org_count} i organisationer &middot; {inf_count} influencers &middot; {med_count} i medier</div>
+<div class="ps">{len(lm)} stakeholders &middot; {org_count} i organisationer &middot; {inf_count} influencers &middot; {med_count} i medier &middot; {kom_count} i kommuner</div>
 <div class="main-search">
 <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
 <input type="text" id="mainSearch" placeholder="Søg efter navn, organisation, rolle..." oninput="doSearch(this.value)">
@@ -613,9 +622,10 @@ group_icons = {
     'ORGANISATIONER': ('<div class="gh-icon gh-org"><svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg></div>', 'Organisationer'),
     'INFLUENCERS': ('<div class="gh-icon gh-inf"><svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div>', 'Influencers'),
     'MEDIER': ('<div class="gh-icon gh-med"><svg viewBox="0 0 24 24"><path d="M22 3l-1.67 1.67L18.67 3 17 4.67 15.33 3l-1.66 1.67L12 3l-1.67 1.67L8.67 3 7 4.67 5.33 3 3.67 4.67 2 3v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V3zM11 19H4v-6h7v6zm9 0h-7v-2h7v2zm0-4h-7v-2h7v2zm0-4H4V8h16v3z"/></svg></div>', 'Medier'),
+    'KOMMUNER': ('<div class="gh-icon gh-kom"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>', 'Kommuner'),
 }
 
-for gname in ['ORGANISATIONER', 'INFLUENCERS', 'MEDIER']:
+for gname in ['ORGANISATIONER', 'INFLUENCERS', 'MEDIER', 'KOMMUNER']:
     icon_html, label = group_icons[gname]
     H.append(f'<div class="gh" id="{mkid(gname)}">{icon_html} {label}</div>\n')
 
@@ -654,6 +664,10 @@ for gname in ['ORGANISATIONER', 'INFLUENCERS', 'MEDIER']:
             org_groups = build_org_groups(people)
             for canon_org, org_people in org_groups.items():
                 H.append(render_org_group(canon_org, org_people, sec))
+        elif gname == 'KOMMUNER':
+            # Section IS the municipality — render cards directly
+            for p in people:
+                H.append(render_person_card(p))
         else:
             # For INFLUENCERS and MEDIER: render cards directly (or grouped by media outlet)
             if gname == 'MEDIER':
@@ -794,7 +808,8 @@ print(f"File: {len(html)/1024:.0f} KB")
 print(f"ORGANISATIONER: {org_count}")
 print(f"INFLUENCERS: {inf_count}")
 print(f"MEDIER: {med_count}")
-print(f"Total: {org_count+inf_count+med_count}")
+print(f"KOMMUNER: {kom_count} ({len(GROUPS['KOMMUNER'])} kommuner)")
+print(f"Total: {org_count+inf_count+med_count+kom_count}")
 
 # Verify
 all_scored = sum(1 for r in master if r.get('relevance_score') is not None)
