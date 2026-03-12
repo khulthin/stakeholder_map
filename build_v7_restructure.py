@@ -114,9 +114,23 @@ MUNICIPALITY_DATA = {
 # Normalize canonical_org names to match MUNICIPALITY_DATA keys
 CANONICAL_NORMALIZE = {
     'Københavns Kommune': 'København Kommune',
+    'Københavns Kommune (tidl.)': 'København Kommune',
+    'Nordfyn': 'Nordfyns Kommune',
 }
 
 TIER_CLASS = {'Must wins': 'mw', 'Important': 'imp', 'Followers': 'fol'}
+
+# Segment → tier mapping for folkeskole_netvaerk persons
+SEGMENT_TIER = {
+    'leder_skoleudvikling': 2,
+    'konsulent_skoleudvikling': 3,
+    'konsulent_inklusion': 3,
+}
+SEGMENT_ROLE = {
+    'leder_skoleudvikling': 'Leder, skoleudvikling',
+    'konsulent_skoleudvikling': 'Konsulent, skoleudvikling',
+    'konsulent_inklusion': 'Konsulent, inklusion',
+}
 
 with open('master_stakeholders.json') as f:
     data = json.load(f)
@@ -124,6 +138,70 @@ with open('master_stakeholders.json') as f:
 master = data['stakeholders']
 org_data = data['organizations']
 org_enrichment = data.get('org_enrichment', {})
+
+# Load folkeskole_netvaerk and convert to master-compatible format
+with open('folkeskole_netvaerk.json') as f:
+    netvaerk_data = json.load(f)
+
+# Names already in master (kommunal sections) — for deduplication
+master_kommunal_names = set()
+for s in master:
+    sec = s.get('section', '')
+    if sec in ('Kommunale Skolechefer', 'Kommunalt', 'Kommuner', 'Skoleniveau'):
+        master_kommunal_names.add(s.get('name', '').lower().strip())
+
+def normalize_kommune(k):
+    """Normalize netvaerk kommune name to match MUNICIPALITY_DATA key"""
+    k = k.strip()
+    k = CANONICAL_NORMALIZE.get(k, k)
+    if not k.endswith(' Kommune'):
+        k = k + ' Kommune'
+    k = CANONICAL_NORMALIZE.get(k, k)
+    return k
+
+netvaerk_persons = []
+for p in netvaerk_data['personer']:
+    name = p.get('navn', '').strip()
+    if not name:
+        continue
+    # Skip duplicates already in master
+    if name.lower() in master_kommunal_names:
+        continue
+    raw_kommune = p.get('kommune', '').strip()
+    if not raw_kommune:
+        continue
+    canon = normalize_kommune(raw_kommune)
+    # Only include persons belonging to a known municipality
+    if canon not in MUNICIPALITY_DATA:
+        continue
+    segment = p.get('segment', '')
+    tier = SEGMENT_TIER.get(segment, 3)
+    role = p.get('titel', '') or SEGMENT_ROLE.get(segment, 'Kommunal konsulent')
+    np_person = {
+        'name': name,
+        'role': role,
+        'title': p.get('titel', ''),
+        'organization': canon,
+        'canonical_org': canon,
+        'section': 'Kommuner',
+        'tier': tier,
+        'pipeline': '',
+        'relevance_score': None,
+        'linkedin': p.get('linkedin_url', ''),
+        'email': p.get('email', ''),
+        'phone': p.get('afdeling', '') if p.get('afdeling', '').startswith('Tlf') else '',
+        'baggrund': p.get('fokusområde', ''),
+        'fokus': '',
+        'saga_relevans': '',
+        'abm_strategy': '',
+        '_source': 'folkeskole_netvaerk',
+        '_sort_key': 2,
+        'new_group': 'KOMMUNER',
+        'new_section': canon,
+    }
+    netvaerk_persons.append(np_person)
+
+print(f"Netvaerk: {len(netvaerk_persons)} nye (efter deduplication)")
 
 # ══════════════════════════════════════════════
 # NEW STRUCTURE MAPPING
@@ -145,7 +223,7 @@ def assign_new_group(s):
     # ORGANISATIONER
     if sec == 'Nationalt Politisk':
         return ('ORGANISATIONER', 'Nationalt Politisk', 0)
-    if sec in ('Kommunalt', 'Kommunale Skolechefer'):
+    if sec in ('Kommunalt', 'Kommunale Skolechefer', 'Kommuner'):
         canon = s.get('canonical_org', '')
         canon = CANONICAL_NORMALIZE.get(canon, canon)
         # Only real municipalities (canonical_org ends with "Kommune") go to KOMMUNER
@@ -283,6 +361,13 @@ for s in layout_master:
     if sec not in GROUPS[g]:
         GROUPS[g][sec] = []
     GROUPS[g][sec].append(s)
+
+# Add folkeskole_netvaerk persons to KOMMUNER
+for np in netvaerk_persons:
+    canon = np['canonical_org']
+    if canon not in GROUPS['KOMMUNER']:
+        GROUPS['KOMMUNER'][canon] = []
+    GROUPS['KOMMUNER'][canon].append(np)
 
 # Add all 98 municipalities from CSV (even those with no stakeholders yet)
 for mname in MUNICIPALITY_DATA:
@@ -441,7 +526,7 @@ ct=sum(1 for r in lm if r.get('email') or r.get('phone'))
 org_count = sum(1 for s in lm if s['new_group'] == 'ORGANISATIONER')
 inf_count = sum(1 for s in lm if s['new_group'] == 'INFLUENCERS')
 med_count = sum(1 for s in lm if s['new_group'] == 'MEDIER')
-kom_count = sum(1 for s in lm if s['new_group'] == 'KOMMUNER')
+kom_count = sum(1 for s in lm if s['new_group'] == 'KOMMUNER') + len(netvaerk_persons)
 
 building_svg = '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 21h18v-2H3v2zm0-4h4v-2H3v2zm6 0h4v-2H9v2zm6 0h4v-2h-4v2zM3 13h4v-2H3v2zm6 0h4v-2H9v2zm6 0h4v-2h-4v2zM3 9h4V7H3v2zm6 0h4V7H9v2zm6 0h4V7h-4v2zM3 5h18V3H3v2z"/></svg>'
 
