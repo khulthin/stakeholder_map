@@ -241,6 +241,10 @@ def assign_new_group(s):
         return ('ORGANISATIONER', 'IT-Myndigheder', 5)
     if sec == 'EdTech & Digitale Aktører':
         return ('ORGANISATIONER', 'EdTech & Digitale Aktører', 6)
+    if sec == 'Elev & Civilsamfund':
+        return ('ORGANISATIONER', 'Elev & Civilsamfund', 7)
+    if sec == 'Digital Dannelse & Trivsel':
+        return ('ORGANISATIONER', 'Digital Dannelse & Trivsel', 8)
 
     # INFLUENCERS
     if sec == 'Nøglepersoner (Influencers)':
@@ -344,7 +348,7 @@ GROUPS['MEDIER'] = OrderedDict()
 GROUPS['KOMMUNER'] = OrderedDict()
 
 # Section order within each group
-ORG_SECTIONS = ['Nationalt Politisk', 'Foreninger & KL', 'Fonde', 'Professionshøjskoler', 'IT-Myndigheder', 'EdTech & Digitale Aktører']
+ORG_SECTIONS = ['Nationalt Politisk', 'Foreninger & KL', 'Fonde', 'Professionshøjskoler', 'IT-Myndigheder', 'EdTech & Digitale Aktører', 'Elev & Civilsamfund', 'Digital Dannelse & Trivsel']
 INF_SECTIONS = ['Psykologer', 'Forskere', 'Erhvervsledere', 'Andre']
 MED_SECTIONS = ['Medier']
 
@@ -457,6 +461,14 @@ SECTION_DESCRIPTIONS = {
     'EdTech & Digitale Aktører': {
         'desc': 'Digitale platforme, klynger og nationale IT-myndigheder der kontrollerer adgang til og distribution i skolerne.',
         'saga': 'STIL-integration = adgang til 1 mio+ brugere. EdTech Denmark membership = 70+ netværkskontakter og markedsindsigt. EMU og CFU = distributionskanaler til alle lærere.'
+    },
+    'Elev & Civilsamfund': {
+        'desc': 'Elevorganisationer og NGOer der repræsenterer børns stemme, rettigheder og trivsel i uddannelsesdebatten.',
+        'saga': 'Civilsamfunds-endorsement styrker SAGAs troværdighed. Børns Vilkår og Red Barnet kan validere SAGA som trivselsstøtte — ikke skærm-tid. Afgørende for at vinde forældreopbakning.'
+    },
+    'Digital Dannelse & Trivsel': {
+        'desc': 'Rådgivende organer og ekspertcentre for digital dannelse, ansvarlig mediebrug og trivsel for børn og unge.',
+        'saga': 'Medierådet og Center for Digital Pædagogik kan co-signere SAGA som ansvarlig EdTech. Kritisk for at neutralisere skærmtids-narrativet og styrke legitimitet hos skeptiske forældre og kommuner.'
     },
     'Psykologer': {
         'desc': 'Psykologer der former narrativet om børns trivsel, mental sundhed og digital skærmtid.',
