@@ -125,9 +125,14 @@
           "stats": "~400 projekter/år, 1.500 ansøgninger/år"
         },
         {
-          "name": "LIFE Fonden (Novo Nordisk Fonden)",
+          "name": "Novo Nordisk Fonden",
           "website": "https://novonordiskfonden.dk/",
-          "stats": "10 mia DKK bevillinger (2024), naturfagsfokus"
+          "stats": "10+ mia DKK bevillinger (2024), Danmarks største erhvervsdrivende fond"
+        },
+        {
+          "name": "LIFE Fonden",
+          "website": "https://lifefonden.dk/",
+          "stats": "Naturfagsinitiativ under Novo Nordisk Fonden, PREPARE Programme 2025-2027"
         },
         {
           "name": "Villum Fonden",
@@ -1447,7 +1452,7 @@
     {
       "name": "Stefan Hermann",
       "role": "Direktør",
-      "organization": "LIFE Fonden (Novo Nordisk Fonden)",
+      "organization": "LIFE Fonden",
       "section": "Fonde",
       "tier": 1,
       "pipeline": "Influencer",
@@ -1470,7 +1475,7 @@
       "fokus": "Hermann leder LIFE Fondens ambition om at skabe et landsdækkende initiativ for naturvidenskabelig undervisning i folkeskolen. Han er filosofisk og systemteoretisk orienteret og er en hyppig og velartikuleret stemme i den brede uddannelsesdebat.",
       "saga_relevans": "Hermann kombinerer som ingen anden dyb operationel viden om professionshøjskolernes uddannelse af lærere og et direkte forvalteransvar for Novo Nordisk Fondens uddannelsesinvesteringer. LIFE Fonden og SAGA er komplementære: begge vil styrke lærernes evne til at differentiere undervisning. Et konkret samarbejde kan føre til pilotfinansiering og integration af SAGA i LIFE-skolernes netværk.",
       "linkedin_username": "stefan-hermann-506274b",
-      "canonical_org": "Novo Nordisk Fonden / LIFE Fonden",
+      "canonical_org": "LIFE Fonden",
       "new_group": "ORGANISATIONER",
       "new_section": "Fonde",
       "_sort_key": 3
@@ -1656,7 +1661,7 @@
       "fokus": "Stor dansk fond, sundhed, uddannelse, forskning. Supporterede LIFE.",
       "saga_relevans": "Novo Nordisk Fondens kolossale midler og fokus på videnskabelig uddannelse gør dem til potentiel strategisk partner. SAGA kan pitch adaptiv naturfagsundervisning gennem LIFE-koblingen.",
       "linkedin_username": null,
-      "canonical_org": "Novo Nordisk Fonden / LIFE Fonden",
+      "canonical_org": "Novo Nordisk Fonden",
       "new_group": "ORGANISATIONER",
       "new_section": "Fonde",
       "_sort_key": 3
@@ -3679,7 +3684,7 @@
     {
       "name": "Stefan Hermann",
       "role": "Direktør, Strateg",
-      "organization": "LIFE Fonden — RISING",
+      "organization": "LIFE Fonden",
       "section": "Nøglepersoner (Influencers)",
       "tier": 1,
       "pipeline": "Influencer",
@@ -3702,7 +3707,7 @@
       "fokus": "Hermann leder LIFE Fondens ambition om at skabe et landsdækkende initiativ for naturvidenskabelig undervisning i folkeskolen. Han er en filosofisk og systemteoretisk orienteret stemme i den brede uddannelsesdebat.",
       "saga_relevans": "Hermann kombinerer dyb viden om professionshøjskolernes uddannelse af lærere og direkte forvalteransvar for Novo Nordisk Fondens uddannelsesinvesteringer. Et samarbejde med LIFE Fonden om at integrere adaptiv AI i naturvidenskabelige forløb kan føre til pilotfinansiering og integration i LIFE-skolernes netværk.",
       "linkedin_username": "stefan-hermann-506274b",
-      "canonical_org": "Novo Nordisk Fonden / LIFE Fonden",
+      "canonical_org": "LIFE Fonden",
       "new_group": "INFLUENCERS",
       "new_section": "Forskere",
       "_sort_key": 1
@@ -5586,6 +5591,37 @@
       "new_group": "KOMMUNER",
       "new_section": "Hvidovre Kommune",
       "_sort_key": 1
+    },
+    {
+      "name": "Mads Krogsgaard Thomsen",
+      "role": "CEO",
+      "organization": "Novo Nordisk Fonden",
+      "section": "Fonde",
+      "tier": 1,
+      "pipeline": "Top-Down",
+      "relevance_score": 8,
+      "linkedin": "https://www.linkedin.com/in/mads-krogsgaard-thomsen/",
+      "focus": "Leder Novo Nordisk Fondens strategiske initiativer inden for sundhed, uddannelse og forskning",
+      "abm_strategy": "Strategisk partnerskab om SAGA og adaptiv læring i naturvidenskab",
+      "v1_profile": "",
+      "v1_saga_vinkel": "",
+      "v1_strategy": "",
+      "v2_ansvar": "",
+      "v2_holdning": "",
+      "v2_saga_relevans": "",
+      "v2_abm_strategy": "",
+      "v2_relevance_score": null,
+      "email": "",
+      "phone": "",
+      "contact_note": "",
+      "baggrund": "Mads Krogsgaard Thomsen er CEO for Novo Nordisk Fonden, Danmarks og verdens største erhvervsdrivende fond med over 10 mia DKK i årlige bevillinger. Fonden støtter bl.a. LIFE Fonden og har et bredt uddannelses- og forskningsfokus.",
+      "fokus": "Strategisk ledelse af Novo Nordisk Fondens investerings- og bevillingsstrategi med fokus på uddannelse, forskning og innovation.",
+      "saga_relevans": "Som CEO for Danmarks største fond er Mads Krogsgaard Thomsen en nøgleperson for at sikre strategisk og finansiel opbakning til SAGA på fondsplan.",
+      "linkedin_username": "mads-krogsgaard-thomsen",
+      "canonical_org": "Novo Nordisk Fonden",
+      "new_group": "ORGANISATIONER",
+      "new_section": "Fonde",
+      "_sort_key": 3
     }
   ],
   "meta": {
