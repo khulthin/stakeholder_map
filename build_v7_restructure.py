@@ -7,6 +7,117 @@ ALL existing data preserved — only reorganized
 import json, re
 from collections import OrderedDict
 
+# ══════════════════════════════════════════════
+# MUNICIPALITY PRIORITY DATA (from SAGA Opportunity Score CSV)
+# ══════════════════════════════════════════════
+MUNICIPALITY_DATA = {
+    'Slagelse Kommune': {'rank': 1, 'tier': 'Must wins', 'score': 8.16},
+    'Næstved Kommune': {'rank': 2, 'tier': 'Must wins', 'score': 7.83},
+    'Holbæk Kommune': {'rank': 3, 'tier': 'Must wins', 'score': 7.78},
+    'Høje-Taastrup Kommune': {'rank': 4, 'tier': 'Must wins', 'score': 7.64},
+    'Brøndby Kommune': {'rank': 5, 'tier': 'Must wins', 'score': 7.44},
+    'Kalundborg Kommune': {'rank': 6, 'tier': 'Must wins', 'score': 7.38},
+    'Gribskov Kommune': {'rank': 7, 'tier': 'Must wins', 'score': 7.22},
+    'Hvidovre Kommune': {'rank': 8, 'tier': 'Must wins', 'score': 7.2},
+    'Struer Kommune': {'rank': 9, 'tier': 'Must wins', 'score': 7.17},
+    'Halsnæs Kommune': {'rank': 10, 'tier': 'Must wins', 'score': 7.14},
+    'Faaborg-Midtfyn Kommune': {'rank': 11, 'tier': 'Must wins', 'score': 7.14},
+    'Haderslev Kommune': {'rank': 12, 'tier': 'Must wins', 'score': 7.12},
+    'Odsherred Kommune': {'rank': 13, 'tier': 'Must wins', 'score': 7.09},
+    'Aalborg Kommune': {'rank': 14, 'tier': 'Must wins', 'score': 6.93},
+    'Norddjurs Kommune': {'rank': 15, 'tier': 'Must wins', 'score': 6.9},
+    'Langeland Kommune': {'rank': 16, 'tier': 'Must wins', 'score': 6.9},
+    'Silkeborg Kommune': {'rank': 17, 'tier': 'Must wins', 'score': 6.9},
+    'Hillerød Kommune': {'rank': 18, 'tier': 'Must wins', 'score': 6.84},
+    'Stevns Kommune': {'rank': 19, 'tier': 'Must wins', 'score': 6.78},
+    'Vejle Kommune': {'rank': 20, 'tier': 'Must wins', 'score': 6.76},
+    'Holstebro Kommune': {'rank': 21, 'tier': 'Important', 'score': 6.75},
+    'Odense Kommune': {'rank': 22, 'tier': 'Important', 'score': 6.6},
+    'Aarhus Kommune': {'rank': 23, 'tier': 'Important', 'score': 6.44},
+    'København Kommune': {'rank': 24, 'tier': 'Important', 'score': 6.42},
+    'Herlev Kommune': {'rank': 25, 'tier': 'Important', 'score': 6.36},
+    'Kolding Kommune': {'rank': 26, 'tier': 'Important', 'score': 6.27},
+    'Frederikssund Kommune': {'rank': 27, 'tier': 'Important', 'score': 6.26},
+    'Guldborgsund Kommune': {'rank': 28, 'tier': 'Important', 'score': 6.24},
+    'Morsø Kommune': {'rank': 29, 'tier': 'Important', 'score': 6.22},
+    'Brønderslev Kommune': {'rank': 30, 'tier': 'Important', 'score': 6.21},
+    'Herning Kommune': {'rank': 31, 'tier': 'Important', 'score': 6.2},
+    'Furesø Kommune': {'rank': 32, 'tier': 'Important', 'score': 6.15},
+    'Middelfart Kommune': {'rank': 33, 'tier': 'Important', 'score': 6.05},
+    'Lolland Kommune': {'rank': 34, 'tier': 'Important', 'score': 5.88},
+    'Kerteminde Kommune': {'rank': 35, 'tier': 'Important', 'score': 5.85},
+    'Køge Kommune': {'rank': 36, 'tier': 'Important', 'score': 5.77},
+    'Aabenraa Kommune': {'rank': 37, 'tier': 'Important', 'score': 5.74},
+    'Helsingør Kommune': {'rank': 38, 'tier': 'Important', 'score': 5.72},
+    'Assens Kommune': {'rank': 39, 'tier': 'Important', 'score': 5.69},
+    'Frederiksberg Kommune': {'rank': 40, 'tier': 'Important', 'score': 5.68},
+    'Albertslund Kommune': {'rank': 41, 'tier': 'Important', 'score': 5.66},
+    'Randers Kommune': {'rank': 42, 'tier': 'Important', 'score': 5.64},
+    'Solrød Kommune': {'rank': 43, 'tier': 'Important', 'score': 5.63},
+    'Frederikshavn Kommune': {'rank': 44, 'tier': 'Important', 'score': 5.57},
+    'Fanø Kommune': {'rank': 45, 'tier': 'Important', 'score': 5.37},
+    'Læsø Kommune': {'rank': 46, 'tier': 'Important', 'score': 5.37},
+    'Samsø Kommune': {'rank': 47, 'tier': 'Important', 'score': 5.37},
+    'Ærø Kommune': {'rank': 48, 'tier': 'Important', 'score': 5.37},
+    'Faxe Kommune': {'rank': 49, 'tier': 'Important', 'score': 5.29},
+    'Rødovre Kommune': {'rank': 50, 'tier': 'Important', 'score': 5.24},
+    'Thisted Kommune': {'rank': 51, 'tier': 'Followers', 'score': 5.22},
+    'Lejre Kommune': {'rank': 52, 'tier': 'Followers', 'score': 5.2},
+    'Roskilde Kommune': {'rank': 53, 'tier': 'Followers', 'score': 5.19},
+    'Ringsted Kommune': {'rank': 54, 'tier': 'Followers', 'score': 5.16},
+    'Hedensted Kommune': {'rank': 55, 'tier': 'Followers', 'score': 5.16},
+    'Ringkøbing-Skjern Kommune': {'rank': 56, 'tier': 'Followers', 'score': 5.15},
+    'Rebild Kommune': {'rank': 57, 'tier': 'Followers', 'score': 5.09},
+    'Gladsaxe Kommune': {'rank': 58, 'tier': 'Followers', 'score': 5.06},
+    'Skive Kommune': {'rank': 59, 'tier': 'Followers', 'score': 5.04},
+    'Lyngby-Taarbæk Kommune': {'rank': 60, 'tier': 'Followers', 'score': 5.02},
+    'Sorø Kommune': {'rank': 61, 'tier': 'Followers', 'score': 5.0},
+    'Favrskov Kommune': {'rank': 62, 'tier': 'Followers', 'score': 4.9},
+    'Allerød Kommune': {'rank': 63, 'tier': 'Followers', 'score': 4.9},
+    'Gentofte Kommune': {'rank': 64, 'tier': 'Followers', 'score': 4.88},
+    'Horsens Kommune': {'rank': 65, 'tier': 'Followers', 'score': 4.85},
+    'Ballerup Kommune': {'rank': 66, 'tier': 'Followers', 'score': 4.8},
+    'Jammerbugt Kommune': {'rank': 67, 'tier': 'Followers', 'score': 4.74},
+    'Greve Kommune': {'rank': 68, 'tier': 'Followers', 'score': 4.72},
+    'Glostrup Kommune': {'rank': 69, 'tier': 'Followers', 'score': 4.71},
+    'Varde Kommune': {'rank': 70, 'tier': 'Followers', 'score': 4.7},
+    'Skanderborg Kommune': {'rank': 71, 'tier': 'Followers', 'score': 4.53},
+    'Sønderborg Kommune': {'rank': 72, 'tier': 'Followers', 'score': 4.5},
+    'Viborg Kommune': {'rank': 73, 'tier': 'Followers', 'score': 4.49},
+    'Esbjerg Kommune': {'rank': 74, 'tier': 'Followers', 'score': 4.44},
+    'Nyborg Kommune': {'rank': 75, 'tier': 'Followers', 'score': 4.33},
+    'Vesthimmerlands Kommune': {'rank': 76, 'tier': 'Followers', 'score': 4.3},
+    'Mariagerfjord Kommune': {'rank': 77, 'tier': 'Followers', 'score': 4.18},
+    'Lemvig Kommune': {'rank': 78, 'tier': 'Followers', 'score': 4.15},
+    'Rudersdal Kommune': {'rank': 79, 'tier': 'Followers', 'score': 4.13},
+    'Odder Kommune': {'rank': 80, 'tier': 'Followers', 'score': 4.03},
+    'Nordfyns Kommune': {'rank': 81, 'tier': 'Followers', 'score': 3.92},
+    'Egedal Kommune': {'rank': 82, 'tier': 'Followers', 'score': 3.92},
+    'Tønder Kommune': {'rank': 83, 'tier': 'Followers', 'score': 3.8},
+    'Fredensborg Kommune': {'rank': 84, 'tier': 'Followers', 'score': 3.66},
+    'Svendborg Kommune': {'rank': 85, 'tier': 'Followers', 'score': 3.65},
+    'Hjørring Kommune': {'rank': 86, 'tier': 'Followers', 'score': 3.62},
+    'Billund Kommune': {'rank': 87, 'tier': 'Followers', 'score': 3.61},
+    'Tårnby Kommune': {'rank': 88, 'tier': 'Followers', 'score': 3.53},
+    'Hørsholm Kommune': {'rank': 89, 'tier': 'Followers', 'score': 3.44},
+    'Fredericia Kommune': {'rank': 90, 'tier': 'Followers', 'score': 3.36},
+    'Ishøj Kommune': {'rank': 91, 'tier': 'Followers', 'score': 3.33},
+    'Ikast-Brande Kommune': {'rank': 92, 'tier': 'Followers', 'score': 3.1},
+    'Vejen Kommune': {'rank': 93, 'tier': 'Followers', 'score': 3.07},
+    'Vordingborg Kommune': {'rank': 94, 'tier': 'Followers', 'score': 2.85},
+    'Dragør Kommune': {'rank': 95, 'tier': 'Followers', 'score': 2.68},
+    'Bornholm Kommune': {'rank': 96, 'tier': 'Followers', 'score': 2.55},
+    'Vallensbæk Kommune': {'rank': 97, 'tier': 'Followers', 'score': 2.48},
+    'Syddjurs Kommune': {'rank': 98, 'tier': 'Followers', 'score': 2.37},
+}
+
+# Normalize canonical_org names to match MUNICIPALITY_DATA keys
+CANONICAL_NORMALIZE = {
+    'Københavns Kommune': 'København Kommune',
+}
+
+TIER_CLASS = {'Must wins': 'mw', 'Important': 'imp', 'Followers': 'fol'}
+
 with open('master_stakeholders.json') as f:
     data = json.load(f)
 
@@ -36,6 +147,7 @@ def assign_new_group(s):
         return ('ORGANISATIONER', 'Nationalt Politisk', 0)
     if sec in ('Kommunalt', 'Kommunale Skolechefer'):
         canon = s.get('canonical_org', '')
+        canon = CANONICAL_NORMALIZE.get(canon, canon)
         # Only real municipalities (canonical_org ends with "Kommune") go to KOMMUNER
         if canon.endswith('Kommune'):
             return ('KOMMUNER', canon, 1)
@@ -172,8 +284,16 @@ for s in layout_master:
         GROUPS[g][sec] = []
     GROUPS[g][sec].append(s)
 
-# Sort municipalities alphabetically
-GROUPS['KOMMUNER'] = OrderedDict(sorted(GROUPS['KOMMUNER'].items()))
+# Add all 98 municipalities from CSV (even those with no stakeholders yet)
+for mname in MUNICIPALITY_DATA:
+    if mname not in GROUPS['KOMMUNER']:
+        GROUPS['KOMMUNER'][mname] = []
+
+# Sort municipalities by priority_rank
+GROUPS['KOMMUNER'] = OrderedDict(
+    sorted(GROUPS['KOMMUNER'].items(),
+           key=lambda x: MUNICIPALITY_DATA.get(x[0], {}).get('rank', 999))
+)
 
 # For Foreninger & KL: also move the KL org-level stakeholder
 # (the one named "KL (Kommunernes Landsforening)" currently in Kommunalt)
@@ -356,6 +476,16 @@ body{{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
 .sb a{{display:flex;align-items:center;justify-content:space-between;color:#777;text-decoration:none;padding:5px 10px;border-radius:6px;font-size:12px;transition:all .15s;margin-bottom:1px}}
 .sb a:hover{{background:rgba(255,255,255,.06);color:#ccc}}.sb a.active{{background:rgba(232,145,58,.12);color:#fff;font-weight:500}}
 .nc{{font-size:10px;color:#555;background:rgba(255,255,255,.05);padding:1px 5px;border-radius:6px}}
+/* Municipality rank badges (nav) */
+.rnk{{font-size:9px;font-weight:700;padding:1px 5px;border-radius:4px;margin-right:4px;flex-shrink:0;letter-spacing:.2px}}
+.rnk.mw{{background:#dc2626;color:#fff}}.rnk.imp{{background:#d97706;color:#fff}}.rnk.fol{{background:#444;color:#888}}
+/* Tier badge (section header) */
+.tier-bdg{{font-size:10px;font-weight:600;padding:2px 8px;border-radius:8px;margin-left:8px;vertical-align:middle}}
+.tier-bdg.mw{{background:#fef2f2;color:#dc2626;border:1px solid #fca5a5}}
+.tier-bdg.imp{{background:#fffbeb;color:#d97706;border:1px solid #fde68a}}
+.tier-bdg.fol{{background:#f4f4f5;color:#71717a;border:1px solid #d4d4d8}}
+/* Empty municipality placeholder */
+.kom-empty{{padding:16px;color:#aaa;font-size:12px;font-style:italic;border:1px dashed #e0ddd8;border-radius:8px;text-align:center}}
 /* Stats */
 .ss{{margin-top:14px;padding-top:14px;border-top:1px solid #2a2a2a}}
 .sr{{display:flex;justify-content:space-between;padding:2px 10px;font-size:10px}}.sr .l{{color:#555}}.sr .v{{color:#777;font-weight:600}}
@@ -480,7 +610,16 @@ for gname, (glabel, gcount) in group_labels.items():
     H.append(f'<div class="ng">\n<div class="ng-h">{glabel} <span class="ng-c">{gcount}</span></div>\n')
     for sec in group_sections[gname]:
         people = GROUPS[gname].get(sec, [])
-        if people:
+        if gname == 'KOMMUNER':
+            mdata = MUNICIPALITY_DATA.get(sec, {})
+            rank = mdata.get('rank', '')
+            tier = mdata.get('tier', '')
+            tc = TIER_CLASS.get(tier, 'fol')
+            badge = f'<span class="rnk {tc}">#{rank}</span>' if rank else ''
+            display = sec.replace(' Kommune', '')  # strip suffix for brevity
+            cnt = f'<span class="nc">{len(people)}</span>' if people else ''
+            H.append(f'<a href="#{mkid(gname+"-"+sec)}" onclick="go(\'{mkid(gname+"-"+sec)}\');return false">{badge}{esc(display)} {cnt}</a>\n')
+        elif people:
             H.append(f'<a href="#{mkid(gname+"-"+sec)}" onclick="go(\'{mkid(gname+"-"+sec)}\');return false">{esc(sec)} <span class="nc">{len(people)}</span></a>\n')
     H.append('</div>\n')
 
@@ -644,14 +783,28 @@ for gname in ['ORGANISATIONER', 'INFLUENCERS', 'MEDIER', 'KOMMUNER']:
     sections = group_sections[gname]
     for sec in sections:
         people = GROUPS[gname].get(sec, [])
-        if not people:
+        # For non-KOMMUNER: skip empty sections
+        if not people and gname != 'KOMMUNER':
             continue
 
         sec_id = mkid(gname + "-" + sec)
         sd = SECTION_DESCRIPTIONS.get(sec, {})
 
         H.append(f'<div class="sec" id="{sec_id}" data-group="{gname}">\n')
-        H.append(f'<div class="sh"><div class="st">{esc(sec)}</div><div class="sc_">{len(people)} stakeholders</div></div>\n')
+
+        if gname == 'KOMMUNER':
+            mdata = MUNICIPALITY_DATA.get(sec, {})
+            rank = mdata.get('rank', '')
+            tier = mdata.get('tier', '')
+            score = mdata.get('score', '')
+            tc = TIER_CLASS.get(tier, 'fol')
+            display = sec.replace(' Kommune', '')
+            badge = f'<span class="tier-bdg {tc}">{tier} #{rank}</span>' if rank else ''
+            score_str = f' &middot; Score {score}/10' if score else ''
+            H.append(f'<div class="sh"><div class="st">{esc(display)}{badge}</div>'
+                     f'<div class="sc_">{len(people)} stakeholders{score_str}</div></div>\n')
+        else:
+            H.append(f'<div class="sh"><div class="st">{esc(sec)}</div><div class="sc_">{len(people)} stakeholders</div></div>\n')
 
         if sd:
             H.append(f'<div class="sec-desc"><div class="od">{esc(sd.get("desc",""))}</div>')
@@ -665,9 +818,11 @@ for gname in ['ORGANISATIONER', 'INFLUENCERS', 'MEDIER', 'KOMMUNER']:
             for canon_org, org_people in org_groups.items():
                 H.append(render_org_group(canon_org, org_people, sec))
         elif gname == 'KOMMUNER':
-            # Section IS the municipality — render cards directly
-            for p in people:
-                H.append(render_person_card(p))
+            if people:
+                for p in people:
+                    H.append(render_person_card(p))
+            else:
+                H.append('<div class="kom-empty">Ingen kontakter endnu</div>\n')
         else:
             # For INFLUENCERS and MEDIER: render cards directly (or grouped by media outlet)
             if gname == 'MEDIER':
