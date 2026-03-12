@@ -6363,6 +6363,20 @@
       "new_group": "ORGANISATIONER",
       "new_section": "Professionshøjskoler",
       "_sort_key": 4
+    },
+    {
+      "name": "Michael Stahl",
+      "role": "Head of Nordics",
+      "organization": "LEGO Fonden",
+      "section": "Fonde",
+      "tier": 2,
+      "pipeline": "Top-Down",
+      "relevance_score": 8.0,
+      "linkedin": "https://www.linkedin.com/in/micsta/",
+      "canonical_org": "LEGO Fonden",
+      "new_group": "ORGANISATIONER",
+      "new_section": "Fonde",
+      "_sort_key": 3
     }
   ],
   "meta": {
