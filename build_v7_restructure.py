@@ -615,8 +615,7 @@ for gname, (glabel, gcount) in group_labels.items():
             rank = mdata.get('rank', '')
             display = sec.replace(' Kommune', '')  # strip suffix for brevity
             cnt = f'<span class="nc">{len(people)}</span>' if people else ''
-            prefix = f'#{rank} ' if rank else ''
-            H.append(f'<a href="#{mkid(gname+"-"+sec)}" onclick="go(\'{mkid(gname+"-"+sec)}\');return false">{esc(prefix + display)} {cnt}</a>\n')
+            H.append(f'<a href="#{mkid(gname+"-"+sec)}" onclick="go(\'{mkid(gname+"-"+sec)}\');return false">{esc(display)} {cnt}</a>\n')
         elif people:
             H.append(f'<a href="#{mkid(gname+"-"+sec)}" onclick="go(\'{mkid(gname+"-"+sec)}\');return false">{esc(sec)} <span class="nc">{len(people)}</span></a>\n')
     H.append('</div>\n')
@@ -727,17 +726,20 @@ def render_org_group(canon_org, people, section_name):
     display_name = canon_org.replace(' Kommune', '') if section_name == 'KOMMUNER' else canon_org
     out.append(f'<div class="og-name">{esc(display_name)}</div>\n')
     meta = []
+    kom_badge = ''
     if section_name == 'KOMMUNER':
         mdata = MUNICIPALITY_DATA.get(canon_org, {})
         rank = mdata.get('rank', '')
         tier = mdata.get('tier', '')
         if rank:
             tc = TIER_CLASS.get(tier, 'fol')
-            meta.append(f'<span class="tier-bdg {tc}">{tier} &middot; #{rank}</span>')
+            kom_badge = f'<span class="tier-bdg {tc}">{tier}</span>'
     if stats: meta.append(esc(stats))
     meta.append(f'{len(people)} {"person" if len(people)==1 else "personer"}')
     out.append(f'<div class="og-meta">{"&middot;".join(meta)}</div>\n')
     out.append('</div></div>\n<div class="og-right">\n')
+    if kom_badge:
+        out.append(f'{kom_badge}\n')
     if website:
         out.append(f'<a class="og-link" href="{website}" target="_blank" onclick="event.stopPropagation()">Hjemmeside &#8599;</a>\n')
     out.append(f'<span class="og-cnt">{len(people)}</span>\n<span class="og-cv">&#9660;</span>\n</div></div>\n')
