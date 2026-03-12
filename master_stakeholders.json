@@ -765,7 +765,7 @@
     {
       "name": "Martin Damm",
       "role": "Formand KL, Borgmester",
-      "organization": "Kalundborg Kommune (V)",
+      "organization": "KL (Kommunernes Landsforening)",
       "section": "Kommunalt",
       "tier": 3,
       "pipeline": "Top-Down",
@@ -788,10 +788,10 @@
       "fokus": "Damm er i sin afsluttende KL-formandsperiode optaget af at videregive en stærk organisation til efterfølgeren. I Kalundborg Kommune har folkeskolen været én af hans store personlige udfordringer med faglige resultater, og han har proklameret at folkeskolen er i fremgang.",
       "saga_relevans": "Kalundborg Kommunes folkeskoleudfordringer med faglige resultater gør det til en potentiel pilotkommune for SAGA, og et succesfuldt pilotprojekt under den afgående KL-formands øjne har stor symbolsk og kommunikativ værdi. Et møde med fokus på, hvordan SAGA kan accelerere Kalundborgs folkeskoleresultater, er den rette tilgang.",
       "linkedin_username": "martin-damm-453727b2",
-      "canonical_org": "Kommuner (øvrige)",
+      "canonical_org": "KL (Kommunernes Landsforening)",
       "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 1
+      "new_section": "Foreninger & KL",
+      "_sort_key": 2
     },
     {
       "name": "Christina Krzyrosiak Hansen",
@@ -820,8 +820,8 @@
       "saga_relevans": "Christina Krzyrosiak Hansen har en dobbeltrolle, der er exceptionelt værdifuld for SAGA: som borgmester i en frihedsforsøgskommune kan hun igangsætte et pilotprojekt med særlige frihedsgrader til afprøvning af adaptiv læring, og som KL-udvalgsformand kan hun løfte SAGA's resultater til national dagsorden for alle 98 kommuner. Et samarbejde kunne starte med en Holbæk-pilot og eskalere til KL-briefing og kommunal spredningsstrategi.",
       "linkedin_username": "christina-krzyrosiak-hansen-a3840014a",
       "canonical_org": "Holbæk Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Holbæk Kommune",
       "_sort_key": 1
     },
     {
@@ -851,8 +851,8 @@
       "saga_relevans": "Rahbæk Juel er fra marts 2026 den vigtigste enkeltperson for kommunal folkeskolestrategi i Danmark. Et pilotsamarbejde i Odense Kommune der demonstrerer SAGAs effekter på læringsresultater og inklusion, kan give grundlag for at SAGA anbefales nationalt fra KL's formandskab. Et tidligt møde nu, mens han forbereder KL-formandskabet, er strategisk optimalt.",
       "linkedin_username": "peter-rahbæk-juel-1a181a87",
       "canonical_org": "Odense Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Odense Kommune",
       "_sort_key": 1
     },
     {
@@ -882,8 +882,8 @@
       "saga_relevans": "Som den øverste administrative leder for Københavns skolevæsen kontrollerer Tobias Stax rammerne for digitale platform-valg og piloter i verdens 10. største folkeskolekommune (målt på antal institutioner). Et samarbejde med BUF Kbh om en SAGA-pilot på 3-5 skoler ville skabe en signalstærk reference. Hans akademiske baggrund i sociologi og ledelse skaber troværdighed til en evidensbaseret tilgang.",
       "linkedin_username": "tobiasstax",
       "canonical_org": "København Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "København Kommune",
       "_sort_key": 1
     },
     {
@@ -913,8 +913,8 @@
       "saga_relevans": "Som fagdirektør er Gitte Lohse den person, der konkret kan tage stilling til om SAGA skal pilottestes på Københavns skoler. Hendes kombination af pædagogisk baggrund og Harvard-uddannelse gør hende til en stærk evaluator af SAGA's evidensbase. Et samarbejde kunne inkludere workshops med Kobenhavnske skoleleder-netværk og et afprøvningsforløb på udvalgte skoler med særlige inklusionsbehov.",
       "linkedin_username": "gitte-lohse-aaa35847",
       "canonical_org": "København Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "København Kommune",
       "_sort_key": 1
     },
     {
@@ -944,8 +944,8 @@
       "saga_relevans": "Som politisk borgmester for Børne- og Ungdomsudvalget i Kbh er Næsager den person, der kan give et officielt kommunalt buy-in til en SAGA-pilot og løfte sagen politisk. En vellykket pilot i Kbh vil med Næsagers opbakning kunne præsenteres som et politisk flagskibsprojekt og accelerere kommunal adoption nationalt.",
       "linkedin_username": "jakob-næsager-029baa6",
       "canonical_org": "København Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "København Kommune",
       "_sort_key": 1
     },
     {
@@ -975,15 +975,15 @@
       "saga_relevans": "Thomas Medomes kombination af SF-værdier (fokus på alle børn, inklusion, reduceret ulighed) og hans lærer-baggrund gør ham til en oplagt SAGA-allieret. Han forstår lærernes hverdag fra begge sider og kan initiere en Aarhus-pilot koblet med DPU-forskning, der vil generere evidens og faglig legitimitet for SAGA på nationalt plan.",
       "linkedin_username": "thomas-medom-606a91b9",
       "canonical_org": "Aarhus Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Aarhus Kommune",
       "_sort_key": 1
     },
     {
       "name": "Lars Sloth",
-      "role": "Formand BKF (Skolechef)",
+      "role": "Skolechef / Formand BKF",
       "organization": "Thisted Kommune",
-      "section": "Kommunalt",
+      "section": "Kommunale Skolechefer",
       "tier": 3,
       "pipeline": "Top-Down",
       "relevance_score": 6.5,
@@ -1005,164 +1005,9 @@
       "fokus": "Som BKF-formand sætter Lars Sloth den professionelle dagsorden for kommunale børne- og kulturchefer på tværs af alle 98 kommuner. Han arbejder for et helhedssyn på børns udfordringer og insisterer på, at faglighed og børneperspektiv ikke er modsætninger. Han er pragmatisk og evidensorienteret i sin tilgang til nye initiativer.",
       "saga_relevans": "Lars Sloths formandskab i BKF giver ham direkte adgang til alle kommunale børne- og kulturchefer i Danmark. Hans endorsement af SAGA som evidensbaseret differentieringsværktøj ville have stor gennemslagskraft på tværs af kommuner. Et pilotsamarbejde i Thisted Kommune kan desuden illustrere, at SAGA fungerer i mindre kommuner med færre ressourcer — et vigtigt signal i national udrulning.",
       "linkedin_username": "lars-sloth-659ab0b",
-      "canonical_org": "Kommuner (øvrige)",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 1
-    },
-    {
-      "name": "Forvaltning - Pædagogiske Konsulenter",
-      "role": "Kommunale pædagogiske rådgivere",
-      "organization": "Kommuner DK-dækkende",
-      "section": "Kommunalt",
-      "tier": 2,
-      "pipeline": "Influencer",
-      "relevance_score": 8,
-      "linkedin": "",
-      "focus": "Vejleder skolepædagogik & praksis. Nøgle-influencers for lærere.",
-      "abm_strategy": "Del SAGA-pædagogik & forskning. Deres godkendelse giver troværdighed",
-      "v1_profile": "Professionelle pædagoger i kommunal administration vejleder skolepædagogik & praksis.",
-      "v1_saga_vinkel": "",
-      "v1_strategy": "Tier 2Influencers & LegitimeringPositionér pædagogiske konsulenter som nøgle-influencers. Del SAGA-pædagogik & forskning. Deres godkendelse af bottom-up lærere-adoption giver troværdighed til senere kommunal beslutningstagning.",
-      "v2_ansvar": "",
-      "v2_holdning": "",
-      "v2_saga_relevans": "",
-      "v2_abm_strategy": "",
-      "v2_relevance_score": null,
-      "email": "",
-      "phone": "",
-      "contact_note": "",
-      "baggrund": "Kommunale pædagogiske konsulenter rådgiver skoler om undervisningsmetoder, didaktik og implementering af nye tiltag. De fungerer som mellemled mellem kommunal forvaltning og den enkelte skole og er ofte first-movers for nye pædagogiske tilgange.",
-      "fokus": "Vejleder skolepædagogik & praksis. Nøgle-influencers for lærere.",
-      "saga_relevans": "Pædagogiske konsulenter er nøgle-gatekeepers for nye undervisningsmetoder i skoler. Deres anbefaling af SAGA giver troværdighed hos lærere. Del SAGA-pædagogik og forskning — deres godkendelse er guld værd.",
-      "linkedin_username": null,
-      "canonical_org": "Kommuner (øvrige)",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 1
-    },
-    {
-      "name": "Rådmænd",
-      "role": "Kommunale rådsmedlemmer",
-      "organization": "Kommuner DK-dækkende",
-      "section": "Kommunalt",
-      "tier": 3,
-      "pipeline": "Top-Down",
-      "relevance_score": 5.5,
-      "linkedin": "",
-      "focus": "Budget & policy-beslutninger om uddannelse",
-      "abm_strategy": "Identify progressive kommuner med SAGA-adoptanter, byg cost-benefit cases",
-      "v1_profile": "Kommunale rådsmedlemmer ansvarlige for budget & policy-beslutninger om uddannelse.",
-      "v1_saga_vinkel": "",
-      "v1_strategy": "Tier 3Top-Down PipelineIdentify progressive kommuner hvor lærere er tidlige SAGA-adoptanter. Brug grassroots momentum til at påvirke råd-beslutninger. Byg cases med cost-benefit af kommunal SAGA-adoption.",
-      "v2_ansvar": "",
-      "v2_holdning": "",
-      "v2_saga_relevans": "",
-      "v2_abm_strategy": "",
-      "v2_relevance_score": null,
-      "email": "",
-      "phone": "",
-      "contact_note": "",
-      "baggrund": "Kommunale rådmænd med ansvar for børn og unge styrer budgetter og politiske prioriteringer for skoler i deres kommuner. De træffer de endelige politiske beslutninger om investeringer i skole-IT og digitale læringsplatforme.",
-      "fokus": "Budget & policy-beslutninger om uddannelse",
-      "saga_relevans": "Rådmænd kontrollerer budgetterne. SAGA's business case skal vise cost-benefit: reduceret specialundervisningsbehov, bedre inklusion, lavere frafald. Progressive kommuner med SAGA-adoptanter kan inspirere naboer.",
-      "linkedin_username": null,
-      "canonical_org": "Kommuner (øvrige)",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 1
-    },
-    {
-      "name": "IT-chef (Kommune)",
-      "role": "Kommunal IT-ledelse",
-      "organization": "Kommuner DK-dækkende",
-      "section": "Kommunalt",
-      "tier": 3,
-      "pipeline": "Top-Down",
-      "relevance_score": 6,
-      "linkedin": "",
-      "focus": "Systemintegrering, sikkerhed, teknisk infrastruktur for skoler",
-      "abm_strategy": "Byg relationer på tekniske specs, GDPR-compliance, integration-krav",
-      "v1_profile": "IT-ledelse der sikrer systemintegrering, sikkerhed og teknisk infrastruktur for skoler.",
-      "v1_saga_vinkel": "",
-      "v1_strategy": "Tier 3Top-Down PipelineByg relationer nu på tekniske specs, GDPR-compliance, integration-krav. Når kommunal adoption overvejes, er IT-chef's godkendelse kritisk. Demonstrér SAGA's tekniske parathed.",
-      "v2_ansvar": "",
-      "v2_holdning": "",
-      "v2_saga_relevans": "",
-      "v2_abm_strategy": "",
-      "v2_relevance_score": null,
-      "email": "",
-      "phone": "",
-      "contact_note": "",
-      "baggrund": "Kommunale IT-chefer er ansvarlige for skolernes tekniske infrastruktur, sikkerhed og systemintegration. De vurderer nye IT-systemer ud fra GDPR-compliance, UNI-Login-integration, drift-stabilitet og total cost of ownership.",
-      "fokus": "Systemintegrering, sikkerhed, teknisk infrastruktur for skoler",
-      "saga_relevans": "IT-chefer er den tekniske gatekeeper. SAGA skal demonstrere: GDPR-compliance, UNI-Login SSO, lav drift-kompleksitet, skalerbarhed og integration med eksisterende systemer (AULA, Meebook, læringsplatforme).",
-      "linkedin_username": null,
-      "canonical_org": "Kommuner (øvrige)",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 1
-    },
-    {
-      "name": "Kommunalbestyrelse",
-      "role": "Kommunale bestyrelser",
-      "organization": "Kommuner DK-dækkende",
-      "section": "Kommunalt",
-      "tier": 3,
-      "pipeline": "Top-Down",
-      "relevance_score": 5.5,
-      "linkedin": "",
-      "focus": "Autoritet over uddannelsespolitik & ressourceallokering",
-      "abm_strategy": "Byg kendskab gennem kommunale netværk & sammenslutninger",
-      "v1_profile": "Kommunalbestyrelse med autoritet over uddannelsespolitik & ressourceallokering.",
-      "v1_saga_vinkel": "",
-      "v1_strategy": "Tier 3Top-Down PipelineByg kendskab nu gennem kommunale netværk & sammenslutninger. Skab narrativer omkring bottom-up lærere-succes. Når kommunal adoption foreslås, er bestyrelse-medlemmer klar og forberedt.",
-      "v2_ansvar": "",
-      "v2_holdning": "",
-      "v2_saga_relevans": "",
-      "v2_abm_strategy": "",
-      "v2_relevance_score": null,
-      "email": "",
-      "phone": "",
-      "contact_note": "",
-      "baggrund": "Kommunalbestyrelser er den øverste politiske myndighed i kommunerne med autoritet over uddannelsespolitik og ressourceallokering. De godkender skolernes budgetter og strategiske retning for digitalisering.",
-      "fokus": "Autoritet over uddannelsespolitik & ressourceallokering",
-      "saga_relevans": "Kommunalbestyrelserne sætter de overordnede rammer. SAGA's impact-data fra pilotkommuner kan overbevise bestyrelser om at investere. Kendskab opbygges bedst gennem kommunale netværk og sammenslutninger.",
-      "linkedin_username": null,
-      "canonical_org": "Kommuner (øvrige)",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 1
-    },
-    {
-      "name": "Større Kommuner (KBH, Aarhus, Odense)",
-      "role": "Storby-kommuner",
-      "organization": "De 3 største kommuner",
-      "section": "Kommunalt",
-      "tier": 3,
-      "pipeline": "Top-Down",
-      "relevance_score": 7,
-      "linkedin": "",
-      "focus": "Pilot-kommuner med størst skala og synlighed",
-      "abm_strategy": "Pilot-samarbejder med storbykommuner, skalerings-demonstratorer",
-      "v1_profile": "",
-      "v1_saga_vinkel": "",
-      "v1_strategy": "",
-      "v2_ansvar": "",
-      "v2_holdning": "",
-      "v2_saga_relevans": "",
-      "v2_abm_strategy": "",
-      "v2_relevance_score": null,
-      "email": "",
-      "phone": "",
-      "contact_note": "",
-      "baggrund": "Danmarks tre største kommuner: København (74 folkeskoler, 1.3M indb.), Aarhus (47 skoler), Odense (37 skoler). Tilsammen repræsenterer de den størst mulige skala og synlighed for pilot-implementeringer.",
-      "fokus": "Pilot-kommuner med størst skala og synlighed",
-      "saga_relevans": "Succesfulde piloter i storbykommunerne giver SAGA national synlighed og skaleringsdata. København, Aarhus og Odense er de mest effektive demonstrationskommuner for at overbevise resten af landets 95 kommuner.",
-      "linkedin_username": null,
-      "canonical_org": "Kommuner (øvrige)",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "canonical_org": "Thisted Kommune",
+      "new_group": "KOMMUNER",
+      "new_section": "Thisted Kommune",
       "_sort_key": 1
     },
     {
@@ -3300,8 +3145,8 @@
       "saga_relevans": "Rikke Reiters brede netværk fra 16 år i Helsingør og Gladsaxe, kombineret med hendes nye rolle i Brøndby, giver hende en tværkommunal rækkevidde. I Brøndby — en kommune med social diversitet og et stærkt behov for differentierede løsninger — er hun en oplagt tidlig partner. Hendes erfaringer fra progressive kommuner gør hende til en troværdig ambassadør.",
       "linkedin_username": "rikke-reiter",
       "canonical_org": "Gladsaxe Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Gladsaxe Kommune",
       "_sort_key": 1
     },
     {
@@ -3332,8 +3177,8 @@
       "linkedin_username": null,
       "canonical_org": "BKF (Børne- og Kulturchefforeningen)",
       "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 1
+      "new_section": "Foreninger & KL",
+      "_sort_key": 2
     },
     {
       "name": "Nicolai Kragh Petersen",
@@ -3362,8 +3207,8 @@
       "saga_relevans": "Nicolai Kragh Petersen er relevant for SAGA som den administrative beslutningstager, der godkender budgetter til nye IT-systemer i Odenses skoler. Han er ikke den pædagogiske champion, men den ressource- og kontraktmæssige gatekeeper. Primær SAGA-kontakt i Odense er Nikolaj Juul Jørgensen (skolechef); Nicolai Kragh Petersen er den sekundære administrative sponsor.",
       "linkedin_username": "nicolai-kragh-petersen-040b796",
       "canonical_org": "Odense Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Odense Kommune",
       "_sort_key": 1
     },
     {
@@ -3394,8 +3239,8 @@
       "linkedin_username": null,
       "canonical_org": "Lærere & undervisere",
       "new_group": "INFLUENCERS",
-      "new_section": "Skolepersoner",
-      "_sort_key": 2
+      "new_section": "Andre",
+      "_sort_key": 3
     },
     {
       "name": "Læringsvejledere",
@@ -3425,8 +3270,8 @@
       "linkedin_username": null,
       "canonical_org": "Lærere & undervisere",
       "new_group": "INFLUENCERS",
-      "new_section": "Skolepersoner",
-      "_sort_key": 2
+      "new_section": "Andre",
+      "_sort_key": 3
     },
     {
       "name": "Speciallærere & Inklusionsfokuserede Lærere",
@@ -3456,8 +3301,8 @@
       "linkedin_username": null,
       "canonical_org": "Lærere & undervisere",
       "new_group": "INFLUENCERS",
-      "new_section": "Skolepersoner",
-      "_sort_key": 2
+      "new_section": "Andre",
+      "_sort_key": 3
     },
     {
       "name": "Skoleledere",
@@ -3487,8 +3332,8 @@
       "linkedin_username": null,
       "canonical_org": "Lærere & undervisere",
       "new_group": "INFLUENCERS",
-      "new_section": "Skolepersoner",
-      "_sort_key": 2
+      "new_section": "Andre",
+      "_sort_key": 3
     },
     {
       "name": "Elever",
@@ -3518,8 +3363,8 @@
       "linkedin_username": null,
       "canonical_org": "Elever & forældre",
       "new_group": "INFLUENCERS",
-      "new_section": "Skolepersoner",
-      "_sort_key": 2
+      "new_section": "Andre",
+      "_sort_key": 3
     },
     {
       "name": "Forældre",
@@ -3549,8 +3394,8 @@
       "linkedin_username": null,
       "canonical_org": "Elever & forældre",
       "new_group": "INFLUENCERS",
-      "new_section": "Skolepersoner",
-      "_sort_key": 2
+      "new_section": "Andre",
+      "_sort_key": 3
     },
     {
       "name": "Danske Skoleelever",
@@ -3580,8 +3425,8 @@
       "linkedin_username": null,
       "canonical_org": "Elever & forældre",
       "new_group": "INFLUENCERS",
-      "new_section": "Skolepersoner",
-      "_sort_key": 2
+      "new_section": "Andre",
+      "_sort_key": 3
     },
     {
       "name": "Danske Gymnasieelevers Sammenslutning",
@@ -3611,8 +3456,8 @@
       "linkedin_username": null,
       "canonical_org": "Elever & forældre",
       "new_group": "INFLUENCERS",
-      "new_section": "Skolepersoner",
-      "_sort_key": 2
+      "new_section": "Andre",
+      "_sort_key": 3
     },
     {
       "name": "Dea Seidenfaden",
@@ -3921,8 +3766,8 @@
       "linkedin_username": "gordon-ørskov-madsen-bb800ba6",
       "canonical_org": "Danmarks Lærerforening (DLF)",
       "new_group": "INFLUENCERS",
-      "new_section": "Skolepersoner",
-      "_sort_key": 2
+      "new_section": "Andre",
+      "_sort_key": 3
     },
     {
       "name": "Dorte Andreas",
@@ -3952,8 +3797,8 @@
       "linkedin_username": "dorte-andreas",
       "canonical_org": "Skolelederforeningen",
       "new_group": "INFLUENCERS",
-      "new_section": "Skolepersoner",
-      "_sort_key": 2
+      "new_section": "Andre",
+      "_sort_key": 3
     },
     {
       "name": "Lene Tanggaard",
@@ -4137,8 +3982,8 @@
       "fokus": "Tanja Nyborg fokuserer på børn og unges trivsel, tidlig indsats og inklusion i Aarhus. Hun prioriterer samarbejde med DPU/Aarhus Universitet om evidensbaseret skoleudvikling og er optaget af, at digital transformation sker med pædagogisk forankring og ikke blot teknologisk drevet. Hun er aktiv i at opbygge partnerskaber mellem kommunen og uddannelsesinstitutioner.",
       "saga_relevans": "Aarhus er en af Danmarks mest prioriterede kommuner for SAGA-pilot, og Tanja Nyborg er den administrative nøgleperson, der kan åbne døren. Hendes fokus på DPU-samarbejde og evidensbaseret skoleudvikling matcher SAGA's tilgang. Et samarbejde kunne se ud som en Aarhus-pilot koblet med DPU-evaluering, der skaber en stærk videnskabelig validering.",
       "canonical_org": "Aarhus Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Aarhus Kommune",
       "_sort_key": 1
     },
     {
@@ -4168,8 +4013,8 @@
       "fokus": "Nikolaj Juul Jørgensen fokuserer på at hæve kvaliteten i Odenses folkeskoler med fokus på differentieret undervisning, digital læring og inklusion. Han er optaget af at udnytte Odenses tætte samarbejde med UCL og af at gøre Odense til en foregangskommune for skoleinnovation på landsplan.",
       "saga_relevans": "Odenses strategiske position som KL-formandens hjemby gør Nikolaj Juul Jørgensen til en særlig vigtig SAGA-partner. En vellykket pilot i Odense vil have direkte synlighed for den kommende KL-formand og kan banes for national spredning via KL. Et samarbejde med UCL som medevaluator vil styrke evidensbasen og give adgang til lærerstuderende som ambassadører.",
       "canonical_org": "Odense Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Odense Kommune",
       "_sort_key": 1
     },
     {
@@ -4199,8 +4044,8 @@
       "fokus": "Kristian Toft fokuserer på skolekvalitet, digitalisering og at udnytte Aalborgs position som universitetsby med AAU. Han er optaget af at gøre folkeskolen i Aalborg til et laboratorium for innovation i undervisning, og han prioriterer inklusion og differentieret læring i kommunens skolestrategi.",
       "saga_relevans": "Aalborg er strategisk vigtig for SAGA på grund af nærheden til AAU's lærings- og uddannelsesforskere, som kan levere uafhængig evaluering af en SAGA-pilot. Kristian Toft er den direkte beslutningstagere for indkøb og piloter på tværs af kommunens skoler. Et pilotprojekt i Aalborg koblet med AAU-forskning vil give SAGA stærk nordisk akademisk validering.",
       "canonical_org": "Aalborg Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Aalborg Kommune",
       "_sort_key": 1
     },
     {
@@ -4230,8 +4075,8 @@
       "fokus": "Jakob Ryttersgaard fokuserer på sammenhæng i børns liv fra dagtilbud til ungdomsuddannelse, digitalisering, inklusion og nordjysk uddannelsespolitik. Han er optaget af at skabe skalerbare løsninger til en kommune i vækst og af AAU-samarbejde som motor for evidensbaseret skoleudvikling.",
       "saga_relevans": "Som direktør for hele forvaltningen er Ryttersgaard den strategiske beslutningstager, der kan godkende en SAGA-aftale på tværs af alle Aalborgs folkeskoler. Hans fokus på nordjysk uddannelsesinnovation og AAU-samarbejde matcher SAGA's ambition om at koble adaptiv læring med forskning. Kontakt til ham åbner for en hel forvaltningsaftale frem for en enkelt skole-pilot.",
       "canonical_org": "Aalborg Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Aalborg Kommune",
       "_sort_key": 1
     },
     {
@@ -4261,8 +4106,8 @@
       "fokus": "Ulla Riisbjerg Thomsen fokuserer på digital innovation i undervisningen, erhvervssamarbejde og fremtidens kompetencer i folkeskolen. Hun er optaget af at gøre Vejle til en foregangskommune for moderne læringsformer og af at koble folkeskolens undervisning med konkrete erhvervsbehov i regionen.",
       "saga_relevans": "Vejle Kommune er et oplagt mål for en tidlig SAGA-pilot takket være dens innovationsvenlige kultur og åbenhed over for nye undervisningsformer. Ulla Riisbjerg Thomsens fokus på digital innovation betyder, at hun er receptiv for et SAGA-samarbejde om differentieret læring og støtte til elever med særlige behov i en erhvervsorienteret kontekst.",
       "canonical_org": "Vejle Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Vejle Kommune",
       "_sort_key": 1
     },
     {
@@ -4292,8 +4137,8 @@
       "fokus": "Morten Mærsk Schmidt fokuserer på skolekvalitet, læringsmiljøer og digitalisering med særlig opmærksomhed på Vestjyllands erhvervs- og arbejdskraftmæssige virkelighed. Han er optaget af at styrke inklusion og særlig støtte til elever, der kæmper med faglige udfordringer i en by med stor social diversitet.",
       "saga_relevans": "Esbjerg er Danmarks femte største by og strategisk vigtig for SAGA's vestjyske ekspansion. En pilot i Esbjerg med Morten Mærsk Schmidt som driver kan skabe præcedens for adoption i hele Vestjylland. Esbjerg-kommunens fokus på erhvervslivet giver desuden mulighed for at koble SAGA med Esbjerg Kommunes erhvervs- og uddannelsespartnerskaber.",
       "canonical_org": "Esbjerg Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Esbjerg Kommune",
       "_sort_key": 1
     },
     {
@@ -4323,8 +4168,8 @@
       "fokus": "I sin tid som Frederiksberg-skolechef fokuserede Gorm Bagger Andersen på skolekvalitet, differentieret undervisning og digital innovation i en ressourcestærk kontekst. I Glostrup arbejder han nu med at modernisere kommunens institutioner og skoler bredt. Han er optaget af evidensbaseret ledelse og sammenhæng på tværs af kommunale indsatser for børn og unge.",
       "saga_relevans": "Gorm Bagger Andersens erfaring fra Frederiksberg — en af landets mest ressourcestærke skoleforvaltninger — giver ham troværdighed som tidlig adopter og evaluator af premium EdTech-løsninger. I Glostrup kan han nu afprøve SAGA i en mere gennemsnitlig kommunal kontekst, hvilket vil styrke løsningens generaliserbarhed.",
       "canonical_org": "Frederiksberg Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Frederiksberg Kommune",
       "_sort_key": 1
     },
     {
@@ -4354,8 +4199,8 @@
       "fokus": "Morten Lyhne fokuserer på skoledrift, inklusion, digitalisering og samarbejde med øvrige østjyske kommuner om uddannelsesudvikling. Han er optaget af at finde løsninger, der virker i en mellemstor dansk by med real social og faglig diversitet, og af at sikre, at alle elever — inklusiv dem med ordblindhed, ADHD og autisme — får den støtte, de har brug for.",
       "saga_relevans": "Randers er en vigtig reference for at demonstrere, at SAGA skalerer ud over de store byer. En SAGA-pilot her vil dokumentere effekten i en by med reelle inklusions- og differentieringsudfordringer, som er identisk med langt de fleste af landets kommuner. Morten Lyhnes fokus på inklusion matcher SAGA's kerneværdi.",
       "canonical_org": "Randers Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Randers Kommune",
       "_sort_key": 1
     },
     {
@@ -4385,8 +4230,8 @@
       "fokus": "Hasse Valdemar Mortensen fokuserer på skolekvalitet, digitalisering og det særlige samspil med VIA UC om læreruddannelse og kompetenceudvikling. Han er optaget af moderne læringsmiljøer og af at Viborg fortsat udnytter VIA-samarbejdet til at være tidlig adopter af nye pædagogiske metoder og teknologier.",
       "saga_relevans": "Vibrog Kommunes tætte samarbejde med VIA UC giver en unik mulighed for at koble en SAGA-pilot med VIA's læreruddannelse: SAGA som et praktikredskab for lærerstuderende kombineret med kommunal skoledrift. Hasse Valdemar Mortensens interesse i VIA-samarbejde giver en naturlig indgang til en dobbeltstrategi med uddannelsesinstitution og kommune.",
       "canonical_org": "Viborg Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Viborg Kommune",
       "_sort_key": 1
     },
     {
@@ -4416,8 +4261,8 @@
       "fokus": "Som ny skolechef sætter Rasmus Andreassen sin agenda med skoleinnovation, digitalisering og moderne læringsmiljøer som centrale pejlemærker. Han er optaget af at gøre Silkeborg til en attraktiv skolekommune i vækst og af at udvikle et skolevæsen, der møder elever med forskellige behov — herunder dem med indlæringsvanskeligheder.",
       "saga_relevans": "Ny skolechef i en ambitiøs vækstkommune er en af de bedste forudsætninger for tidlig adoption af innovative løsninger. Rasmus Andreassen er i en fase, hvor han aktivt søger at sætte sin egen dagsorden — SAGA kan positioneres som hans første markante digitaliseringsinitiativ og give Silkeborg en SAGA-profil som foregangskommune.",
       "canonical_org": "Silkeborg Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Silkeborg Kommune",
       "_sort_key": 1
     },
     {
@@ -4447,8 +4292,8 @@
       "fokus": "Karen Albrechtsen fokuserer på skoledrift, designtænkning som metode i undervisningsudvikling og digitalisering i Trekantsområdet. Hun er optaget af samarbejdet med Designskolen Kolding og af at bringe design thinking ind i folkeskolernes læringskultur. Hun prioriterer inklusion og differentieret undervisning i en voksende og diversificeret skolepopulation.",
       "saga_relevans": "Kolding Kommunes stærke designkultur via Designskolen Kolding giver en unik synergi med SAGA's brugerfokuserede og intuitive designprincipper. Karen Albrechtsen kan positionere SAGA som et redskab for designtænkning i praksis — differentieret læring skabt med brugercentreret tilgang. Et samarbejde med Designskolen Kolding og Kolding Kommune ville give SAGA en unik profil.",
       "canonical_org": "Kolding Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Kolding Kommune",
       "_sort_key": 1
     },
     {
@@ -4478,8 +4323,8 @@
       "fokus": "Henrik Kallestrup fokuserer på at skalere Horsens' skolevæsen i takt med kommunens vækst, på digitalisering og på inklusion af en stadig mere divers elevgruppe. Han er optaget af at sikre, at folkeskolerne i Horsens kan håndtere den øgede elevtilgang uden at gå på kompromis med differentiering og individuel støtte.",
       "saga_relevans": "Horsens er et ideelt marked for SAGA: en vækstkommune med stigende diversitet, som netop kræver skalerbare differentieringsløsninger. Henrik Kallestrup har konkret behov for redskaber, der kan støtte lærere i klasser med stigende antal elever med ordblindhed, ADHD og autisme. SAGA's AI-drevne differentiering adresserer direkte Horsens' vækstudfordring.",
       "canonical_org": "Horsens Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Horsens Kommune",
       "_sort_key": 1
     },
     {
@@ -4509,8 +4354,8 @@
       "fokus": "Lene Aagaard Brandt fokuserer på skolekvalitet, vestjysk erhvervssamarbejde og praksisnær undervisning med digitalisering som løftestang. Hun er optaget af at styrke folkeskolens kobling til Hernings erhvervsliv og af at sikre, at alle elever — inklusiv dem med indlæringsvanskeligheder — kan deltage aktivt i uddannelsesforløbet og nå frem til erhvervslivet.",
       "saga_relevans": "Herning Kommunes stærke erhvervs- og praksisorientering er en oplagt kontekst for SAGA's differentierede læringsplatform, der netop støtter elever med ordblindhed og andre udfordringer, der ellers risikerer at falde fra i erhvervsuddannelsessystemet. Lene Aagaard Brandt kan koble SAGA-piloten med Hernings stærke erhvervs-track og gøre det til en overgang-til-erhvervsliv-case.",
       "canonical_org": "Herning Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Herning Kommune",
       "_sort_key": 1
     },
     {
@@ -4540,8 +4385,8 @@
       "fokus": "Kathrine Ersted Sørensen fokuserer på skoledrift, inklusion og digitalisering i Sydsjællands vigtigste by. Hun er optaget af at styrke indsatsen over for elever med særlige behov, af at samarbejde med Professionshøjskolen Absalon og af at Næstved kan spille en positiv nøglerolle i sjællandsk uddannelsesudvikling.",
       "saga_relevans": "Næstved Kommunes udfordringer med faglig ulighed og inklusion er præcis det problem, SAGA er designet til at løse. Kathrine Ersted Sørensens fokus på at løfte elever med særlige behov giver et stærkt match med SAGA's kernefunktion. En SAGA-pilot her vil demonstrere effekten i en udfordret by og give SAGA en vigtig socialt-inkluderende reference.",
       "canonical_org": "Næstved Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Næstved Kommune",
       "_sort_key": 1
     },
     {
@@ -4571,8 +4416,8 @@
       "fokus": "Torben Møller Nielsen fokuserer på sammenhæng i børns liv fra dagtilbud til folkeskole, digitalisering og indsatser for udsatte børn og unge. Han er optaget af at koordinere skole- og dagtilbudsområdet som en sammenhængende enhed og af at udnytte samarbejdet med Absalon til kompetenceudvikling og innovation.",
       "saga_relevans": "Slagelses helhedsorienterede tilgang til børns liv fra dagtilbud til folkeskole er en oplagt ramme for SAGA som tidlig læringsoptimering. Torben Møller Nielsens samarbejde med Absalon giver mulighed for at koble SAGA-piloten med professionshøjskolens forskningsmiljø og lærerstuderende, der kan fungere som SAGA-ambassadører.",
       "canonical_org": "Slagelse Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Slagelse Kommune",
       "_sort_key": 1
     },
     {
@@ -4602,8 +4447,8 @@
       "fokus": "Skoleinnovation, grænseregion, dansk-tysk samarbejde, digitalisering",
       "saga_relevans": "Nytiltrådt skolechef = åben for nye partnerskaber. Sønderborg som grænseregion har unik profil.",
       "canonical_org": "Sønderborg Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Sønderborg Kommune",
       "_sort_key": 1
     },
     {
@@ -4633,8 +4478,8 @@
       "fokus": "Susanne Poulsen fokuserer på skolekvalitet, differentieret undervisning, digital innovation og stærk forældreinddragelse i Gentoftes folkeskoler. Hun er optaget af at bibeholde Gentoftes position som uddannelsesfyrtårn og af at sikre, at elever med særlige behov — herunder ordblinde og elever med ADHD — får optimal støtte.",
       "saga_relevans": "Gentofte er en premium-reference for SAGA: en ressourcestærk kommune, der adopterer SAGA, sender signalet at løsningen er ambitiøs og kvalitetssikret. Susanne Poulsens fokus på differentieret undervisning matcher SAGA præcist, og Gentoftes forældre-engagement vil producere entusiastiske case-stories. Gentofte som referencekunde åbner døre til andre Nordsjællands-kommuner.",
       "canonical_org": "Gentofte Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Gentofte Kommune",
       "_sort_key": 1
     },
     {
@@ -4664,8 +4509,8 @@
       "fokus": "Helhedstilgang til børns liv, skoledrift, sport og fritid, digitalisering",
       "saga_relevans": "Helsingør har helhedstilgang til børns udvikling. SAGA som del af samlet lærings- og trivselsplatform.",
       "canonical_org": "Helsingør Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Helsingør Kommune",
       "_sort_key": 1
     },
     {
@@ -4695,8 +4540,8 @@
       "fokus": "Skolekvalitet, STEM-samarbejde med DTU, differentieret undervisning, digitalisering",
       "saga_relevans": "Lyngby-Taarbæk har DTU og stærk akademisk kultur. SAGA's STEM-potentiale er oplagt her.",
       "canonical_org": "Lyngby-Taarbæk Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Lyngby-Taarbæk Kommune",
       "_sort_key": 1
     },
     {
@@ -4726,8 +4571,8 @@
       "fokus": "Anne Sofie Stevnhoved fokuserer på at videreudvikle Gladsaxes 'Fremtidens Skole'-program, styrke inklusion og differentieret undervisning og implementere digitale løsninger, der understøtter lærernes pædagogiske arbejde. Som ny skolechef er hun i en aktiv afsøgningsfase for de rigtige strategiske initiativer.",
       "saga_relevans": "Gladsaxes 'Fremtidens Skole'-program er en udmærket institutionel ramme for en SAGA-pilot: der er allerede en innovationsinfrastruktur på plads. Anne Sofie Stevnhoved som ny skolechef er motiveret for at sætte sit eget aftryk med markante initiativer — SAGA som 'første store digitaliseringsinitiativ' matcher dette behov perfekt.",
       "canonical_org": "Gladsaxe Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Gladsaxe Kommune",
       "_sort_key": 1
     },
     {
@@ -4757,8 +4602,8 @@
       "fokus": "Hanne Frederiksen fokuserer på skoledrift, digitalisering og nordsjællandsk samarbejde om uddannelsesudvikling. Hun er optaget af at styrke folkeskolernes kapacitet til differentieret undervisning og af at gøre Hillerød til en attraktiv skolekommune i Region Hovedstaden.",
       "saga_relevans": "Hillerød er et godt udgangspunkt for SAGA's nordsjællandske ekspansion og kan fungere som springbræt til de mange ressourcestærke kommuner i regionen. Hanne Frederiksens interesse i digitalisering og differentieret undervisning giver et naturligt match med SAGA's tilbud. En pilot i Hillerød kan sprede sig til nabokommuner som Fredensborg, Gribskov og Allerød.",
       "canonical_org": "Hillerød Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Hillerød Kommune",
       "_sort_key": 1
     },
     {
@@ -4788,8 +4633,8 @@
       "fokus": "René Rasmussen Sjøholm fokuserer på skoledrift, inklusion og digitalisering i Vestegns-konteksten. Han er optaget af at Hvidovres folkeskoler servicerer en socialt divers elevgruppe, og at digitale løsninger bidrager til at reducere ulighed i læringsudbytte.",
       "saga_relevans": "Hvidovre er en vigtig vestegnskommune, hvor SAGA's inklusionskraft kan demonstreres i en urban kontekst med social diversitet. En pilot her kan sprede sig til de øvrige Vestegns-kommuner (Brøndby, Rødovre, Albertslund), der deler mange af de samme inklusions- og differentieringsudfordringer.",
       "canonical_org": "Hvidovre Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Hvidovre Kommune",
       "_sort_key": 1
     },
     {
@@ -4819,8 +4664,8 @@
       "fokus": "Gitte Scheuer Andersen fokuserer på skole, klub og ungdomsskole som sammenhængende indsats for børn og unge i Frederikshavn. Hun er optaget af nordjysk uddannelsessamarbejde, digitalisering og af at fastholde unge i uddannelse i en region med befolkningsnedgang og erhvervsmæssig transformation.",
       "saga_relevans": "Frederikshavn er en vigtig nordjysk adgang til AAU-samarbejde og et eksempel på en kystkommune med behov for differentierede løsninger til elever med særlige behov. Gitte Scheuer Andersens brede ungdomsperspektiv betyder, at SAGA kan pitches som en løsning for hele ungdomsforløbet — fra folkeskole til fastholdelse i ungdomsuddannelse.",
       "canonical_org": "Frederikshavn Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Frederikshavn Kommune",
       "_sort_key": 1
     },
     {
@@ -4850,8 +4695,8 @@
       "fokus": "Rasmus Højlund fokuserer på skoledrift, vestjysk erhvervssamarbejde, digitalisering og VIA UC-samarbejde om lærerkompetencer. Han er optaget af at Holstebro kan tilbyde et attraktivt skolemiljø til en voksende og divers elevpopulation og af at finde løsninger, der støtter lærerne i en komplex inklusionsindsats.",
       "saga_relevans": "Holstebro er en oplagt vestjysk SAGA-pilot, der — ligesom Viborg — kan kobles med VIA UC's læreruddannelse. Rasmus Højlunds fokus på VIA-samarbejde og vestjysk erhvervsambitioner giver et naturligt match. En Holstebro-pilot kombineret med VIA-evaluering ville være en stærk vestjysk reference for SAGA.",
       "canonical_org": "Holstebro Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Holstebro Kommune",
       "_sort_key": 1
     },
     {
@@ -4881,8 +4726,8 @@
       "fokus": "Flemming Ellingsen fokuserer på mangfoldighed, inklusion og digitalisering i en af Storkøbenhavns mest udfordrende skolekommuner. Han er optaget af at sikre, at alle elever — uanset baggrund, sprog eller særlige behov — kan tilgå en differentieret og støttende undervisning. Han arbejder med tværfaglige indsatser, der kombinerer skole, socialt arbejde og fritidstilbud.",
       "saga_relevans": "Høje-Taastrup repræsenterer præcis den kommunale virkelighed, som SAGA er designet til: høj diversitet, mange elever med ordblindhed, sprogbarrierer og ADHD i samme klasse. Flemming Ellingsens inklusionsfokus matcher SAGA's kerneydelse direkte. En pilot her ville give SAGA en stærk, socialt inkluderende reference fra en af landets mest udfordrende skoleudfordringer.",
       "canonical_org": "Høje-Taastrup Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Høje-Taastrup Kommune",
       "_sort_key": 1
     },
     {
@@ -4912,8 +4757,8 @@
       "fokus": "Per Kensø fokuserer på digital innovation, tech-samarbejde og fremtidsorienteret skoleudvikling i Ballerup. Han er optaget af at udnytte Ballerups unikke position som tech-hub til at gøre kommunens skoler til frontrunners i digitaliseret undervisning. Han arbejder med erhvervssamarbejder om digital kompetenceudvikling allerede fra folkeskolealderen.",
       "saga_relevans": "Ballerup er den ideelle EdTech-pilotkommune i Danmark: tech-DNA i erhvervslivet, Microsoft som nabo og en kommunal leder med åbenhed for digitale løsninger. Per Kensøs naturlige alignment med digital innovation gør ham til en potentielt stærk SAGA-partner og ambassadør i tech-branchen. Microsoft Ballerup som sekundær partner er en strategisk bonus.",
       "canonical_org": "Ballerup Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
+      "new_group": "KOMMUNER",
+      "new_section": "Ballerup Kommune",
       "_sort_key": 1
     },
     {
@@ -5158,9 +5003,9 @@
       "saga_relevans": "Katrine Jørgensen er den mest direkte indgang til et pilotprogram for SAGA i Københavns Kommunes skoler, da hun som centerchef har beslutningskompetence for digitale løsninger og læringsplatforme. Et samarbejde kan initieres via en proof-of-concept på udvalgte BUF-skoler, hvor SAGA integreres med eksisterende Microsoft 365-infrastruktur. Som ansvarlig for den administrative digitalisering i Danmarks største skoleforvaltning er hun en potentiel champion for skalering af adaptiv AI-læring.",
       "abm_strategy": "Positioner SAGA som et naturligt næste skridt i BUFs digitale læringsinfrastruktur ved at tilbyde et konkret pilotforslag med målbare læringsudbytte på 2-3 udvalgte Københavnerskoler.",
       "canonical_org": "Københavns Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "København Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Signe Hvid Maribo",
@@ -5178,9 +5023,9 @@
       "saga_relevans": "Signe Hvid Maribo er en oplagt strategisk partner for SAGA, da hun kombinerer skoledigitalisering med AI-analyse og datadriven ledelse. Et samarbejde kan formes som et pilotprojekt koblet til AarhusAI-platformen, hvor SAGA testes som adaptiv læringsassistent på udvalgte grundskoler. Hendes ekspertise i IT-arkitektur og systemudbud gør hende til en potentiel indkøbschampion.",
       "abm_strategy": "Engager Signe Hvid Maribo via Aarhus Kommunes AI-indsats ved at positionere SAGA som et data-understøttet læringsværktøj der kan integreres i det eksisterende Google-skolemiljø og måles på læringsudbytte.",
       "canonical_org": "Aarhus Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Aarhus Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Sander Hye Ehmsen",
@@ -5198,9 +5043,9 @@
       "saga_relevans": "Sander Hye Ehmsen er relevant for SAGA som en beslutningsdygtig leder med stærk teknisk profil og kendskab til både forretningssiden og kodeimplementering. Et proof-of-concept for SAGA kan kobles til eksisterende fagsystemlandskab, og hans datadrevne tilgang gør ham til en oplagt partner for at validere SAGAs læringseffekter med konkrete KPI'er.",
       "abm_strategy": "Tilgå Sander Hye Ehmsen med en teknisk datadrevet præsentation af SAGA, der viser integrationsmulighederne med Odenses IT-arkitektur og dokumenterer målbare læringsgevinster som kan rapporteres i forvaltningens BI-system.",
       "canonical_org": "Odense Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Odense Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Charles Skovhus Lydersen",
@@ -5218,9 +5063,9 @@
       "saga_relevans": "Charles Skovhus Lydersen er den operative leder af IT og Digitalisering direkte under skole- og dagtilbudsområdet i Aalborg. Et pilotprojekt med SAGA kan kobles til Aalborgs Google Workspace-skolemiljø og præsenteres som en adaptiv læringsassistent, der styrker folkeskolernes undervisningsdifferentiering.",
       "abm_strategy": "Kontakt Charles Skovhus Lydersen med et konkret pilotforslag der bygger oven på Aalborgs eksisterende Google Workspace for Education-infrastruktur og demonstrerer, hvordan adaptiv AI-læring kan reducere behovet for specialpædagogisk differentiering.",
       "canonical_org": "Aalborg Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Aalborg Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Nicolaj Fessel",
@@ -5238,9 +5083,9 @@
       "saga_relevans": "Nicolaj Fessel er den mest direkte faglige kontakt for SAGA i Frederiksberg, da han personligt styrer IT-strategien, læringsplatformene og netværket af IT-vejledere på kommunens skoler. Et pilotprogram med SAGA kan præsenteres som en udvidelse af det eksisterende Office 365/Aula-læringsmiljø, og hans netværk af IT-vejledere udgør en ideel første implementeringsgruppe.",
       "abm_strategy": "Inddrag Nicolaj Fessel som faglig pilotkoordinator ved at præsentere SAGA som et supplement til Aula og Office 365 på udvalgte Frederiksberg-skoler, med fokus på at IT-vejledere kan bruge SAGA som et konkret pædagogisk differentieringsværktøj.",
       "canonical_org": "Frederiksberg Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Frederiksberg Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Jacob Elholm",
@@ -5258,9 +5103,9 @@
       "saga_relevans": "Jacob Elholm er den mest direkte indgang til et pilotprojekt for SAGA i Esbjerg, da han har teknisk adgang, pædagogiske netværk og erfaring med at implementere læringsplatforme i stor skala. Et samarbejde kan starte med en proof-of-concept på 2-3 skoler, efterfulgt af fælles evaluering med lærere og skoleledere. Han kan desuden fungere som faglig sparringspartner ift. integration med Google Workspace og Aula.",
       "abm_strategy": "Kontakt Jacob Elholm med fokus på SAGA som konkret supplement til de eksisterende digitale læremidler på Chromebook-platformen – og tilbyd et gratis pilotforløb på én skole med dokumenterede læringsresultater.",
       "canonical_org": "Esbjerg Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Esbjerg Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Bent Højlund",
@@ -5278,9 +5123,9 @@
       "saga_relevans": "Bent Højlund er den rette strategiske kontakt til at åbne Randers Kommunes skoler for SAGA. Som øverste IT-chef med ansvar for 10.000 folkeskoleelever kan han godkende og facilitere en pilotaftale. En indgang bør fokusere på SAGA som supplement til den eksisterende Chromebook-platform med dokumenterede læringseffekter.",
       "abm_strategy": "Præsenter SAGA som et evidensbaseret adaptivt læringsværktøj der direkte understøtter Randers Kommunes Chromebook-infrastruktur for 10.000 folkeskoleelever – og foreslå en konkret pilotaftale med måling af læringsresultater.",
       "canonical_org": "Randers Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Randers Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Mark Møller Olsen",
@@ -5298,9 +5143,9 @@
       "saga_relevans": "Mark Møller Olsen er den primære strategiske indgang til et digitalt samarbejde i Kolding Kommune. Da hans rolle handler om digital forretningsudvikling på tværs af forvaltninger, kan han facilitere en introduktion til Børne- og Uddannelsesforvaltningen og positionere SAGA som et prioriteret pilotprojekt inden for kommunens digitaliseringsdagsorden.",
       "abm_strategy": "Positioner SAGA som et konkret bidrag til Kolding Kommunes nyoprettede digitaliseringsstrategi ved at tilbyde et samarbejde om at teste AI-drevet adaptiv læring på udvalgte folkeskoler.",
       "canonical_org": "Kolding Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Kolding Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Brian Slot",
@@ -5318,9 +5163,9 @@
       "saga_relevans": "Brian Slot er den rette topindgang til Vejle Kommunes skoledigitalisering. Hans aktive interesse for AI-teknologi gør ham receptiv for SAGA som et næste skridt inden for AI i skolen. En invitation til et fagligt oplæg i KL's AI-netværk om SAGAs erfaringer kan være en naturlig åbner.",
       "abm_strategy": "Inviter Brian Slot til et sparringsmøde om AI i folkeskolen med udgangspunkt i hans AI-agenda og præsenter SAGA som den naturlige forlængelse af kommunens digitale skoleambitioner.",
       "canonical_org": "Vejle Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Vejle Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Ole Hersted Hansen",
@@ -5338,9 +5183,9 @@
       "saga_relevans": "Ole Hersted Hansen er beslutningstageren der kan åbne Horsens Kommunes skoler for SAGA. Med ansvar for IT-servicen til 9.000 folkeskoleelever og 1.800 lærere er han den rette person til at præsentere en SAGA-pilotaftale. En indgang bør fremhæve SAGAs evne til at arbejde inden for GDPR- og informationssikkerhedsrammer.",
       "abm_strategy": "Kontakt Ole Hersted Hansen med en konkret pilotproposal for SAGA i Horsens, med fokus på GDPR-compliance og målbar effekt på de 9.000 elevers læringsudbytte.",
       "canonical_org": "Horsens Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Horsens Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Thomas Lerche",
@@ -5358,9 +5203,9 @@
       "saga_relevans": "Thomas Lerche er i en ny stilling og ønsker at markere sit fodaftryk med konkrete projekter. SAGA kan præsenteres som et pilotprojekt for adaptiv AI-læring på udvalgte skoler, der dokumenterer læringseffekt og lærerempowerment — et argument der passer direkte ind i kommunens nyformulerede digitaliseringsstrategi.",
       "abm_strategy": "Kontakt Thomas Lerche med et konkret pilotforslag til 2-3 Roskilde-skoler, framed som proof-of-concept for kommunens nye digitaliseringsstrategi med målbare læringsresultater.",
       "canonical_org": "Roskilde Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Roskilde Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Leif Skibsted Jakobsen",
@@ -5378,9 +5223,9 @@
       "saga_relevans": "Herning er en proaktiv midtjysk kommune med Meebook-erfaring og veldokumenteret IT-strategi for skolerne. Leif Skibsted Jakobsen kan have interesse i at afslutte sin karriere med et markant digitaliseringsprojekt. Et pilotprojekt på 2-3 Herning-skoler, der dokumenterer synergier med Meebook, er en oplagt tilgang.",
       "abm_strategy": "Kontakt Skibsted Jakobsen nu med et konkret pilotforslag der positionerer SAGA som det adaptive AI-lag oven på Hernings eksisterende Meebook-infrastruktur.",
       "canonical_org": "Herning Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Herning Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Henrik Willumsen",
@@ -5398,9 +5243,9 @@
       "saga_relevans": "Silkeborg er en af Danmarks større kommuner med et modent digitalt skolemiljø og en aktiv AI-dagsorden. Et SAGA-pilotprojekt kan introduceres som det næste naturlige skridt i kommunens AI-strategi for skolerne, tilpasset Meebook-platformen. Kontakt bør inkludere en invitation til Forum for IT og Digitalisering som beslutningsforum.",
       "abm_strategy": "Tilbyd SAGA som det adaptive AI-supplement til Silkeborgs eksisterende Meebook-infrastruktur, med et konkret pilotforslag til Forum for IT og Digitalisering.",
       "canonical_org": "Silkeborg Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Silkeborg Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Lars Borg",
@@ -5418,9 +5263,9 @@
       "saga_relevans": "Lars Borg er Danmarks mest profilerede kommunale digitaliseringschef med en unik kombination af pædagogisk baggrund og AI-ekspertise. Hans interesse for AI som beslutningsstøtte gør ham til en ideel pilotpartner og ambassadør for SAGA. Et møde om SAGAs adaptive læringsmotor som et 'NKGPT for skolen' vil resonnere direkte med hans faglige værdier.",
       "abm_strategy": "Invitér Lars Borg til en bilateral snak om SAGA som et adaptivt AI-læringsredskab med samme arkitekturprincipper som NKGPT — lokal datakontrol, lærerstøtte og dokumenteret effekt.",
       "canonical_org": "Næstved Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Næstved Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Lasse Wamsler",
@@ -5438,9 +5283,9 @@
       "saga_relevans": "Lasse Wamsler leder en afdeling med direkte ansvar for skolernes IT og er aktivt engageret i AI-implementering. Et SAGA-pilotprojekt vil matche hans nuværende dagsorden om AI i kommunal praksis og kan introduceres som en udvidelse af skolernes eksisterende digitale infrastruktur.",
       "abm_strategy": "Kontakt Lasse Wamsler med et targeted forslag om SAGA som kommunens næste AI-projekt på skoleområdet, med reference til hans egne udtalte ambitioner om AI-implementering og hans afdelings eksplicitte ansvar for skolernes IT.",
       "canonical_org": "Hvidovre Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Hvidovre Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Anders Peder Brahm",
@@ -5458,9 +5303,9 @@
       "saga_relevans": "Anders Brahm er en oplagt indgang til SAGA som strategisk partner i Gentofte, idet han allerede har erfaring med at rulle en fælles AI-platform ud til kommunens medarbejdere og skoler. Et konkret pilotprogram på én eller to folkeskoler i Gentofte ville kunne positionere kommunen som foregangseksempel. Hans netværk i Dansk IT's offentlige udvalg kan åbne døre til andre kommuner.",
       "abm_strategy": "Tilgå Anders Brahm med et konkret proof-of-concept-forslag til ét pilotskole-projekt i Gentofte, der bygger videre på kommunens eksisterende AI-platformserfaring og dokumenterer læringseffekt med målbare data.",
       "canonical_org": "Gentofte Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Gentofte Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Rune Dziadecki Gråbæk",
@@ -5478,9 +5323,9 @@
       "saga_relevans": "Rune Gråbæks baggrund som pædagogisk digitaliseringskonsulent og hans Master i IKT og Læring gør ham til en ekstraordinært relevant samtalepartner for SAGA. Han forstår både den pædagogiske og tekniske dimension af adaptive læringsplatforme. SAGA bør positionere sig som en naturlig forlængelse af Gladsaxes eksisterende AI-indsats, med et pilotprogram der kombinerer adaptive læringsalgoritmer med kommunens etablerede AI-infrastruktur.",
       "abm_strategy": "Præsenter SAGA som den pædagogisk-digitale løsning der forbinder Gladsaxes AI-ambitioner med konkrete læringsresultater i folkeskolen, og udnyt Rune Gråbæks pædagogiske baggrund som indgang til en faglig dialog frem for en ren teknisk demo.",
       "canonical_org": "Gladsaxe Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Gladsaxe Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Mikkel Ørtoft Arp",
@@ -5498,9 +5343,9 @@
       "saga_relevans": "Mikkel Arp er den centrale IT-beslutningstager i Lyngby-Taarbæk, og enhver digital læringsplatform der skal rulles ud på kommunens skoler vil kræve hans godkendelse og tekniske integration. En dialog bør fokusere på SAGAs kompatibilitet med eksisterende VDI-infrastruktur, lav IT-driftsomkostning og sikkerhedsmæssig robusthed. Introduktion via KITA-netværket øger troværdighed markant.",
       "abm_strategy": "Tilgå Mikkel Arp med en teknisk proof-of-concept der dokumenterer SAGAs lave driftsbelastning og kompatibilitet med Lyngby-Taarbæks VDI-setup, og knyt kontakten til hans engagement i KITA-netværket.",
       "canonical_org": "Lyngby-Taarbæk Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Lyngby-Taarbæk Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Henrik Dons Christensen",
@@ -5518,9 +5363,9 @@
       "saga_relevans": "Henrik Dons Christensens center ejer IT-infrastrukturen som SAGA ville køre på i Helsingør. Det anbefales at supplere kontakten med en dialog med centerchefen for Dagtilbud, Skoler, Idræt og Fritid (Michael Mariendal), som sidder på det pædagogiske ansvar, for at sikre dobbelt forankring af et eventuelt pilotprojekt.",
       "abm_strategy": "Kombiner outreach til Henrik Dons Christensen (teknisk ejer af IT-infrastrukturen) og Michael Mariendal (pædagogisk ansvarlig for skoler) i Helsingør for at sikre både teknisk og faglig opbakning til et SAGA-pilotprojekt.",
       "canonical_org": "Helsingør Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Helsingør Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Ivan Harreskov",
@@ -5538,9 +5383,9 @@
       "saga_relevans": "Ivan Harreskov er oplagt indgang til SAGA i Køge, idet han allerede arbejder med AI som strategisk løftestang og er vant til at evaluere komplekse digitale løsninger. Hans eget fokus på skoleelevers afhængighed af digital infrastruktur åbner naturligt for en præsentation af SAGA som AI-drevet læringsværktøj der kan skaleres inden for Køges eksisterende digitaliseringsstrategi.",
       "abm_strategy": "Brug Ivan Harreskovs eksisterende AI-agenda og OS2-netværk som indgang, og præsenter SAGA som det pædagogiske AI-lag der kompletterer Køges tekniske digitaliseringsinvesteringer med konkrete læringsresultater i folkeskolen.",
       "canonical_org": "Køge Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Køge Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Sti Andreas Garde",
@@ -5558,9 +5403,9 @@
       "saga_relevans": "Sti Andreas Garde er central beslutningstager for, hvilke pædagogiske udviklingsredskaber der rulles ud til Københavns 74 folkeskoler. SAGA kan introduceres som adaptivt AI-læringsværktøj til pilotafprøvning på udvalgte 'skoler på handleplan' som datainformeret understøttelse af den pædagogiske indsats for inkluderende læringsmiljøer. En co-branded workshop om AI og differentiering for skolekonsulentteamet er et oplagt indgangspunkt.",
       "abm_strategy": "Tilbyd et pilotprogram på 3-5 'skoler på handleplan', der kombinerer SAGAs adaptive læringsanalyse med det udgående konsulentteams praksisnære arbejde inden for Mangfoldige Børnefællesskaber-rammen.",
       "canonical_org": "Københavns Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "København Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Mette Søberg",
@@ -5578,9 +5423,9 @@
       "saga_relevans": "Mette Søbergs kontor er den primære kommunale aktør i Aarhus' folkeskoleudvikling og naturligt indgangspunkt for at introducere SAGA som datainformeret understøttelse af læringspartnernes praksisnære arbejde. Et pilotprogram på 3-5 aarhusianske folkeskoler i regi af 'Stærkere Læringsfællesskaber' ville ramme direkte ind i hendes ansvarsområde og de eksisterende evalueringsstrukturer.",
       "abm_strategy": "Præsenter SAGA for Mette Søberg som et konkret bidrag til 'Stærkere Læringsfællesskaber', med fokus på hvordan adaptiv AI kan supplere læringspartnernes sparring og give skoleledelsesteams datagrundlag for prioritering af faglig indsats.",
       "canonical_org": "Aarhus Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Aarhus Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Michael Plauborg Jensen",
@@ -5598,9 +5443,9 @@
       "saga_relevans": "Michael Plauborg Jensen er nøglepersonen for pædagogisk udvikling og kompetenceudvikling i Odenses folkeskoler og direkte beslutningstager for, hvilke læringsværktøjer der anvendes. SAGAs adaptive platform kan præsenteres som et redskab til differentiering og inklusion og som støtte til den nyansatte funktionsleder for pædagogisk udvikling.",
       "abm_strategy": "Tilbyd et pilotprojekt på 2-3 Odense-skoler med fokus på inklusion og differentiering, positioneret som supplement til skoleafdelingens nye funktionslederinitiativ for pædagogisk kompetenceudvikling.",
       "canonical_org": "Odense Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Odense Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Rasmus Greve Henriksen",
@@ -5618,9 +5463,9 @@
       "saga_relevans": "Rasmus Greve Henriksen er den mest direkte match i Aalborg for en SAGA-samtale: han leder præcis det team der digitalt og pædagogisk støtter skolerne, er personligt interesseret i AI og uddannelse og har kapaciteten til at gennemføre pilotprogrammer på tværs af mange skoler. En invitation til en demosession eller co-branded workshop om AI i skolen er et naturligt udgangspunkt.",
       "abm_strategy": "Ræk ud til Rasmus Greve Henriksen med en direkte invitation til faglig dialog om SAGAs potentiale — understreg hans egen interesse for AI i uddannelse og tilbyd et pilotskolemodel på 3-5 skoler med datadrevet læringsopfølgning.",
       "canonical_org": "Aalborg Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Aalborg Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Line Berthelsen",
@@ -5638,9 +5483,9 @@
       "saga_relevans": "Line Berthelsen leder den sektion i Frederiksberg Kommunes Skoleafdeling der arbejder direkte med pædagogisk udvikling og skoleledelse. SAGA kan præsenteres som et adaptivt læringsredskab til Fremtidens Skole-strategien, med fokus på differentieret undervisning og datainformeret praksis, samt som konkret emne i et skoleledelsesnetværksmøde.",
       "abm_strategy": "Kontakt Line Berthelsen med forslag om at præsentere SAGA på et eksisterende ledelsesnetværksmøde i Frederiksberg Kommunes skoleafdeling, positioneret som redskab til Fremtidens Skole-strategien.",
       "canonical_org": "Frederiksberg Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Frederiksberg Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Elsebeth Aller",
@@ -5658,9 +5503,9 @@
       "saga_relevans": "Som leder af det faglige konsulentteam i Roskilde Kommunes Skole og Klub er Elsebeth Aller en oplagt indgang for SAGA til at præsentere en adaptiv AI-læringsplatform, der kan understøtte konsulenterne i at levere differentieret pædagogisk sparring og datainformeret skoleudvikling til kommunens skoleledere og lærere.",
       "abm_strategy": "Inviter Elsebeth Aller til en demonstration af, hvordan SAGA kan styrke konsulentteamets kapacitet til skalerbar pædagogisk støtte til Roskildes skoler.",
       "canonical_org": "Roskilde Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Roskilde Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Betina Folke",
@@ -5678,9 +5523,9 @@
       "saga_relevans": "Betina Folkes rolle som bindeled mellem forvaltningens konsulentfunktion og kommunens skoler gør hende til en central kontakt for SAGA. Et pilotprogram med SAGA kan præsenteres som et redskab til at styrke konsulenterne i Herning og gøre hende til ambassadør over for skolelederne.",
       "abm_strategy": "Præsenter SAGA for Betina Folke som et redskab, der kan styrke de faglige konsulenter i Herning og give skolerne skalerbar, datainformeret pædagogisk støtte.",
       "canonical_org": "Herning Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Herning Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Marianne Holst Nielsen",
@@ -5698,9 +5543,9 @@
       "saga_relevans": "Marianne Holst Nielsen leder et stort konsulentapparat, der understøtter samtlige lærere og pædagoger i Silkeborg Kommunes folkeskoler – en oplagt partner for SAGA til at demonstrere, hvordan adaptiv AI-læring kan styrke PPL-konsulenterne i at levere skalerbar, datainformeret pædagogisk vejledning.",
       "abm_strategy": "Tilbyd Marianne Holst Nielsen et pilotforløb, hvor SAGA understøtter PPL-teamets kapacitet til praksisnær skoleudvikling i Silkeborg Kommunes folkeskoler.",
       "canonical_org": "Silkeborg Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Silkeborg Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Søren Kokholm",
@@ -5718,9 +5563,9 @@
       "saga_relevans": "Som centerleder med ansvar for opbygning af en ny konsulentstruktur er Søren Kokholm en strategisk kontakt for SAGA, der kan præsentere en adaptiv AI-læringsplatform som redskab til at styrke det nye konsulenthold med datainformeret, praksisnær skoleudvikling i almenundervisningen.",
       "abm_strategy": "Tag kontakt til Søren Kokholm i forbindelse med opbygningen af Næstveds nye 'Rejsehold' og præsenter SAGA som en platform der kan løfte konsulenternes effekt i de almene klasser.",
       "canonical_org": "Næstved Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Næstved Kommune",
+      "_sort_key": 1
     },
     {
       "name": "Bettina Jacoby",
@@ -5738,9 +5583,9 @@
       "saga_relevans": "Bettina Jacoby leder direkte det team af pædagogiske udviklingskonsulenter i Hvidovre, der arbejder med skolernes faglige og pædagogiske udvikling — et oplagt udgangspunkt for SAGA til at demonstrere, hvordan en adaptiv AI-læringsplatform kan give konsulentteamet skalerbare redskaber til datainformeret støtte af kommunens ni folkeskoler.",
       "abm_strategy": "Præsenter SAGA for Bettina Jacoby som en platform der understøtter Team Pædagogik og Udviklings arbejde med professionelle læringsfællesskaber og differentieret læringsunderstøttelse på tværs af Hvidovres folkeskoler.",
       "canonical_org": "Hvidovre Kommune",
-      "new_group": "ORGANISATIONER",
-      "new_section": "Kommuner",
-      "_sort_key": 99
+      "new_group": "KOMMUNER",
+      "new_section": "Hvidovre Kommune",
+      "_sort_key": 1
     }
   ],
   "meta": {
