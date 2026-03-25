@@ -509,6 +509,11 @@
           "name": "Børns Vilkår",
           "website": "https://bornsvilkar.dk/",
           "stats": "BørneTelefonen, 30+ ansatte, 500.000+ kontakter om trivsel og rettigheder"
+        },
+        {
+          "name": "Teach First Danmark",
+          "website": "https://www.teachfirst.dk/",
+          "stats": "Rekrutterer akademikere til lærerjob i udsatte skoler"
         }
       ],
       "description": "Elevorganisationer og civilsamfund der repræsenterer børns stemme og rettigheder i uddannelsesdebatten.",
@@ -6458,6 +6463,20 @@
       "new_group": "INFLUENCERS",
       "new_section": "Andre",
       "_sort_key": 3
+    },
+    {
+      "name": "Jesper Christensen",
+      "role": "CEO",
+      "organization": "Teach First Danmark",
+      "section": "Elev & Civilsamfund",
+      "tier": 2,
+      "pipeline": "Bottom-Up",
+      "relevance_score": 7.5,
+      "linkedin": "https://www.linkedin.com/in/jesper-christensen-bedreby/",
+      "canonical_org": "Teach First Danmark",
+      "new_group": "ORGANISATIONER",
+      "new_section": "Elev & Civilsamfund",
+      "_sort_key": 7
     }
   ],
   "meta": {
