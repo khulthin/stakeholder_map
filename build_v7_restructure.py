@@ -687,6 +687,23 @@ body{{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
 /* No results */
 .no-results{{display:none;text-align:center;padding:40px 20px;color:var(--m);font-size:14px}}
 
+/* CRM */
+.crm-dot{{width:8px;height:8px;border-radius:50%;flex-shrink:0;display:none;margin-right:1px}}
+.crm-dot.vis{{display:inline-block}}
+.crm-dot.s-prospect{{background:#3b82f6}}.crm-dot.s-contacted{{background:#f59e0b}}.crm-dot.s-meeting{{background:#6366f1}}.crm-dot.s-active{{background:#10b981}}.crm-dot.s-partner{{background:#059669}}.crm-dot.s-paused{{background:#9ca3af}}
+.crm-n-dot{{width:5px;height:5px;border-radius:50%;background:#7c3aed;opacity:.4;flex-shrink:0;display:none;margin-right:1px}}.crm-n-dot.vis{{display:inline-block}}
+.crm-sec{{margin-top:12px;padding-top:10px;border-top:1px solid #f0ede5}}
+.crm-lbl{{font-size:9px;font-weight:700;color:#7c3aed;text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px}}
+.crm-btns{{display:flex;flex-wrap:wrap;gap:3px;margin-bottom:8px}}
+.crm-b{{font-size:10px;padding:3px 9px;border-radius:10px;border:1px solid #e5e7eb;background:#f9fafb;color:#666;cursor:pointer;transition:all .15s;white-space:nowrap;font-family:inherit}}
+.crm-b:hover{{border-color:#7c3aed;color:#7c3aed}}
+.crm-b.on{{border-color:transparent;color:#fff;font-weight:600}}
+.crm-b.on.s-prospect{{background:#3b82f6}}.crm-b.on.s-contacted{{background:#f59e0b}}.crm-b.on.s-meeting{{background:#6366f1}}.crm-b.on.s-active{{background:#10b981}}.crm-b.on.s-partner{{background:#059669}}.crm-b.on.s-paused{{background:#9ca3af}}
+.crm-ta{{width:100%;min-height:54px;font-size:11px;padding:6px 8px;border:1px solid #e5e7eb;border-radius:6px;resize:vertical;font-family:inherit;color:#444;background:#fafaf9;outline:none;transition:border .2s;line-height:1.5}}.crm-ta:focus{{border-color:#7c3aed;background:#fff}}
+.crm-ta::placeholder{{color:#ccc}}
+.crm-exp{{width:100%;margin-top:4px;padding:5px 8px;font-size:10px;border-radius:6px;border:1px solid #333;background:#222;color:#999;cursor:pointer;text-align:left;font-family:inherit;transition:all .15s}}.crm-exp:hover{{background:#2a2a2e;color:#ccc;border-color:#555}}
+.crm-imp{{display:block;width:100%;margin-top:3px;padding:5px 8px;font-size:10px;border-radius:6px;border:1px solid #333;background:#222;color:#999;cursor:pointer;text-align:left;font-family:inherit;transition:all .15s}}.crm-imp:hover{{background:#2a2a2e;color:#ccc;border-color:#555}}
+
 @media(max-width:768px){{.sb{{display:none}}.mn{{margin-left:0;padding:16px 14px}}.og-h{{flex-wrap:wrap}}.og-right{{margin-top:6px}}}}
 </style>
 </head>
@@ -736,6 +753,10 @@ H.append(f'''<div class="ss">
 <div class="sr"><span class="l">Kommuner</span><span class="v">{len(GROUPS["KOMMUNER"])}</span></div>
 <div class="sr"><span class="l">LinkedIn</span><span class="v">{li}</span></div>
 <div class="sr"><span class="l">Kontakt</span><span class="v">{ct}</span></div>
+</div>
+<div style="padding:0 10px 14px">
+<button class="crm-exp" onclick="exportCrm()">&#8681; Eksport&eacute;r CRM</button>
+<label class="crm-imp">&#8679; Import&eacute;r CRM<input type="file" accept=".json" style="display:none" onchange="importCrm(this)"></label>
 </div></nav>
 <main class="mn">
 <div class="pt">Stakeholder Map</div>
@@ -762,7 +783,7 @@ def render_person_card(r):
     svg = f'<svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g{svgid}" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="{g1}"/><stop offset="100%" stop-color="{g2}"/></linearGradient></defs><circle cx="17" cy="17" r="17" fill="url(#g{svgid})"/><text x="17" y="17" text-anchor="middle" dominant-baseline="central" fill="white" font-family="-apple-system,sans-serif" font-size="11" font-weight="600">{ini}</text></svg>'
 
     out = []
-    out.append(f'<div class="cd t{t}" data-search="{esc(search_text)}" data-tier="{t}" data-score="{score or 0}">\n')
+    out.append(f'<div class="cd t{t}" data-search="{esc(search_text)}" data-tier="{t}" data-score="{score or 0}" data-name="{esc(r["name"])}">\n')
     out.append(f'<div class="ch" onclick="toggle(this.parentElement)">\n<div class="cl">\n<div class="av">{svg}</div>\n<div class="ci">\n<div class="cn">{esc(r["name"])}</div>\n<div class="cr">{esc(r["role"])}</div>\n')
     # Show org for influencers/medier (useful context)
     org_display = r.get('canonical_org', '') or r.get('organization', '')
@@ -775,7 +796,7 @@ def render_person_card(r):
     if score is not None:
         out.append(f'<span class="tp t{t}">{score}/10</span>\n')
     out.append(f'<span class="tp t{t}">{TIER_LABELS[t]}</span>\n')
-    out.append(f'<span class="cv">&#9660;</span>\n</div></div>\n')
+    out.append(f'<span class="crm-dot" title=""></span><span class="crm-n-dot" title="Har notater"></span><span class="cv">&#9660;</span>\n</div></div>\n')
 
     # Detail
     out.append('<div class="dt">\n')
@@ -806,6 +827,14 @@ def render_person_card(r):
     if r.get('phone'): parts.append(f'&#9742; {esc(r["phone"])}')
     if r.get('linkedin'): parts.append(f'<a href="{r["linkedin"]}" target="_blank" onclick="event.stopPropagation()">LinkedIn &#8599;</a>')
     if parts: out.append(f'<div class="cb">{" &nbsp;&middot;&nbsp; ".join(parts)}</div>\n')
+    # CRM section
+    out.append('<div class="crm-sec">\n<div class="crm-lbl">CRM Status</div>\n<div class="crm-btns">\n')
+    for v, label in [('prospect','Identificeret'),('contacted','Kontaktet'),('meeting','M\u00f8de aftalt'),('active','I dialog'),('partner','Partner'),('paused','Afventer')]:
+        out.append(f'<button class="crm-b" data-val="{v}" onclick="crmSetStatus(this);event.stopPropagation()">{label}</button>\n')
+    out.append('<button class="crm-b" data-val="" onclick="crmSetStatus(this);event.stopPropagation()">Ryd</button>\n')
+    out.append('</div>\n<div class="crm-lbl" style="margin-top:6px">Notater</div>\n')
+    out.append('<textarea class="crm-ta" placeholder="Tilf\u00f8j noter om denne kontakt..." oninput="crmSaveNote(this)" onclick="event.stopPropagation()" onkeydown="event.stopPropagation()"></textarea>\n')
+    out.append('</div>\n')
     out.append('</div></div>\n')
     return ''.join(out)
 
@@ -1049,7 +1078,69 @@ function sortInfluencers(mode,btn){
     flat.appendChild(clone);
   });
   flat.style.display='block';
+  flat.querySelectorAll('.cd[data-name]').forEach(applyCrm);
 }
+
+// ── CRM (localStorage) ────────────────────────────────────────────────────
+const CRM_KEY='saga_crm_v1';
+let crm=JSON.parse(localStorage.getItem(CRM_KEY)||'{}');
+const CRM_S={
+  'prospect':{label:'Identificeret',cls:'s-prospect'},
+  'contacted':{label:'Kontaktet',cls:'s-contacted'},
+  'meeting':{label:'Møde aftalt',cls:'s-meeting'},
+  'active':{label:'I dialog',cls:'s-active'},
+  'partner':{label:'Partner',cls:'s-partner'},
+  'paused':{label:'Afventer',cls:'s-paused'}
+};
+function saveCrm(){localStorage.setItem(CRM_KEY,JSON.stringify(crm));}
+function applyCrm(card){
+  const k=card.dataset.name||'';const d=crm[k]||{};
+  const st=d.status||'';const nt=d.note||'';
+  const dot=card.querySelector('.crm-dot');
+  if(dot){dot.className='crm-dot';if(st&&CRM_S[st]){dot.classList.add('vis',CRM_S[st].cls);dot.title=CRM_S[st].label;}}
+  const nd=card.querySelector('.crm-n-dot');
+  if(nd)nd.classList.toggle('vis',nt.length>0);
+  card.querySelectorAll('.crm-b[data-val]').forEach(b=>{
+    const v=b.dataset.val;
+    b.className='crm-b'+(v===st&&v?' on '+CRM_S[v].cls:'');
+  });
+  const ta=card.querySelector('.crm-ta');
+  if(ta&&ta.value!==nt)ta.value=nt;
+}
+function crmSetStatus(btn){
+  const card=btn.closest('.cd');const k=card.dataset.name||'';
+  const v=btn.dataset.val;
+  if(!crm[k])crm[k]={};crm[k].status=v;saveCrm();applyCrm(card);
+}
+function crmSaveNote(ta){
+  const card=ta.closest('.cd');const k=card.dataset.name||'';
+  if(!crm[k])crm[k]={};crm[k].note=ta.value;saveCrm();
+  const nd=card.querySelector('.crm-n-dot');
+  if(nd)nd.classList.toggle('vis',ta.value.length>0);
+}
+function exportCrm(){
+  const entries=Object.entries(crm).filter(([,v])=>v.status||v.note);
+  if(!entries.length){alert('Ingen CRM data at eksportere endnu.');return;}
+  const blob=new Blob([JSON.stringify(crm,null,2)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);
+  a.download='saga_crm_'+new Date().toISOString().slice(0,10)+'.json';a.click();
+}
+function importCrm(inp){
+  const f=inp.files[0];if(!f)return;
+  const r=new FileReader();
+  r.onload=e=>{
+    try{
+      const d=JSON.parse(e.target.result);
+      Object.assign(crm,d);saveCrm();
+      document.querySelectorAll('.cd[data-name]').forEach(applyCrm);
+      inp.value='';alert('Importeret: '+Object.keys(d).length+' poster.');
+    }catch{alert('Ugyldig JSON-fil.');}
+  };
+  r.readAsText(f);
+}
+document.addEventListener('DOMContentLoaded',()=>{
+  document.querySelectorAll('.cd[data-name]').forEach(applyCrm);
+});
 </script></body></html>''')
 
 html = ''.join(H)
