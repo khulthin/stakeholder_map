@@ -378,10 +378,13 @@ for mname in MUNICIPALITY_DATA:
     if mname not in GROUPS['KOMMUNER']:
         GROUPS['KOMMUNER'][mname] = []
 
-# Sort municipalities by priority_rank
+# Focus municipalities — shown first with a badge
+FOCUS_KOMMUNER = {'Aalborg Kommune', 'Gentofte Kommune', 'Rudersdal Kommune', 'Ishøj Kommune', 'Frederiksberg Kommune'}
+
+# Sort municipalities: focus ones first, then by priority_rank
 GROUPS['KOMMUNER'] = OrderedDict(
     sorted(GROUPS['KOMMUNER'].items(),
-           key=lambda x: MUNICIPALITY_DATA.get(x[0], {}).get('rank', 999))
+           key=lambda x: (0 if x[0] in FOCUS_KOMMUNER else 1, MUNICIPALITY_DATA.get(x[0], {}).get('rank', 999)))
 )
 
 # For Foreninger & KL: also move the KL org-level stakeholder
@@ -592,6 +595,8 @@ body{{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
 .tier-bdg.mw{{background:#fef2f2;color:#dc2626;border:1px solid #fca5a5}}
 .tier-bdg.imp{{background:#fffbeb;color:#d97706;border:1px solid #fde68a}}
 .tier-bdg.fol{{background:#f4f4f5;color:#71717a;border:1px solid #d4d4d8}}
+.tier-bdg.fok-main{{background:#ecfdf5;color:#059669;border:1px solid #6ee7b7;font-weight:700}}
+.fok-bdg{{font-size:8px;font-weight:700;padding:1px 5px;border-radius:4px;background:#ecfdf5;color:#059669;border:1px solid #6ee7b7;margin-right:4px;vertical-align:middle;letter-spacing:.3px}}
 /* Empty municipality placeholder */
 .kom-empty{{padding:16px;color:#aaa;font-size:12px;font-style:italic;border:1px dashed #e0ddd8;border-radius:8px;text-align:center}}
 /* Stats */
@@ -740,7 +745,8 @@ for gname, (glabel, gcount) in group_labels.items():
             rank = mdata.get('rank', '')
             display = sec.replace(' Kommune', '')  # strip suffix for brevity
             cnt = f'<span class="nc">{len(people)}</span>' if people else ''
-            H.append(f'<a href="#{mkid(gname+"-"+sec)}" onclick="go(\'{mkid(gname+"-"+sec)}\');return false">{esc(display)} {cnt}</a>\n')
+            fokus_badge = '<span class="fok-bdg">FOKUS</span>' if sec in FOCUS_KOMMUNER else ''
+            H.append(f'<a href="#{mkid(gname+"-"+sec)}" onclick="go(\'{mkid(gname+"-"+sec)}\');return false">{fokus_badge}{esc(display)} {cnt}</a>\n')
         elif people:
             H.append(f'<a href="#{mkid(gname+"-"+sec)}" onclick="go(\'{mkid(gname+"-"+sec)}\');return false">{esc(sec)} <span class="nc">{len(people)}</span></a>\n')
     H.append('</div>\n')
@@ -868,7 +874,9 @@ def render_org_group(canon_org, people, section_name):
         mdata = MUNICIPALITY_DATA.get(canon_org, {})
         rank = mdata.get('rank', '')
         tier = mdata.get('tier', '')
-        if rank:
+        if canon_org in FOCUS_KOMMUNER:
+            kom_badge = '<span class="tier-bdg fok-main">FOKUS</span>'
+        elif rank:
             tc = TIER_CLASS.get(tier, 'fol')
             kom_badge = f'<span class="tier-bdg {tc}">{tier}</span>'
     if stats: meta.append(esc(stats))
